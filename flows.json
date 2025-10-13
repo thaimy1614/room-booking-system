@@ -8,6 +8,38 @@
         "env": []
     },
     {
+        "id": "bd5efab3a54ad20c",
+        "type": "tab",
+        "label": "Booking Flow",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "37dd95d269875e4a",
+        "type": "tab",
+        "label": "Room Flow",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "7ff81452bcb86b9c",
+        "type": "tab",
+        "label": "History Flow",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "1fca8f55997ebce8",
+        "type": "tab",
+        "label": "Flow 4",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "8ba1cb52c18f200a",
         "type": "users_config",
         "appPath": "/users",
