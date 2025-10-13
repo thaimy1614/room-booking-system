@@ -2,7 +2,18 @@
     "name": "RoomBooking",
     "description": "A Node-RED Project",
     "version": "0.0.1",
-    "dependencies": {},
+    "dependencies": {
+        "dotenv": "^17.2.3",
+        "node-red": "^4.1.0",
+        "node-red-contrib-bcrypt": "~0.1.6",
+        "node-red-contrib-jwt": "~0.1.0",
+        "node-red-contrib-postgresql": "~0.15.4",
+        "node-red-contrib-uibuilder": "^7.5.0",
+        "node-red-contrib-users-jwt": "~0.1.0",
+        "react": "^19.2.0",
+        "socket.io": "4.8.1",
+        "node-red-node-mysql": "2.0.0"
+    },
     "node-red": {
         "settings": {
             "flowFile": "flows.json",
