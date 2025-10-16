@@ -24,22 +24,6 @@
         "env": []
     },
     {
-        "id": "7ff81452bcb86b9c",
-        "type": "tab",
-        "label": "History Flow",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
-        "id": "1fca8f55997ebce8",
-        "type": "tab",
-        "label": "Flow 4",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
         "id": "8ba1cb52c18f200a",
         "type": "users_config",
         "appPath": "/users",
@@ -59,6 +43,35 @@
         "x": 140,
         "y": 260,
         "wires": [
+            []
+        ]
+    },
+    {
+        "id": "abc94fd1618ad75d",
+        "type": "uibuilder",
+        "z": "6e18303f78d73c6e",
+        "name": "",
+        "topic": "",
+        "url": "project",
+        "okToGo": true,
+        "fwdInMessages": false,
+        "allowScripts": false,
+        "allowStyles": false,
+        "copyIndex": true,
+        "templateFolder": "blank",
+        "extTemplate": "",
+        "showfolder": false,
+        "reload": false,
+        "sourceFolder": "build",
+        "deployedVersion": "7.5.0",
+        "showMsgUib": false,
+        "title": "",
+        "descr": "",
+        "editurl": "",
+        "x": 360,
+        "y": 80,
+        "wires": [
+            [],
             []
         ]
     },
