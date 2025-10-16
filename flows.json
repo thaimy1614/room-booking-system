@@ -47,35 +47,6 @@
         "jwtHttpsOnly": false
     },
     {
-        "id": "36897ace952ebacb",
-        "type": "uibuilder",
-        "z": "6e18303f78d73c6e",
-        "name": "",
-        "topic": "",
-        "url": "project",
-        "okToGo": true,
-        "fwdInMessages": false,
-        "allowScripts": false,
-        "allowStyles": false,
-        "copyIndex": true,
-        "templateFolder": "blank",
-        "extTemplate": "",
-        "showfolder": false,
-        "reload": false,
-        "sourceFolder": "src",
-        "deployedVersion": "7.5.0",
-        "showMsgUib": false,
-        "title": "",
-        "descr": "",
-        "editurl": "",
-        "x": 200,
-        "y": 60,
-        "wires": [
-            [],
-            []
-        ]
-    },
-    {
         "id": "81b37112c7a8319c",
         "type": "http in",
         "z": "6e18303f78d73c6e",

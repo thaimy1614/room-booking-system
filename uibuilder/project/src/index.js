@@ -1,11 +1,17 @@
-// Give VS Code IntelliSense for uibuilder
-/// <reference path="../types/uibuilder.d.ts" />
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
 
-/** The simplest use of uibuilder client library
- * See the docs if the client doesn't start on its own.
- */
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
 
-// Listen for incoming messages from Node-RED and action
-// uibuilder.onChange('msg', (msg) => {
-//     // do stuff with the incoming msg
-// })
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();

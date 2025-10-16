@@ -1,35 +1,39 @@
 {
-  "name": "uib-blank",
-  "version": "2025-05-27",
+  "name": "project",
+  "version": "0.1.0",
   "private": true,
-  "description": "This is about the simplest template you can get for uibuilder.",
-  "browser": "./src/index.js",
+  "dependencies": {
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
   "scripts": {
-    "build": "echo \"No build process specified\""
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "devDependencies": {
-    "@eslint/eslintrc": "^3.3.1",
-    "@eslint/js": "^9.27.0",
-    "@stylistic/eslint-plugin": "^5.2.2",
-    "eslint": "^9.27.0",
-    "eslint-plugin-html": "^8.1.3",
-    "eslint-plugin-jsdoc": "^54.1.1",
-    "globals": "^16.1.0"
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
-  "keywords": ["uibuilder", "node-red", "node-red-contrib-uibuilder"],
-  "author": "Julian Knight (Totally Information)",
-  "license": "Apache-2.0",
-  "homepage": "https://github.com/TotallyInformation/node-red-contrib-uibuilder",
-  "bugs": "https://github.com/TotallyInformation/node-red-contrib-uibuilder/issues",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/TotallyInformation/node-red-contrib-uibuilder.git"
-  },
-  "browserslist": [
-    "> 0.5%",
-    "maintained versions",
-    "last 2 versions",
-    "not dead",
-    "not ie > 0"
-  ]
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
