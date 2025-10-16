@@ -8,17 +8,17 @@
         "env": []
     },
     {
-        "id": "bd5efab3a54ad20c",
+        "id": "37dd95d269875e4a",
         "type": "tab",
-        "label": "Booking Flow",
+        "label": "Room Flow",
         "disabled": false,
         "info": "",
         "env": []
     },
     {
-        "id": "37dd95d269875e4a",
+        "id": "bd5efab3a54ad20c",
         "type": "tab",
-        "label": "Room Flow",
+        "label": "Booking Flow",
         "disabled": false,
         "info": "",
         "env": []
@@ -68,10 +68,154 @@
         "title": "",
         "descr": "",
         "editurl": "",
-        "x": 300,
-        "y": 280,
+        "x": 200,
+        "y": 60,
         "wires": [
             [],
+            []
+        ]
+    },
+    {
+        "id": "81b37112c7a8319c",
+        "type": "http in",
+        "z": "6e18303f78d73c6e",
+        "name": "POST /api/login",
+        "url": "/api/login",
+        "method": "post",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 140,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e1ba5d9452dd23b3",
+        "type": "http in",
+        "z": "37dd95d269875e4a",
+        "name": "GET /api/rooms/available",
+        "url": "/api/rooms/available",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 310,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a78a1605b4df65fc",
+        "type": "http in",
+        "z": "37dd95d269875e4a",
+        "name": "POST /api/rooms",
+        "url": "/api/rooms",
+        "method": "post",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 280,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a9409be585c97e54",
+        "type": "http in",
+        "z": "37dd95d269875e4a",
+        "name": "PUT /api/rooms/:room_id",
+        "url": "/api/rooms/:room_id",
+        "method": "put",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 310,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d36aea7df4e962e1",
+        "type": "http in",
+        "z": "37dd95d269875e4a",
+        "name": "DELETE /api/rooms/:room_id",
+        "url": "/api/rooms/:room_id",
+        "method": "delete",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 320,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d89dd19e8226e94f",
+        "type": "http in",
+        "z": "bd5efab3a54ad20c",
+        "name": "GET /my-bookings",
+        "url": "/my-bookings",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 270,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3d52c22525c9e01f",
+        "type": "http in",
+        "z": "bd5efab3a54ad20c",
+        "name": "POST /my-bookings/:booking_id/cancel",
+        "url": "/my-bookings/:booking_id/cancel",
+        "method": "post",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 330,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1ff3c68dc62441e7",
+        "type": "http in",
+        "z": "bd5efab3a54ad20c",
+        "name": "POST /bookings",
+        "url": "/bookings",
+        "method": "post",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 260,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "764eec3794775bdd",
+        "type": "http in",
+        "z": "bd5efab3a54ad20c",
+        "name": "GET /bookings",
+        "url": "/bookings",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 260,
+        "y": 480,
+        "wires": [
             []
         ]
     }
