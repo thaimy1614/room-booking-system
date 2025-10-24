@@ -1,0 +1,22 @@
+{
+  "name": "node-red-role-check",
+  "version": "1.0.0",
+  "keywords": [
+    "node-red"
+  ],
+  "node-red": {
+    "nodes": {
+      "role-check": "nodes/role-check.js"
+    }
+  },
+  "devDependencies": {
+    "chai": "^6.2.0",
+    "mocha": "^11.7.4",
+    "node-red": "^4.1.0",
+    "node-red-node-test-helper": "^0.3.5",
+    "sinon": "^21.0.0"
+  },
+  "scripts": {
+    "test": "mocha test/role-check-test.js"
+  }
+}

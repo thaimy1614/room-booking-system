@@ -1,0 +1,36 @@
+<script type="text/x-red" data-template-name="role-check">
+    <div class="form-row">
+        <label for="node-input-name">
+            <i class="fa fa-tag"></i> Name
+        </label>
+        <input type="text" id="node-input-name" placeholder="Node name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-requiredRole">
+            <i class="fa fa-user-shield"></i> Required Role
+        </label>
+        <input type="text" id="node-input-requiredRole" placeholder="e.g. admin">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="role-check">
+    <p>This node checks if the incoming message has the required role.</p>
+    <p>If <code>msg.role</code> matches the configured <strong>Required Role</strong>, the message is sent to the first output. Otherwise, it goes to the second output.</p>
+</script>
+
+<script type="text/javascript">
+    RED.nodes.registerType('role-check', {
+        category: 'function',
+        color: '#a6bbcf',
+        defaults: {
+            name: { value: "" },
+            requiredRole: { value: "admin" }
+        },
+        inputs: 1,
+        outputs: 2,
+        icon: "shield.png",
+        label: function() {
+            return this.name || "role-check";
+        }
+    });
+</script>
