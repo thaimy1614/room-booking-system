@@ -23,7 +23,7 @@ Edit your Node-RED settings file (usually in ~/.node-red/settings.js) and make s
         }
     }
 
-Then restart Node-RED. It creates /projects folder in user .node-red automatically.
+Then restart Node-RED. It creates /projects folder in user dir .node-red automatically.
 
 📦 2. Get the Project
 
@@ -32,11 +32,11 @@ You can clone this Node-RED project either via Git CLI or directly in the Node-R
 🖥️ Option A — Clone via Terminal
 
     cd userDir nodered (.node-red) /projects
-    git clone https://github.com/<your-username>/<your-nodered-project>.git
-    cd <your-nodered-project>
+    git clone https://github.com/thaimy1614/room-booking-system.git
+    cd project name
     npm install
 
-🧠 Option B — Clone via Node-RED UI
+🧠 Option B — Clone via Node-RED UI (RECOMMEND)
 
 Once Project Mode is enabled:
 
@@ -52,7 +52,8 @@ Go to Menu -> Projects -> New
 When prompted to “Select a project,” choose: Clone repository
 
 Paste repo URL:
-https://github.com/thaimy1614/room_booking_system.git
+
+    https://github.com/thaimy1614/room_booking_system.git
 
 Node-RED will automatically clone the project and install dependencies.
 
@@ -62,7 +63,7 @@ Node-RED will automatically clone the project and install dependencies.
 
 Add .env file into project directory
 
-Open .env file and create env:
+Open .env file and create variable:
 
     JWT_SECRET_KEY=your-jwt-secret-key
 
@@ -75,13 +76,15 @@ Start Node-RED manually:
 
 To run with custom-setting.js file
 
-🌐 Open your browser at: http://localhost:1880
+🌐 Open your browser at: 
+
+    http://localhost:1880
 
 ▶️ 5. Open and Run UIBUILDER
 
 Start UIBUILDER manually:
 
-    cd to the project /uibuilder/project (uibuilder prefix)
+    cd to the project /uibuilder/project (uibuilder name prefix)
     npm install
     npm run build (to create /build folder)
 
@@ -96,7 +99,7 @@ Run ReactJS dev mode:
 
 📦 6. Folder Structure
 
-    ├── uibuilder/              # Store uibuild (ReactJS) files
+    ├── uibuilder/              # Store uibuild (ReactJS)
     ├── flows.json              # Main Node-RED flow definitions
     ├── flows_cred.json         # Encrypted credentials (auto-generated)
     ├── package.json            # Node dependencies
