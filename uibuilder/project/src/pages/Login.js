@@ -1,9 +1,14 @@
 import React, { useState } from 'react';
 import { Card, Container } from 'react-bootstrap';
-import { TextField, Button, Snackbar, Alert } from '@mui/material';
+import { TextField, Button, CircularProgress } from '@mui/material';
 import { motion } from 'framer-motion';
-import { mockLogin } from '../mockData';
 import LoginIcon from '@mui/icons-material/Login';
+import { handleLogin } from '../services/AuthAPIs';
+import { setToken, setUserInfo } from '../services/LocalStorageService';
+import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
+import axios from '../configs/AxiosConfig';
+import { useAuth } from '../context/AuthContext';
 
 const cardVariants = {
   initial: { y: -50, opacity: 0 },
@@ -13,19 +18,29 @@ const cardVariants = {
 function Login() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const [error, setError] = useState('');
+  const [loading, setLoading] = useState(false);
+  const { login } = useAuth();
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (!username || !password) {
+      toast.error('Please fill in all fields');
+      return;
+    }
+    setLoading(true);
     try {
-      const { result, token } = await mockLogin(username, password);
-      localStorage.setItem('token', token);
-      localStorage.setItem('role', result.user.role_name);
-      localStorage.setItem('userId', result.user.user_id);
-      localStorage.setItem('fullName', result.user.full_name);
-      window.location.href = '/project';
+      const { token, user } = await handleLogin(username, password);
+      
+      login(token, user);
+      toast.success('Login successful!');
+      
+      navigate('/');
     } catch (err) {
-      setError(err.message);
+      console.error('Login error:', err);
+      toast.error(err.response?.data?.message || err.message || 'Login failed');
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -37,17 +52,39 @@ function Login() {
             Welcome Back
           </motion.h3>
           <form onSubmit={handleSubmit}>
-            <TextField label="Username" fullWidth margin="normal" value={username} onChange={(e) => setUsername(e.target.value)} InputProps={{ startAdornment: <LoginIcon sx={{ mr: 1 }} /> }} />
-            <TextField label="Password" type="password" fullWidth margin="normal" value={password} onChange={(e) => setPassword(e.target.value)} />
+            <TextField
+              label="Username"
+              fullWidth
+              margin="normal"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+              InputProps={{ startAdornment: <LoginIcon sx={{ mr: 1 }} /> }}
+              disabled={loading}
+            />
+            <TextField
+              label="Password"
+              type="password"
+              fullWidth
+              margin="normal"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              disabled={loading}
+            />
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <Button type="submit" variant="contained" fullWidth sx={{ mt: 2, py: 1.5 }}>Login</Button>
+              <Button
+                type="submit"
+                variant="contained"
+                fullWidth
+                sx={{ mt: 2, py: 1.5 }}
+                disabled={loading}
+              >
+                {loading ? <CircularProgress size={24} /> : 'Login'}
+              </Button>
             </motion.div>
           </form>
         </Card>
       </motion.div>
-      <Snackbar open={!!error} autoHideDuration={6000} onClose={() => setError('')}>
-        <Alert severity="error">{error}</Alert>
-      </Snackbar>
+      {/* ToastContainer is in index.js - no need here */}
     </Container>
   );
 }

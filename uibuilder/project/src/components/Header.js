@@ -3,12 +3,19 @@ import { Navbar, Nav } from 'react-bootstrap';
 import { Avatar, Typography, Button } from '@mui/material';
 import { motion } from 'framer-motion';
 import LogoutIcon from '@mui/icons-material/Logout';
+import { useNavigate } from 'react-router-dom';
+import { useAuth } from '../context/AuthContext';
+import { toast } from 'react-toastify';
 
 function Header() {
   const fullName = localStorage.getItem('fullName') || 'User';
+  const { logout } = useAuth();
+  const navigate = useNavigate();
+
   const handleLogout = () => {
-    localStorage.clear();
-    window.location.href = '/project/login';
+    logout();
+    toast.success('Logged out');
+    navigate('/login');
   };
 
   return (

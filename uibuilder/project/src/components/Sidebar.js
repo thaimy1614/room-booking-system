@@ -17,13 +17,13 @@ function Sidebar({ role }) {
       {(role === 'USER' || role === 'ADMIN') && (
         <>
           <motion.div variants={linkVariants} whileHover="hover">
-            <Nav.Link as={Link} to="/project/available-rooms"><RoomIcon sx={{ mr: 1 }} /> Available Rooms</Nav.Link>
+            <Nav.Link as={Link} to="/available-rooms"><RoomIcon sx={{ mr: 1 }} /> Available Rooms</Nav.Link>
           </motion.div>
           <motion.div variants={linkVariants} whileHover="hover">
-            <Nav.Link as={Link} to="/project/my-bookings"><HistoryIcon sx={{ mr: 1 }} /> My Bookings</Nav.Link>
+            <Nav.Link as={Link} to="/my-bookings"><HistoryIcon sx={{ mr: 1 }} /> My Bookings</Nav.Link>
           </motion.div>
           <motion.div variants={linkVariants} whileHover="hover">
-            <Nav.Link as={Link} to="/project/schedule"><ScheduleIcon sx={{ mr: 1 }} /> Schedule</Nav.Link>
+            <Nav.Link as={Link} to="/schedule"><ScheduleIcon sx={{ mr: 1 }} /> Schedule</Nav.Link>
           </motion.div>
         </>
       )}
@@ -31,10 +31,10 @@ function Sidebar({ role }) {
         <>
           <hr />
           <motion.div variants={linkVariants} whileHover="hover">
-            <Nav.Link as={Link} to="/project/admin/rooms"><AdminPanelSettingsIcon sx={{ mr: 1 }} /> Room Management</Nav.Link>
+            <Nav.Link as={Link} to="/admin/rooms"><AdminPanelSettingsIcon sx={{ mr: 1 }} /> Room Management</Nav.Link>
           </motion.div>
           <motion.div variants={linkVariants} whileHover="hover">
-            <Nav.Link as={Link} to="/project/admin/bookings"><AdminPanelSettingsIcon sx={{ mr: 1 }} /> Bookings Management</Nav.Link>
+            <Nav.Link as={Link} to="/admin/bookings"><AdminPanelSettingsIcon sx={{ mr: 1 }} /> Bookings Management</Nav.Link>
           </motion.div>
         </>
       )}

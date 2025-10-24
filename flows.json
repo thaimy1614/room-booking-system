@@ -1,5 +1,13 @@
 [
     {
+        "id": "959654febd2675df",
+        "type": "tab",
+        "label": "Catch SPA",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "6e18303f78d73c6e",
         "type": "tab",
         "label": "Auth Flow",
@@ -8,9 +16,25 @@
         "env": []
     },
     {
+        "id": "f6851f6212eb23ed",
+        "type": "tab",
+        "label": "Facility Flow",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "503bea98da0fd5c1",
+        "type": "tab",
+        "label": "Room Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "37dd95d269875e4a",
         "type": "tab",
-        "label": "Room Flow",
+        "label": "Room Flow 2",
         "disabled": false,
         "info": "",
         "env": []
@@ -24,6 +48,585 @@
         "env": []
     },
     {
+        "id": "1f9ad198f05c78e0",
+        "type": "tab",
+        "label": "My Booking Flow",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "ef473e5856f6634c",
+        "type": "tab",
+        "label": "Schedule Flow",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e713e992ef10c6ef",
+        "type": "group",
+        "z": "6e18303f78d73c6e",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "dc10e10d5ad5b29f",
+            "783009e76506f4ac",
+            "1fede23e0ea5f9e5",
+            "7b8fe5c856099f49",
+            "01e4e1b598319715",
+            "82d058830d4ceb1d",
+            "8aba317151570a38",
+            "4d54edb4e492d2d9",
+            "5be9363c051a9fa6",
+            "eaddd29ee67511e9",
+            "6a6b7a242b437191",
+            "6a97fe73e3dd47ea",
+            "e481ecfaed1e4a1d",
+            "4e8df7b44bfdd9ed",
+            "4f5d4a1875df4d36",
+            "e09d9be90e6627e3",
+            "5c39b63a3ebb4a63",
+            "def90cb904179c05",
+            "62769e52c886d8d0"
+        ],
+        "x": 74,
+        "y": 119,
+        "w": 1472,
+        "h": 362
+    },
+    {
+        "id": "3e82cbd016ae10ad",
+        "type": "group",
+        "z": "959654febd2675df",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "4088509c69c94b07",
+            "a6d77efa37086fdb",
+            "414eeecd4b42d6c7",
+            "a871177578706ddd"
+        ],
+        "x": 294,
+        "y": 179,
+        "w": 812,
+        "h": 82
+    },
+    {
+        "id": "6f5a2056e6dbbb95",
+        "type": "group",
+        "z": "f6851f6212eb23ed",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "9fc4af25f225331b",
+            "b6cab3c170a6933b",
+            "2e92d20fa8764e9d",
+            "d8505e493d0cc0fe",
+            "8b0fc36ec31dc06f",
+            "741871df92cd9a57",
+            "6ae2496922c5c06c",
+            "199bf403f409f890",
+            "aa67d135e210cf0d"
+        ],
+        "x": 34,
+        "y": 139,
+        "w": 1472,
+        "h": 262
+    },
+    {
+        "id": "aa1e98539aa1c396",
+        "type": "group",
+        "z": "37dd95d269875e4a",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "cbc88d6992fd6244",
+            "8c40e70770102473",
+            "6515c6ccbe020aec",
+            "7fa7b4b75a06dbd0",
+            "aba4e32da9bcb3fb",
+            "69be1a66d4cf79b6",
+            "f4503f000a8c8298",
+            "1fda12a0f63cfad1",
+            "7817a703d1be77aa",
+            "464f66952bdab47e",
+            "79a0f83f2cc19f56"
+        ],
+        "x": 74,
+        "y": 19,
+        "w": 1472,
+        "h": 302
+    },
+    {
+        "id": "43e2605169538c26",
+        "type": "group",
+        "z": "37dd95d269875e4a",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "cd333c9b6c4cdda9",
+            "b2db5fd42dcc0f04",
+            "ca54e389846ed556",
+            "9e8a701f796ea424",
+            "4387afda2196ac5e",
+            "22d0dc9c70904d93",
+            "d1e2eeb3dc8a7baf",
+            "96b0ad5d6251979a",
+            "d69a2c26cc9f11f4",
+            "f4a6b7abba1b853d",
+            "9c0d4d10d5da0824",
+            "680759f4220e0736",
+            "27d09c56ab542e0d"
+        ],
+        "x": 54,
+        "y": 339,
+        "w": 1532,
+        "h": 262
+    },
+    {
+        "id": "731b84d8bf335b59",
+        "type": "group",
+        "z": "37dd95d269875e4a",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "8f6dc201eb39db7f",
+            "6fc035c0c6e89a92",
+            "006a159ba1dfc5a1",
+            "a1ed93e7596aee60",
+            "1dba4f40f290cccf",
+            "21f2cec970bbfd1c",
+            "961abd4227914836",
+            "5d94436a08194e41",
+            "8e3fbc7cd8b9157c",
+            "9760f2d98b064709",
+            "d608c6cb7f4e8011"
+        ],
+        "x": 314,
+        "y": 1759,
+        "w": 1292,
+        "h": 302
+    },
+    {
+        "id": "bddb83f6550c1c97",
+        "type": "group",
+        "z": "37dd95d269875e4a",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "e5bc05878d40a519",
+            "3c078bd0c5d8df5f",
+            "1bbf582482b68d30",
+            "28385584a48e4371",
+            "06f562fde793b236",
+            "f762ee3ff328e7cd",
+            "ecfa6dbba57472fe",
+            "5c63a40e03c4acc2",
+            "7bb450e6dbd39a15",
+            "4201ab2e0ef62410",
+            "9cfc3430e40aa6a4",
+            "71c313ebddc64a42"
+        ],
+        "x": 34,
+        "y": 659,
+        "w": 1572,
+        "h": 262
+    },
+    {
+        "id": "35b9f398219455c3",
+        "type": "group",
+        "z": "37dd95d269875e4a",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "52aafdd0e13af00c",
+            "9d7fd5160cb070dc",
+            "2e2f24f033fdb12b",
+            "43aa5890e3f9b088",
+            "6c7516dbba02306e",
+            "29f02c5b5fc0e4e3",
+            "c6d2166a6c5bb5be",
+            "8d87ea4ed40cebc3",
+            "a1a916a8a5dd826e",
+            "8b7921bc8d96309c",
+            "393a75a4de27840f",
+            "3b5c8c025c7be344",
+            "c74f1b8ad4ca48b9",
+            "d5dfed81c3112ccf",
+            "d0c8176da8830878"
+        ],
+        "x": 34,
+        "y": 939,
+        "w": 1732,
+        "h": 282
+    },
+    {
+        "id": "504069dc06829e62",
+        "type": "group",
+        "z": "bd5efab3a54ad20c",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "884dbc834c6e5c30",
+            "f49e1e067a9d555c",
+            "747405ee397774a0",
+            "892bcbf8f3e47265",
+            "bb29fab178cd7225",
+            "994f23d2cbc7df98",
+            "f27de9691e262046",
+            "5e495eac96e9b125",
+            "3e9a8064bd5699d9",
+            "5cebd9d63084d28f",
+            "4a5e1ac9b16eef0b"
+        ],
+        "x": 54,
+        "y": 39,
+        "w": 1472,
+        "h": 302
+    },
+    {
+        "id": "a847a3dcc63466dd",
+        "type": "group",
+        "z": "bd5efab3a54ad20c",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "725ac9592f3f84e1",
+            "d7bcb882196787cd",
+            "17a6b9621f067b31",
+            "ee1292e6c81456c3",
+            "9ad8c85861a399b2",
+            "36a16b1a05171e2b",
+            "f3c149f12edd7bfe",
+            "f562ac3a5d4d9712",
+            "2e713eb57718d0c5",
+            "395ab01490064b27",
+            "8d76aa8f4d6e3a0b",
+            "960c6df0e138e3d6",
+            "d3135d685060af63",
+            "22b08998a0ff0c4f"
+        ],
+        "x": 14,
+        "y": 379,
+        "w": 1982,
+        "h": 262
+    },
+    {
+        "id": "f3b4c45c06072b51",
+        "type": "group",
+        "z": "bd5efab3a54ad20c",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "5e77aadfc46105ba",
+            "59fab76c3946fa16",
+            "144df77bf4e0693b",
+            "9e52ea2cd5972986",
+            "b9224ee36eb0aa91",
+            "7739fd1935960220",
+            "bb4b8f65a13a6207",
+            "f0b51bf89200bd2f",
+            "217482fdda0b6241",
+            "48116108952192b6",
+            "5dcaf943a6f299eb"
+        ],
+        "x": 14,
+        "y": 659,
+        "w": 1572,
+        "h": 262
+    },
+    {
+        "id": "111ee870f273a851",
+        "type": "group",
+        "z": "bd5efab3a54ad20c",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "90a6523c3ca716cf",
+            "966f0fcf335488fa",
+            "36d18a09266d5611",
+            "7f171c3b85299b05",
+            "25a944af7087d011",
+            "5d7e50b43b350d65",
+            "1afbc0c54d215cec",
+            "5e621944d897d89e",
+            "ae1e9765fa04833c",
+            "07d99d217a9c3146",
+            "2f17e79c5e0f0a86"
+        ],
+        "x": 14,
+        "y": 939,
+        "w": 1572,
+        "h": 262
+    },
+    {
+        "id": "224b4e5df0a4aff1",
+        "type": "group",
+        "z": "bd5efab3a54ad20c",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "a7a050dd92954768",
+            "c8276d90f5b27e27",
+            "1f40028b455c3ee7",
+            "59619a6753f556ba",
+            "7fa30fa1e35c73bb",
+            "decb45220f690651",
+            "4c2d55d3b2ae811a",
+            "8f776e8533361a7b",
+            "488e589395636742",
+            "a1e31873174aa9c6",
+            "bc1d3039e6fec733",
+            "a7b22cdff551f99d",
+            "809f9cc877822a87",
+            "d0689467ab220886",
+            "5452fc51071cf111"
+        ],
+        "x": 14,
+        "y": 1219,
+        "w": 1572,
+        "h": 302
+    },
+    {
+        "id": "7451396dbeecdd0d",
+        "type": "group",
+        "z": "1f9ad198f05c78e0",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "4bc1e1e3301be371",
+            "1f14ed077d48e282",
+            "694abf437cc3aff9",
+            "d467e2ed1c706795",
+            "aa1ea3764e89ebf5",
+            "6ccf5e0db011d125",
+            "1994a1d8db5bae35",
+            "dad71a52c698f1f0",
+            "c1715a202d930714"
+        ],
+        "x": 54,
+        "y": 59,
+        "w": 1512,
+        "h": 162
+    },
+    {
+        "id": "d08782927857db71",
+        "type": "group",
+        "z": "1f9ad198f05c78e0",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "90c0eef733541071",
+            "2daef27ecde9bc49",
+            "d66f47967ece8973",
+            "f88f6ebc293717bf",
+            "2f687e1ccb4bc830",
+            "aebeee91a1e69f0e",
+            "8089bf6139fa5cc1",
+            "ede2942c134e8197",
+            "b6d2c489811ca47d",
+            "4a29b7e628b685a0",
+            "e1457a63b4ab7e12"
+        ],
+        "x": 14,
+        "y": 299,
+        "w": 1612,
+        "h": 202
+    },
+    {
+        "id": "01efc9251ab27577",
+        "type": "group",
+        "z": "ef473e5856f6634c",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "1559a397916dbc81",
+            "156d551f9094bd51",
+            "63959d4082a511b2",
+            "45db05f2a8852e07",
+            "7508071c22bef509",
+            "22a843db0fbf92fb",
+            "681f51eb831cf4e4",
+            "2c726c3038e4c793",
+            "24d024c054437478",
+            "b3994344d4d8bc13"
+        ],
+        "x": 54,
+        "y": 219,
+        "w": 1472,
+        "h": 302
+    },
+    {
+        "id": "5313c9ea75a5b369",
+        "type": "group",
+        "z": "37dd95d269875e4a",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "1fc813a0b0ee5259",
+            "cd6dc72ddff52036",
+            "bdd6bce524b5de25",
+            "ad28dc62dcbadec1",
+            "d82a38baa1b33d29",
+            "edb201094d6a51c6",
+            "201417b0dcf73486",
+            "4997da6227298859",
+            "a925ca2b3567a3a7"
+        ],
+        "x": 314,
+        "y": 2099,
+        "w": 1232,
+        "h": 222
+    },
+    {
+        "id": "a3285fd9ae16509c",
+        "type": "group",
+        "z": "37dd95d269875e4a",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "dbeba861c30a2419",
+            "d6844f72e50939e2",
+            "b0b0d10d4f67a1d6",
+            "76845cf1372789ee",
+            "a4770e1f4b82cba0",
+            "9ddf9b61f1607ede",
+            "3131bc55bb666978",
+            "21dba808b3974276"
+        ],
+        "x": 294,
+        "y": 1539,
+        "w": 1292,
+        "h": 162
+    },
+    {
         "id": "8ba1cb52c18f200a",
         "type": "users_config",
         "appPath": "/users",
@@ -31,20 +634,243 @@
         "jwtHttpsOnly": false
     },
     {
-        "id": "81b37112c7a8319c",
+        "id": "443dca5366e7983c",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "db": "room_booking_system",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "f04d1c4ebddd8b38",
+        "type": "swagger-doc",
+        "summary": "API login",
+        "description": "",
+        "tags": "",
+        "parameters": [],
+        "responses": {
+            "default": {
+                "description": "default"
+            }
+        },
+        "requestBody": {
+            "description": "",
+            "content": {
+                "application/json": {
+                    "schema": {
+                        "type": "object",
+                        "properties": {
+                            "username": {
+                                "type": "string",
+                                "example": "user1"
+                            },
+                            "password": {
+                                "type": "string",
+                                "example": "password"
+                            }
+                        },
+                        "required": [
+                            "username",
+                            "password"
+                        ]
+                    }
+                }
+            },
+            "required": true
+        },
+        "deprecated": false
+    },
+    {
+        "id": "2a2c4ccdc9e7690a",
+        "type": "swagger-doc",
+        "summary": "",
+        "description": "",
+        "tags": "",
+        "parameters": [],
+        "responses": {
+            "default": {
+                "description": ""
+            }
+        },
+        "deprecated": false
+    },
+    {
+        "id": "51a89dca420ac4d8",
+        "type": "swagger-doc",
+        "summary": "",
+        "description": "",
+        "tags": "",
+        "parameters": [
+            {
+                "name": "name",
+                "in": "query",
+                "required": false,
+                "type": "string"
+            },
+            {
+                "name": "location",
+                "in": "query",
+                "required": false,
+                "type": "string"
+            },
+            {
+                "name": "min_capacity",
+                "in": "query",
+                "required": false,
+                "type": "integer"
+            },
+            {
+                "name": "facility_id",
+                "in": "query",
+                "required": false,
+                "type": "integer"
+            }
+        ],
+        "responses": {
+            "default": {
+                "description": ""
+            }
+        },
+        "deprecated": false
+    },
+    {
+        "id": "4088509c69c94b07",
         "type": "http in",
-        "z": "6e18303f78d73c6e",
-        "name": "POST /api/login",
-        "url": "/api/login",
-        "method": "post",
+        "z": "959654febd2675df",
+        "g": "3e82cbd016ae10ad",
+        "name": "catch_spa",
+        "url": "/project/*",
+        "method": "get",
         "upload": false,
         "skipBodyParsing": false,
         "swaggerDoc": "",
-        "x": 140,
-        "y": 260,
+        "x": 380,
+        "y": 220,
         "wires": [
-            []
+            [
+                "a6d77efa37086fdb"
+            ]
         ]
+    },
+    {
+        "id": "a6d77efa37086fdb",
+        "type": "function",
+        "z": "959654febd2675df",
+        "g": "3e82cbd016ae10ad",
+        "name": "filter_static_file",
+        "func": "const mimeTypes = {\n    '.html': 'text/html',\n    '.css': 'text/css',\n    '.js': 'application/javascript',\n    '.json': 'application/json',\n    '.png': 'image/png',\n    '.jpg': 'image/jpeg',\n    '.svg': 'image/svg+xml',\n    '.ico': 'image/x-icon',\n    '.map': 'application/json',\n};\n\nconst userDir = global.get('userDir');\nconst activeProject = global.get('activeProject');\nconst baseDir = `${userDir}/projects/${activeProject}/uibuilder/project/build`;\n\nconst ext = msg.req.path.substring(msg.req.path.lastIndexOf('.')) || '';\nconst relativePath = msg.req.path.replace('/project', '');\n\n// if (msg.req.path.startsWith('/uibuilder/socket.io') || msg.req.path.startsWith('/uibuilder/vendor/')) {\n//     return null; // Let uibuilder handle this\n// }\n\n\nif (ext && Object.keys(mimeTypes).includes(ext)) {\n    msg.filename = baseDir + relativePath;\n    msg.headers = {\n        'Content-Type': mimeTypes[ext] || 'application/octet-stream'\n    };\n    return msg;\n}else{\n    msg.filename = baseDir + '/index.html';\n    msg.headers = {\n        'Content-Type': 'text/html'\n    };\n    return msg;\n}\n\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "path",
+                "module": "path"
+            }
+        ],
+        "x": 580,
+        "y": 220,
+        "wires": [
+            [
+                "414eeecd4b42d6c7"
+            ]
+        ]
+    },
+    {
+        "id": "414eeecd4b42d6c7",
+        "type": "file in",
+        "z": "959654febd2675df",
+        "g": "3e82cbd016ae10ad",
+        "name": "read_index_file",
+        "filename": "filename",
+        "filenameType": "msg",
+        "format": "utf8",
+        "allProps": false,
+        "x": 780,
+        "y": 220,
+        "wires": [
+            [
+                "a871177578706ddd"
+            ]
+        ]
+    },
+    {
+        "id": "a871177578706ddd",
+        "type": "http response",
+        "z": "959654febd2675df",
+        "g": "3e82cbd016ae10ad",
+        "name": "response_index_file",
+        "statusCode": "",
+        "headers": {},
+        "x": 980,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "3b693b50f30d7d65",
+        "type": "inject",
+        "z": "959654febd2675df",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 340,
+        "wires": [
+            [
+                "7edadbbe7a39f16f"
+            ]
+        ]
+    },
+    {
+        "id": "7edadbbe7a39f16f",
+        "type": "function",
+        "z": "959654febd2675df",
+        "name": "function 2",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 340,
+        "wires": [
+            [
+                "baa3d5f2eb79a531"
+            ]
+        ]
+    },
+    {
+        "id": "baa3d5f2eb79a531",
+        "type": "link out",
+        "z": "959654febd2675df",
+        "name": "link out 1",
+        "mode": "link",
+        "links": [
+            "64b287a5cceee242"
+        ],
+        "x": 425,
+        "y": 340,
+        "wires": []
     },
     {
         "id": "abc94fd1618ad75d",
@@ -68,7 +894,7 @@
         "title": "",
         "descr": "",
         "editurl": "",
-        "x": 360,
+        "x": 560,
         "y": 80,
         "wires": [
             [],
@@ -76,131 +902,3928 @@
         ]
     },
     {
-        "id": "e1ba5d9452dd23b3",
+        "id": "dc10e10d5ad5b29f",
         "type": "http in",
-        "z": "37dd95d269875e4a",
-        "name": "GET /api/rooms/available",
-        "url": "/api/rooms/available",
-        "method": "get",
+        "z": "6e18303f78d73c6e",
+        "g": "e713e992ef10c6ef",
+        "name": "POST /api/login",
+        "url": "/api/login",
+        "method": "post",
         "upload": false,
         "skipBodyParsing": false,
-        "swaggerDoc": "",
-        "x": 310,
-        "y": 140,
+        "swaggerDoc": "f04d1c4ebddd8b38",
+        "x": 180,
+        "y": 200,
         "wires": [
-            []
+            [
+                "783009e76506f4ac"
+            ]
         ]
     },
     {
-        "id": "a78a1605b4df65fc",
+        "id": "783009e76506f4ac",
+        "type": "json",
+        "z": "6e18303f78d73c6e",
+        "g": "e713e992ef10c6ef",
+        "name": "Parse JSON",
+        "property": "payload",
+        "action": "obj",
+        "pretty": true,
+        "x": 350,
+        "y": 200,
+        "wires": [
+            [
+                "7b8fe5c856099f49"
+            ]
+        ]
+    },
+    {
+        "id": "1fede23e0ea5f9e5",
+        "type": "debug",
+        "z": "6e18303f78d73c6e",
+        "g": "e713e992ef10c6ef",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 570,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "7b8fe5c856099f49",
+        "type": "function",
+        "z": "6e18303f78d73c6e",
+        "g": "e713e992ef10c6ef",
+        "name": "build_query",
+        "func": "const { username, password } = msg.payload || {};\nnode.log(username + password);\nif (!username || !password) {\n    throw new Error(\"Please enter username and password!\")\n}\nmsg.payload = [username];\nmsg.topic = \"SELECT u.user_id, u.username, u.password_hash, r.role_name FROM users u JOIN roles r ON u.role_name = r.role_name WHERE u.username = ?\";\n\nmsg.pass = password\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 300,
+        "wires": [
+            [
+                "4d54edb4e492d2d9"
+            ]
+        ]
+    },
+    {
+        "id": "01e4e1b598319715",
+        "type": "function",
+        "z": "6e18303f78d73c6e",
+        "g": "e713e992ef10c6ef",
+        "name": "set_response",
+        "func": "const user = msg.user;\nmsg.statusCode = 200;\nmsg.payload = {\n    ok: true,\n    message: \"Login successful\",\n    user: {\n        user_id: user.user_id,\n        username: user.username,\n        role: user.role_name\n    },\n    token: msg.token\n};\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1260,
+        "y": 220,
+        "wires": [
+            [
+                "4f5d4a1875df4d36",
+                "e09d9be90e6627e3"
+            ]
+        ]
+    },
+    {
+        "id": "82d058830d4ceb1d",
+        "type": "jwt sign",
+        "z": "6e18303f78d73c6e",
+        "g": "e713e992ef10c6ef",
+        "name": "jwt_sign",
+        "alg": "HS512",
+        "exp": "84600000",
+        "jwkurl": "",
+        "jwkkid": "",
+        "secret": "msg.secret",
+        "key": "",
+        "signvar": "payload",
+        "storetoken": "token",
+        "x": 1100,
+        "y": 220,
+        "wires": [
+            [
+                "01e4e1b598319715",
+                "5c39b63a3ebb4a63"
+            ]
+        ]
+    },
+    {
+        "id": "8aba317151570a38",
+        "type": "bcrypt",
+        "z": "6e18303f78d73c6e",
+        "g": "e713e992ef10c6ef",
+        "name": "",
+        "action": "verify",
+        "field": "pass",
+        "hash": "pass_hash",
+        "target": "payload",
+        "assignment": "replace",
+        "match": "match",
+        "outputs": 1,
+        "rounds": 10,
+        "x": 780,
+        "y": 300,
+        "wires": [
+            [
+                "eaddd29ee67511e9",
+                "6a6b7a242b437191"
+            ]
+        ]
+    },
+    {
+        "id": "4d54edb4e492d2d9",
+        "type": "mysql",
+        "z": "6e18303f78d73c6e",
+        "g": "e713e992ef10c6ef",
+        "mydb": "443dca5366e7983c",
+        "name": "mysql",
+        "x": 450,
+        "y": 300,
+        "wires": [
+            [
+                "1fede23e0ea5f9e5",
+                "5be9363c051a9fa6"
+            ]
+        ]
+    },
+    {
+        "id": "5be9363c051a9fa6",
+        "type": "function",
+        "z": "6e18303f78d73c6e",
+        "g": "e713e992ef10c6ef",
+        "name": "handle_result",
+        "func": "const rows = msg.payload || [];\nif (rows.length > 0) {\n    const user = rows[0];\n    const payload = {\n        user_id: user.user_id,\n        username: user.username,\n        role: user.role_name\n    };\n    \n\n    msg.payload = payload;\n    msg.secret = env.get('JWT_SECRET_KEY')\n    msg.user = user;\n    msg.pass_hash = user.password_hash;\n    return msg;\n} else {\n    msg.statusCode = 404,\n    msg.payload = { ok: false, message: \"User Not Found\" };\n    return msg;\n}\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 300,
+        "wires": [
+            [
+                "8aba317151570a38"
+            ]
+        ]
+    },
+    {
+        "id": "eaddd29ee67511e9",
+        "type": "debug",
+        "z": "6e18303f78d73c6e",
+        "g": "e713e992ef10c6ef",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "match",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1150,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "6a6b7a242b437191",
+        "type": "switch",
+        "z": "6e18303f78d73c6e",
+        "g": "e713e992ef10c6ef",
+        "name": "",
+        "property": "match",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 950,
+        "y": 240,
+        "wires": [
+            [
+                "82d058830d4ceb1d"
+            ],
+            [
+                "4e8df7b44bfdd9ed"
+            ]
+        ]
+    },
+    {
+        "id": "6a97fe73e3dd47ea",
+        "type": "catch",
+        "z": "6e18303f78d73c6e",
+        "g": "e713e992ef10c6ef",
+        "name": "catch",
+        "scope": "group",
+        "uncaught": false,
+        "x": 310,
+        "y": 360,
+        "wires": [
+            [
+                "e481ecfaed1e4a1d"
+            ]
+        ]
+    },
+    {
+        "id": "e481ecfaed1e4a1d",
+        "type": "function",
+        "z": "6e18303f78d73c6e",
+        "g": "e713e992ef10c6ef",
+        "name": "function 1",
+        "func": "msg.status = 400;\nmsg.payload = {\n    ok: false,\n    message: msg.error.message\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 360,
+        "wires": [
+            [
+                "def90cb904179c05",
+                "62769e52c886d8d0"
+            ]
+        ]
+    },
+    {
+        "id": "4e8df7b44bfdd9ed",
+        "type": "function",
+        "z": "6e18303f78d73c6e",
+        "g": "e713e992ef10c6ef",
+        "name": "handle_invalid_password",
+        "func": "msg.statusCode = 401;\nmsg.payload = {\n    ok: false,\n    message: \"Invalid username or password\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1190,
+        "y": 260,
+        "wires": [
+            [
+                "4f5d4a1875df4d36"
+            ]
+        ]
+    },
+    {
+        "id": "4f5d4a1875df4d36",
+        "type": "http response",
+        "z": "6e18303f78d73c6e",
+        "g": "e713e992ef10c6ef",
+        "name": "",
+        "statusCode": "",
+        "headers": {
+            "content-type": "application/json"
+        },
+        "x": 1450,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "e09d9be90e6627e3",
+        "type": "debug",
+        "z": "6e18303f78d73c6e",
+        "g": "e713e992ef10c6ef",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1440,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "5c39b63a3ebb4a63",
+        "type": "debug",
+        "z": "6e18303f78d73c6e",
+        "g": "e713e992ef10c6ef",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "secret",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1220,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "64b287a5cceee242",
+        "type": "link in",
+        "z": "6e18303f78d73c6e",
+        "name": "trigger socket",
+        "links": [
+            "baa3d5f2eb79a531",
+            "bc1d3039e6fec733",
+            "d3135d685060af63"
+        ],
+        "x": 355,
+        "y": 80,
+        "wires": [
+            [
+                "abc94fd1618ad75d"
+            ]
+        ]
+    },
+    {
+        "id": "def90cb904179c05",
+        "type": "http response",
+        "z": "6e18303f78d73c6e",
+        "g": "e713e992ef10c6ef",
+        "name": "",
+        "statusCode": "",
+        "headers": {
+            "content-type": "application/json"
+        },
+        "x": 670,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "62769e52c886d8d0",
+        "type": "debug",
+        "z": "6e18303f78d73c6e",
+        "g": "e713e992ef10c6ef",
+        "name": "debug 17",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "error",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "9fc4af25f225331b",
+        "type": "http in",
+        "z": "f6851f6212eb23ed",
+        "g": "6f5a2056e6dbbb95",
+        "name": "GET /api/facilities",
+        "url": "/api/facilities",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "2a2c4ccdc9e7690a",
+        "x": 140,
+        "y": 180,
+        "wires": [
+            [
+                "6ae2496922c5c06c"
+            ]
+        ]
+    },
+    {
+        "id": "b6cab3c170a6933b",
+        "type": "http response",
+        "z": "f6851f6212eb23ed",
+        "g": "6f5a2056e6dbbb95",
+        "name": "response",
+        "statusCode": "",
+        "headers": {
+            "content-type": "application/json"
+        },
+        "x": 1420,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "2e92d20fa8764e9d",
+        "type": "mysql",
+        "z": "f6851f6212eb23ed",
+        "g": "6f5a2056e6dbbb95",
+        "mydb": "443dca5366e7983c",
+        "name": "mysql",
+        "x": 970,
+        "y": 180,
+        "wires": [
+            [
+                "8b0fc36ec31dc06f"
+            ]
+        ]
+    },
+    {
+        "id": "d8505e493d0cc0fe",
+        "type": "function",
+        "z": "f6851f6212eb23ed",
+        "g": "6f5a2056e6dbbb95",
+        "name": "build_query",
+        "func": "msg.topic = \"SELECT * FROM facilities;\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 180,
+        "wires": [
+            [
+                "2e92d20fa8764e9d"
+            ]
+        ]
+    },
+    {
+        "id": "8b0fc36ec31dc06f",
+        "type": "function",
+        "z": "f6851f6212eb23ed",
+        "g": "6f5a2056e6dbbb95",
+        "name": "handle_result",
+        "func": "const rows = msg.payload || [];\nif(rows.length > 0){\n    msg.statusCode = 200;\n    msg.payload = {\n        facilities: rows,\n        message: \"Get all facilities successfully!\"\n    }\n} else {\n    msg.statusCode = 404;\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1140,
+        "y": 180,
+        "wires": [
+            [
+                "b6cab3c170a6933b"
+            ]
+        ]
+    },
+    {
+        "id": "741871df92cd9a57",
+        "type": "jwt verify",
+        "z": "f6851f6212eb23ed",
+        "g": "6f5a2056e6dbbb95",
+        "name": "verify_jwt",
+        "alg": [
+            "HS512"
+        ],
+        "jwkurl": "",
+        "secret": "msg.secret",
+        "key": "",
+        "signvar": "bearer",
+        "storetoken": "token",
+        "x": 500,
+        "y": 180,
+        "wires": [
+            [
+                "d8505e493d0cc0fe"
+            ]
+        ]
+    },
+    {
+        "id": "6ae2496922c5c06c",
+        "type": "function",
+        "z": "f6851f6212eb23ed",
+        "g": "6f5a2056e6dbbb95",
+        "name": "get_secret_key",
+        "func": "msg.secret = env.get('JWT_SECRET_KEY')\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 180,
+        "wires": [
+            [
+                "741871df92cd9a57"
+            ]
+        ]
+    },
+    {
+        "id": "199bf403f409f890",
+        "type": "function",
+        "z": "f6851f6212eb23ed",
+        "g": "6f5a2056e6dbbb95",
+        "name": "handle_invalid_token",
+        "func": "msg.statusCode = 401;\nmsg.payload = {\n    ok: false,\n    message: \"Invalid token!\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 360,
+        "wires": [
+            [
+                "b6cab3c170a6933b"
+            ]
+        ]
+    },
+    {
+        "id": "aa67d135e210cf0d",
+        "type": "catch",
+        "z": "f6851f6212eb23ed",
+        "g": "6f5a2056e6dbbb95",
+        "name": "catch",
+        "scope": "group",
+        "uncaught": false,
+        "x": 290,
+        "y": 360,
+        "wires": [
+            [
+                "199bf403f409f890"
+            ]
+        ]
+    },
+    {
+        "id": "cbc88d6992fd6244",
         "type": "http in",
         "z": "37dd95d269875e4a",
+        "g": "aa1e98539aa1c396",
+        "name": "GET /api/rooms",
+        "url": "/api/rooms",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "51a89dca420ac4d8",
+        "x": 180,
+        "y": 60,
+        "wires": [
+            [
+                "f4503f000a8c8298"
+            ]
+        ]
+    },
+    {
+        "id": "8c40e70770102473",
+        "type": "http response",
+        "z": "37dd95d269875e4a",
+        "g": "aa1e98539aa1c396",
+        "name": "response",
+        "statusCode": "",
+        "headers": {
+            "content-type": "application/json"
+        },
+        "x": 1460,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "6515c6ccbe020aec",
+        "type": "mysql",
+        "z": "37dd95d269875e4a",
+        "g": "aa1e98539aa1c396",
+        "mydb": "443dca5366e7983c",
+        "name": "mysql",
+        "x": 1010,
+        "y": 60,
+        "wires": [
+            [
+                "aba4e32da9bcb3fb"
+            ]
+        ]
+    },
+    {
+        "id": "7fa7b4b75a06dbd0",
+        "type": "function",
+        "z": "37dd95d269875e4a",
+        "g": "aa1e98539aa1c396",
+        "name": "build_query",
+        "func": "const filters = msg.req.query || {};\n\nlet sql = `\n  SELECT \n    r.room_id,\n    r.room_name AS name,\n    r.capacity,\n    r.location,\n    r.is_deleted,\n    GROUP_CONCAT(DISTINCT CONCAT(f.facility_id, ':', f.name) SEPARATOR ',') AS facilities\n  FROM rooms r\n  LEFT JOIN room_facilities rf ON r.room_id = rf.room_id\n  LEFT JOIN facilities f ON rf.facility_id = f.facility_id\n  WHERE 1=1\n`;\n\nlet params = [];\nlet countParams = [];\nlet conditions = [];\n\nif (filters.name && filters.name.trim()) {\n  conditions.push('r.room_name LIKE ?');\n  params.push(`%${filters.name.trim()}%`);\n  countParams.push(`%${filters.name.trim()}%`);\n}\n\nif (filters.location && filters.location.trim()) {\n  conditions.push('r.location LIKE ?');\n  params.push(`%${filters.location.trim()}%`);\n  countParams.push(`%${filters.location.trim()}%`);\n}\n\nif (filters.min_capacity && !isNaN(parseInt(filters.min_capacity, 10))) {\n  conditions.push('r.capacity >= ?');\n  params.push(parseInt(filters.min_capacity, 10));\n  countParams.push(parseInt(filters.min_capacity, 10));\n}\n\nif (filters.facility_id && !isNaN(parseInt(filters.facility_id, 10))) {\n  conditions.push(`\n    r.room_id IN (\n      SELECT rf.room_id\n      FROM room_facilities rf\n      WHERE rf.facility_id = ?\n    )\n  `);\n  params.push(parseInt(filters.facility_id, 10));\n}\n\n\nif (conditions.length > 0) {\n  sql += ' AND ' + conditions.join(' AND ');\n}\n\nsql += ' GROUP BY r.room_id';\n\nsql += ' ORDER BY r.room_name ASC';\n\nif (filters.limit && !isNaN(parseInt(filters.limit, 10))) {\n  sql += ' LIMIT ?';\n  params.push(parseInt(filters.limit, 10));\n}\nif (filters.offset && !isNaN(parseInt(filters.offset, 10))) {\n  sql += ' OFFSET ?';\n  params.push(parseInt(filters.offset, 10));\n}\n\nconst countSql = `\n  SELECT COUNT(DISTINCT r.room_id) AS total_count\n  FROM rooms r\n  LEFT JOIN room_facilities rf ON r.room_id = rf.room_id\n  LEFT JOIN facilities f ON rf.facility_id = f.facility_id\n  WHERE 1=1\n  ${conditions.length > 0 ? ' AND ' + conditions.join(' AND ') : ''}\n`;\n\nif (filters.facility_id && !isNaN(parseInt(filters.facility_id, 10))) {\n  countParams.push(parseInt(filters.facility_id, 10));\n}\n\nmsg.topic = `${countSql};${sql}`;\nmsg.payload = [...countParams, ...params];\n\n// Debug\nnode.warn(`Filters: ${JSON.stringify(filters)}`);\nnode.warn(`Main SQL: ${sql}`);\nnode.warn(`Count SQL: ${countSql}`);\nnode.warn(`Count Params: ${JSON.stringify(countParams)}`);\nnode.warn(`Main Params: ${JSON.stringify(params)}`);\nnode.warn(`Total Params: ${JSON.stringify(msg.payload)}`);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 60,
+        "wires": [
+            [
+                "6515c6ccbe020aec"
+            ]
+        ]
+    },
+    {
+        "id": "aba4e32da9bcb3fb",
+        "type": "function",
+        "z": "37dd95d269875e4a",
+        "g": "aa1e98539aa1c396",
+        "name": "handle_result",
+        "func": "// Input: msg.payload = [[countResult], [mainResult]]\nconst [countResult, mainResult] = msg.payload || [[], []];\n\n// Parse facilities from GROUP_CONCAT\nconst rooms = mainResult.map(row => ({\n    room_id: row.room_id,\n    name: row.name,\n    capacity: row.capacity,\n    location: row.location,\n    is_deleted: row.is_deleted,\n    facilities: row.facilities ? row.facilities.split(',').map(f => {\n        const [id, name] = f.split(':');\n        return { facility_id: parseInt(id, 10), name };\n    }) : []\n}));\n\n// Format response\nmsg.payload = {\n    result: rooms,\n    total_count: countResult[0]?.total_count || 0\n};\n\n// Debug\nnode.warn(`Result rows: ${JSON.stringify(rooms)}`);\nnode.warn(`Total count: ${countResult[0]?.total_count || 0}`);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1180,
+        "y": 60,
+        "wires": [
+            [
+                "8c40e70770102473"
+            ]
+        ]
+    },
+    {
+        "id": "69be1a66d4cf79b6",
+        "type": "jwt verify",
+        "z": "37dd95d269875e4a",
+        "g": "aa1e98539aa1c396",
+        "name": "verify_jwt",
+        "alg": [
+            "HS512"
+        ],
+        "jwkurl": "",
+        "secret": "msg.secret",
+        "key": "",
+        "signvar": "bearer",
+        "storetoken": "token",
+        "x": 540,
+        "y": 60,
+        "wires": [
+            [
+                "1fda12a0f63cfad1"
+            ]
+        ]
+    },
+    {
+        "id": "f4503f000a8c8298",
+        "type": "function",
+        "z": "37dd95d269875e4a",
+        "g": "aa1e98539aa1c396",
+        "name": "get_secret_key",
+        "func": "msg.secret = env.get('JWT_SECRET_KEY')\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 60,
+        "wires": [
+            [
+                "69be1a66d4cf79b6"
+            ]
+        ]
+    },
+    {
+        "id": "1fda12a0f63cfad1",
+        "type": "role-check",
+        "z": "37dd95d269875e4a",
+        "g": "aa1e98539aa1c396",
+        "name": "role_check",
+        "requiredRole": "ADMIN",
+        "x": 710,
+        "y": 140,
+        "wires": [
+            [
+                "7fa7b4b75a06dbd0"
+            ],
+            [
+                "8c40e70770102473"
+            ]
+        ]
+    },
+    {
+        "id": "7817a703d1be77aa",
+        "type": "function",
+        "z": "37dd95d269875e4a",
+        "g": "aa1e98539aa1c396",
+        "name": "handle_invalid_token",
+        "func": "msg.statusCode = 401;\nmsg.payload = {\n    ok: false,\n    message: \"Invalid token!\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 840,
+        "y": 240,
+        "wires": [
+            [
+                "8c40e70770102473"
+            ]
+        ]
+    },
+    {
+        "id": "464f66952bdab47e",
+        "type": "catch",
+        "z": "37dd95d269875e4a",
+        "g": "aa1e98539aa1c396",
+        "name": "catch",
+        "scope": "group",
+        "uncaught": false,
+        "x": 330,
+        "y": 240,
+        "wires": [
+            [
+                "7817a703d1be77aa",
+                "79a0f83f2cc19f56"
+            ]
+        ]
+    },
+    {
+        "id": "79a0f83f2cc19f56",
+        "type": "debug",
+        "z": "37dd95d269875e4a",
+        "g": "aa1e98539aa1c396",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "error",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "cd333c9b6c4cdda9",
+        "type": "http in",
+        "z": "37dd95d269875e4a",
+        "g": "43e2605169538c26",
         "name": "POST /api/rooms",
         "url": "/api/rooms",
         "method": "post",
         "upload": false,
         "skipBodyParsing": false,
         "swaggerDoc": "",
-        "x": 280,
-        "y": 280,
+        "x": 160,
+        "y": 380,
         "wires": [
-            []
+            [
+                "9c0d4d10d5da0824"
+            ]
         ]
     },
     {
-        "id": "a9409be585c97e54",
+        "id": "b2db5fd42dcc0f04",
+        "type": "http response",
+        "z": "37dd95d269875e4a",
+        "g": "43e2605169538c26",
+        "name": "response",
+        "statusCode": "",
+        "headers": {
+            "content-type": "application/json"
+        },
+        "x": 1500,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "ca54e389846ed556",
+        "type": "mysql",
+        "z": "37dd95d269875e4a",
+        "g": "43e2605169538c26",
+        "mydb": "443dca5366e7983c",
+        "name": "mysql",
+        "x": 1070,
+        "y": 380,
+        "wires": [
+            [
+                "4387afda2196ac5e",
+                "27d09c56ab542e0d"
+            ]
+        ]
+    },
+    {
+        "id": "9e8a701f796ea424",
+        "type": "function",
+        "z": "37dd95d269875e4a",
+        "g": "43e2605169538c26",
+        "name": "build_query",
+        "func": "const payload = msg.payload || {};\n\nif (!payload.name || !payload.capacity || !payload.location || payload.facility_ids.length == 0) {\n  msg.statusCode = 400;\n  msg.payload = { \n    ok: false,\n    message: 'Missing required fields: name, capacity, or location' };\n  return [null, msg];\n}\n\nlet sql = `\n  INSERT INTO rooms (room_name, capacity, location, is_deleted)\n  VALUES (?, ?, ?, 0);\n`;\nlet params = [payload.name.trim(), parseInt(payload.capacity, 10), payload.location.trim()];\n\nlet facilitySql = '';\nlet facilityParams = [];\nif (Array.isArray(payload.facility_ids) && payload.facility_ids.length > 0) {\n  const validFacilityIds = payload.facility_ids.filter(id => !isNaN(parseInt(id, 10)));\n  if (validFacilityIds.length > 0) {\n    facilitySql = validFacilityIds.map(() => `\n      INSERT INTO room_facilities (room_id, facility_id)\n      VALUES (LAST_INSERT_ID(), ?);\n    `).join('');\n    facilityParams = validFacilityIds.map(id => parseInt(id, 10));\n  }\n}\n\nmsg.topic = `\n  START TRANSACTION;\n  ${sql}\n  ${facilitySql}\n  COMMIT;\n  ROLLBACK;\n`;\nmsg.payload = [...params, ...facilityParams];\n\n// Debug\nnode.warn(`Payload: ${JSON.stringify(payload)}`);\nnode.warn(`SQL: ${msg.topic}`);\nnode.warn(`Params: ${JSON.stringify(msg.payload)}`);\n\nreturn [msg, null];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 850,
+        "y": 420,
+        "wires": [
+            [
+                "ca54e389846ed556"
+            ],
+            [
+                "b2db5fd42dcc0f04"
+            ]
+        ]
+    },
+    {
+        "id": "4387afda2196ac5e",
+        "type": "function",
+        "z": "37dd95d269875e4a",
+        "g": "43e2605169538c26",
+        "name": "handle_result",
+        "func": "const results = msg.payload || [];\n\nconst roomResult = results[1] || {};\nif (!roomResult.insertId || roomResult.affectedRows === 0) {\n    msg.statusCode = 400;\n    msg.payload = {\n        ok: false,\n        message: 'Failed to create room'\n    };\n    return msg;\n}\n\n\n// Format success response\nmsg.statusCode = 201;\nmsg.payload = {\n    ok: true,\n    message: 'Room created successfully',\n    result: roomResult.affectedRows\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1240,
+        "y": 380,
+        "wires": [
+            [
+                "b2db5fd42dcc0f04"
+            ]
+        ]
+    },
+    {
+        "id": "22d0dc9c70904d93",
+        "type": "jwt verify",
+        "z": "37dd95d269875e4a",
+        "g": "43e2605169538c26",
+        "name": "verify_jwt",
+        "alg": [
+            "HS512"
+        ],
+        "jwkurl": "",
+        "secret": "msg.secret",
+        "key": "",
+        "signvar": "bearer",
+        "storetoken": "token",
+        "x": 400,
+        "y": 460,
+        "wires": [
+            [
+                "96b0ad5d6251979a"
+            ]
+        ]
+    },
+    {
+        "id": "d1e2eeb3dc8a7baf",
+        "type": "function",
+        "z": "37dd95d269875e4a",
+        "g": "43e2605169538c26",
+        "name": "get_secret_key",
+        "func": "msg.secret = env.get('JWT_SECRET_KEY')\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 240,
+        "y": 460,
+        "wires": [
+            [
+                "22d0dc9c70904d93"
+            ]
+        ]
+    },
+    {
+        "id": "96b0ad5d6251979a",
+        "type": "role-check",
+        "z": "37dd95d269875e4a",
+        "g": "43e2605169538c26",
+        "name": "role_check",
+        "requiredRole": "ADMIN",
+        "x": 550,
+        "y": 460,
+        "wires": [
+            [
+                "9e8a701f796ea424",
+                "680759f4220e0736"
+            ],
+            [
+                "b2db5fd42dcc0f04"
+            ]
+        ]
+    },
+    {
+        "id": "d69a2c26cc9f11f4",
+        "type": "function",
+        "z": "37dd95d269875e4a",
+        "g": "43e2605169538c26",
+        "name": "handle_invalid_token",
+        "func": "msg.statusCode = 401;\nmsg.payload = {\n    ok: false,\n    message: \"Invalid token!\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 560,
+        "wires": [
+            [
+                "b2db5fd42dcc0f04"
+            ]
+        ]
+    },
+    {
+        "id": "f4a6b7abba1b853d",
+        "type": "catch",
+        "z": "37dd95d269875e4a",
+        "g": "43e2605169538c26",
+        "name": "catch",
+        "scope": "group",
+        "uncaught": false,
+        "x": 390,
+        "y": 560,
+        "wires": [
+            [
+                "d69a2c26cc9f11f4"
+            ]
+        ]
+    },
+    {
+        "id": "9c0d4d10d5da0824",
+        "type": "json",
+        "z": "37dd95d269875e4a",
+        "g": "43e2605169538c26",
+        "name": "parse_object",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 330,
+        "y": 380,
+        "wires": [
+            [
+                "d1e2eeb3dc8a7baf"
+            ]
+        ]
+    },
+    {
+        "id": "680759f4220e0736",
+        "type": "debug",
+        "z": "37dd95d269875e4a",
+        "g": "43e2605169538c26",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "8f6dc201eb39db7f",
+        "type": "http response",
+        "z": "37dd95d269875e4a",
+        "g": "731b84d8bf335b59",
+        "name": "response",
+        "statusCode": "",
+        "headers": {
+            "content-type": "application/json"
+        },
+        "x": 1520,
+        "y": 1880,
+        "wires": []
+    },
+    {
+        "id": "6fc035c0c6e89a92",
+        "type": "mysql",
+        "z": "37dd95d269875e4a",
+        "g": "731b84d8bf335b59",
+        "mydb": "443dca5366e7983c",
+        "name": "mysql",
+        "x": 1070,
+        "y": 1800,
+        "wires": [
+            [
+                "a1ed93e7596aee60",
+                "d608c6cb7f4e8011"
+            ]
+        ]
+    },
+    {
+        "id": "006a159ba1dfc5a1",
+        "type": "function",
+        "z": "37dd95d269875e4a",
+        "g": "731b84d8bf335b59",
+        "name": "build_query",
+        "func": "const room_id = msg.req.params.room_id || {};\nconst id = parseInt(room_id, 10);\nmsg.topic = `\n  SELECT \n    r.room_id,\n    r.room_name AS name,\n    r.capacity,\n    r.location,\n    r.is_deleted,\n    GROUP_CONCAT(DISTINCT CONCAT(f.facility_id, ':', f.name) SEPARATOR ',') AS facilities\n  FROM rooms r\n  LEFT JOIN room_facilities rf ON r.room_id = rf.room_id\n  LEFT JOIN facilities f ON rf.facility_id = f.facility_id\n  WHERE r.room_id = ?\n  GROUP BY r.room_id\n  LIMIT 1;\n`;\n\nmsg.payload = [id];\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 1800,
+        "wires": [
+            [
+                "6fc035c0c6e89a92"
+            ]
+        ]
+    },
+    {
+        "id": "a1ed93e7596aee60",
+        "type": "function",
+        "z": "37dd95d269875e4a",
+        "g": "731b84d8bf335b59",
+        "name": "handle_result",
+        "func": "const result = msg.payload || [];\n\nif(result.length != 1){\n    msg.statusCode = 404;\n    msg.payload = {\n        ok: false,\n        message: \"Room not found\"\n    }\n}\nconst resultRoom = result[0];\nconst room = {\n    room_id: resultRoom.room_id,\n    name: resultRoom.name,\n    capacity: resultRoom.capacity,\n    location: resultRoom.location,\n    is_deleted: resultRoom.is_deleted,\n    facilities: resultRoom.facilities ? resultRoom.facilities.split(',').map(f => {\n        const [id, name] = f.split(':');\n        return { facility_id: parseInt(id, 10), name };\n    }) : []\n};\n\nmsg.payload = {\n    result: room,\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1240,
+        "y": 1800,
+        "wires": [
+            [
+                "8f6dc201eb39db7f"
+            ]
+        ]
+    },
+    {
+        "id": "1dba4f40f290cccf",
+        "type": "jwt verify",
+        "z": "37dd95d269875e4a",
+        "g": "731b84d8bf335b59",
+        "name": "verify_jwt",
+        "alg": [
+            "HS512"
+        ],
+        "jwkurl": "",
+        "secret": "msg.secret",
+        "key": "",
+        "signvar": "bearer",
+        "storetoken": "token",
+        "x": 600,
+        "y": 1800,
+        "wires": [
+            [
+                "961abd4227914836"
+            ]
+        ]
+    },
+    {
+        "id": "21f2cec970bbfd1c",
+        "type": "function",
+        "z": "37dd95d269875e4a",
+        "g": "731b84d8bf335b59",
+        "name": "get_secret_key",
+        "func": "msg.secret = env.get('JWT_SECRET_KEY')\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 1800,
+        "wires": [
+            [
+                "1dba4f40f290cccf"
+            ]
+        ]
+    },
+    {
+        "id": "961abd4227914836",
+        "type": "role-check",
+        "z": "37dd95d269875e4a",
+        "g": "731b84d8bf335b59",
+        "name": "role_check",
+        "requiredRole": "ADMIN",
+        "x": 770,
+        "y": 1880,
+        "wires": [
+            [
+                "006a159ba1dfc5a1"
+            ],
+            [
+                "8f6dc201eb39db7f"
+            ]
+        ]
+    },
+    {
+        "id": "5d94436a08194e41",
+        "type": "function",
+        "z": "37dd95d269875e4a",
+        "g": "731b84d8bf335b59",
+        "name": "handle_invalid_token",
+        "func": "msg.statusCode = 401;\nmsg.payload = {\n    ok: false,\n    message: \"Invalid token!\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 1980,
+        "wires": [
+            [
+                "8f6dc201eb39db7f"
+            ]
+        ]
+    },
+    {
+        "id": "8e3fbc7cd8b9157c",
+        "type": "catch",
+        "z": "37dd95d269875e4a",
+        "g": "731b84d8bf335b59",
+        "name": "catch",
+        "scope": "group",
+        "uncaught": false,
+        "x": 390,
+        "y": 1980,
+        "wires": [
+            [
+                "5d94436a08194e41",
+                "9760f2d98b064709"
+            ]
+        ]
+    },
+    {
+        "id": "9760f2d98b064709",
+        "type": "debug",
+        "z": "37dd95d269875e4a",
+        "g": "731b84d8bf335b59",
+        "name": "debug 7",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "error",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 2020,
+        "wires": []
+    },
+    {
+        "id": "d608c6cb7f4e8011",
+        "type": "debug",
+        "z": "37dd95d269875e4a",
+        "g": "731b84d8bf335b59",
+        "name": "debug 8",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1180,
+        "y": 1860,
+        "wires": []
+    },
+    {
+        "id": "e5bc05878d40a519",
         "type": "http in",
         "z": "37dd95d269875e4a",
+        "g": "bddb83f6550c1c97",
         "name": "PUT /api/rooms/:room_id",
         "url": "/api/rooms/:room_id",
         "method": "put",
         "upload": false,
         "skipBodyParsing": false,
         "swaggerDoc": "",
-        "x": 310,
-        "y": 420,
+        "x": 170,
+        "y": 700,
         "wires": [
-            []
+            [
+                "4201ab2e0ef62410"
+            ]
         ]
     },
     {
-        "id": "d36aea7df4e962e1",
+        "id": "3c078bd0c5d8df5f",
+        "type": "http response",
+        "z": "37dd95d269875e4a",
+        "g": "bddb83f6550c1c97",
+        "name": "response",
+        "statusCode": "",
+        "headers": {
+            "content-type": "application/json"
+        },
+        "x": 1520,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "1bbf582482b68d30",
+        "type": "mysql",
+        "z": "37dd95d269875e4a",
+        "g": "bddb83f6550c1c97",
+        "mydb": "443dca5366e7983c",
+        "name": "mysql",
+        "x": 1090,
+        "y": 700,
+        "wires": [
+            [
+                "28385584a48e4371"
+            ]
+        ]
+    },
+    {
+        "id": "28385584a48e4371",
+        "type": "function",
+        "z": "37dd95d269875e4a",
+        "g": "bddb83f6550c1c97",
+        "name": "handle_result",
+        "func": "const results = msg.payload || [];\n\nconst existenceResult = results[0] || [];\nif (!existenceResult || existenceResult.length === 0) {\n    msg.statusCode = 404;\n    msg.payload = {\n        ok: false,\n        message: 'Room not found or already deleted'\n    };\n    return msg;\n}\n\nconst roomUpdateResult = results[1] || {};\nif (roomUpdateResult.affectedRows === 0) {\n    msg.statusCode = 400;\n    msg.payload = {\n        ok: false,\n        message: 'Failed to update room'\n    };\n    return msg;\n}\n\nmsg.statusCode = 200;\nmsg.payload = {\n    ok: true,\n    message: 'Room updated successfully',\n    result: roomUpdateResult.affectedRows\n};\n\nnode.warn(`Update Result: ${JSON.stringify(msg.payload)}`);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1260,
+        "y": 700,
+        "wires": [
+            [
+                "3c078bd0c5d8df5f"
+            ]
+        ]
+    },
+    {
+        "id": "06f562fde793b236",
+        "type": "jwt verify",
+        "z": "37dd95d269875e4a",
+        "g": "bddb83f6550c1c97",
+        "name": "verify_jwt",
+        "alg": [
+            "HS512"
+        ],
+        "jwkurl": "",
+        "secret": "msg.secret",
+        "key": "",
+        "signvar": "bearer",
+        "storetoken": "token",
+        "x": 420,
+        "y": 780,
+        "wires": [
+            [
+                "ecfa6dbba57472fe"
+            ]
+        ]
+    },
+    {
+        "id": "f762ee3ff328e7cd",
+        "type": "function",
+        "z": "37dd95d269875e4a",
+        "g": "bddb83f6550c1c97",
+        "name": "get_secret_key",
+        "func": "msg.secret = env.get('JWT_SECRET_KEY')\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 780,
+        "wires": [
+            [
+                "06f562fde793b236"
+            ]
+        ]
+    },
+    {
+        "id": "ecfa6dbba57472fe",
+        "type": "role-check",
+        "z": "37dd95d269875e4a",
+        "g": "bddb83f6550c1c97",
+        "name": "role_check",
+        "requiredRole": "ADMIN",
+        "x": 570,
+        "y": 780,
+        "wires": [
+            [
+                "9cfc3430e40aa6a4",
+                "71c313ebddc64a42"
+            ],
+            [
+                "3c078bd0c5d8df5f"
+            ]
+        ]
+    },
+    {
+        "id": "5c63a40e03c4acc2",
+        "type": "function",
+        "z": "37dd95d269875e4a",
+        "g": "bddb83f6550c1c97",
+        "name": "handle_invalid_token",
+        "func": "msg.statusCode = 401;\nmsg.payload = {\n    ok: false,\n    message: \"Invalid token!\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 920,
+        "y": 880,
+        "wires": [
+            [
+                "3c078bd0c5d8df5f"
+            ]
+        ]
+    },
+    {
+        "id": "7bb450e6dbd39a15",
+        "type": "catch",
+        "z": "37dd95d269875e4a",
+        "g": "bddb83f6550c1c97",
+        "name": "catch",
+        "scope": "group",
+        "uncaught": false,
+        "x": 410,
+        "y": 880,
+        "wires": [
+            [
+                "5c63a40e03c4acc2"
+            ]
+        ]
+    },
+    {
+        "id": "4201ab2e0ef62410",
+        "type": "json",
+        "z": "37dd95d269875e4a",
+        "g": "bddb83f6550c1c97",
+        "name": "parse_object",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 390,
+        "y": 700,
+        "wires": [
+            [
+                "f762ee3ff328e7cd"
+            ]
+        ]
+    },
+    {
+        "id": "9cfc3430e40aa6a4",
+        "type": "debug",
+        "z": "37dd95d269875e4a",
+        "g": "bddb83f6550c1c97",
+        "name": "debug 9",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 700,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "52aafdd0e13af00c",
         "type": "http in",
         "z": "37dd95d269875e4a",
+        "g": "35b9f398219455c3",
         "name": "DELETE /api/rooms/:room_id",
         "url": "/api/rooms/:room_id",
         "method": "delete",
         "upload": false,
         "skipBodyParsing": false,
         "swaggerDoc": "",
-        "x": 320,
+        "x": 180,
+        "y": 1000,
+        "wires": [
+            [
+                "c6d2166a6c5bb5be"
+            ]
+        ]
+    },
+    {
+        "id": "9d7fd5160cb070dc",
+        "type": "http response",
+        "z": "37dd95d269875e4a",
+        "g": "35b9f398219455c3",
+        "name": "response",
+        "statusCode": "",
+        "headers": {
+            "content-type": "application/json"
+        },
+        "x": 1680,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "2e2f24f033fdb12b",
+        "type": "mysql",
+        "z": "37dd95d269875e4a",
+        "g": "35b9f398219455c3",
+        "mydb": "443dca5366e7983c",
+        "name": "mysql",
+        "x": 910,
+        "y": 1020,
+        "wires": [
+            [
+                "6c7516dbba02306e",
+                "d0c8176da8830878"
+            ]
+        ]
+    },
+    {
+        "id": "43aa5890e3f9b088",
+        "type": "function",
+        "z": "37dd95d269875e4a",
+        "g": "35b9f398219455c3",
+        "name": "build_query_validate",
+        "func": "const room_id = msg.req?.params?.room_id;\n\nif (!room_id || isNaN(parseInt(room_id, 10))) {\n  msg.statusCode = 400;\n  msg.payload = {\n    ok: false,\n    message: 'Invalid or missing room_id'\n  };\n  return [null, msg];\n}\n\nlet sql = `\n  SELECT 1 FROM rooms WHERE room_id = ? AND is_deleted = 0;\n`;\nlet checkFutureBookingSql = `\n  SELECT 1 FROM bookings \n  WHERE room_id = ? \n  AND start_time > NOW()\n  AND status IN ('APPROVED', 'PENDING');\n`;\nlet params = [parseInt(room_id, 10)];\n\nmsg.topic = `${sql}${checkFutureBookingSql}`;\nmsg.payload = [...params, ...params];\n\nreturn [msg, null];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 1040,
+        "wires": [
+            [
+                "2e2f24f033fdb12b"
+            ],
+            [
+                "9d7fd5160cb070dc"
+            ]
+        ]
+    },
+    {
+        "id": "6c7516dbba02306e",
+        "type": "function",
+        "z": "37dd95d269875e4a",
+        "g": "35b9f398219455c3",
+        "name": "handle_result",
+        "func": "const results = msg.payload || [];\n\nnode.log(results)\n\nconst existenceResult = results[0] || [];\nif (!existenceResult || existenceResult.length === 0) {\n    msg.statusCode = 404;\n    msg.payload = {\n        ok: false,\n        message: 'Room not found or already deleted'\n    };\n    return [null,msg];\n}\n\nconst checkFutureBookingResult = results[1] || [];\nif (checkFutureBookingResult && checkFutureBookingResult.length > 0) {\n    msg.statusCode = 400;\n    msg.payload = {\n        ok: false,\n        message: 'Cannot delete room which has bookings in the future!'\n    };\n    return [null, msg];\n}\n\nreturn [msg, null];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1080,
+        "y": 1020,
+        "wires": [
+            [
+                "3b5c8c025c7be344"
+            ],
+            [
+                "9d7fd5160cb070dc"
+            ]
+        ]
+    },
+    {
+        "id": "29f02c5b5fc0e4e3",
+        "type": "jwt verify",
+        "z": "37dd95d269875e4a",
+        "g": "35b9f398219455c3",
+        "name": "verify_jwt",
+        "alg": [
+            "HS512"
+        ],
+        "jwkurl": "",
+        "secret": "msg.secret",
+        "key": "",
+        "signvar": "bearer",
+        "storetoken": "token",
+        "x": 360,
+        "y": 1080,
+        "wires": [
+            [
+                "8d87ea4ed40cebc3"
+            ]
+        ]
+    },
+    {
+        "id": "c6d2166a6c5bb5be",
+        "type": "function",
+        "z": "37dd95d269875e4a",
+        "g": "35b9f398219455c3",
+        "name": "get_secret_key",
+        "func": "msg.secret = env.get('JWT_SECRET_KEY')\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 200,
+        "y": 1080,
+        "wires": [
+            [
+                "29f02c5b5fc0e4e3"
+            ]
+        ]
+    },
+    {
+        "id": "8d87ea4ed40cebc3",
+        "type": "role-check",
+        "z": "37dd95d269875e4a",
+        "g": "35b9f398219455c3",
+        "name": "role_check",
+        "requiredRole": "ADMIN",
+        "x": 510,
+        "y": 1080,
+        "wires": [
+            [
+                "43aa5890e3f9b088"
+            ],
+            [
+                "9d7fd5160cb070dc"
+            ]
+        ]
+    },
+    {
+        "id": "a1a916a8a5dd826e",
+        "type": "function",
+        "z": "37dd95d269875e4a",
+        "g": "35b9f398219455c3",
+        "name": "handle_invalid_token",
+        "func": "msg.statusCode = 401;\nmsg.payload = {\n    ok: false,\n    message: \"Invalid token!\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 920,
+        "y": 1180,
+        "wires": [
+            [
+                "9d7fd5160cb070dc"
+            ]
+        ]
+    },
+    {
+        "id": "8b7921bc8d96309c",
+        "type": "catch",
+        "z": "37dd95d269875e4a",
+        "g": "35b9f398219455c3",
+        "name": "catch",
+        "scope": "group",
+        "uncaught": false,
+        "x": 410,
+        "y": 1180,
+        "wires": [
+            [
+                "a1a916a8a5dd826e"
+            ]
+        ]
+    },
+    {
+        "id": "71c313ebddc64a42",
+        "type": "function",
+        "z": "37dd95d269875e4a",
+        "g": "bddb83f6550c1c97",
+        "name": "build_query",
+        "func": "const payload = msg.payload || {};\nconst room_id = msg.req?.params?.room_id;\n\nif (!room_id || isNaN(parseInt(room_id, 10))) {\n  msg.statusCode = 400;\n  msg.payload = {\n    ok: false,\n    message: 'Invalid or missing room_id'\n  };\n  return [null, msg];\n}\n\nif (!payload.name?.trim() || !payload.capacity || !payload.location?.trim()) {\n  msg.statusCode = 400;\n  msg.payload = {\n    ok: false,\n    message: 'Missing required fields: name, capacity, or location'\n  };\n  return [null, msg];\n}\n\nlet sql = `\n  SELECT 1 FROM rooms WHERE room_id = ? AND is_deleted = 0;\n`;\nlet params = [parseInt(room_id, 10)];\n\nlet updateSql = `\n  UPDATE rooms \n  SET room_name = ?, capacity = ?, location = ?\n  WHERE room_id = ? AND is_deleted = 0;\n`;\nlet updateParams = [payload.name.trim(), parseInt(payload.capacity, 10), payload.location.trim(), parseInt(room_id, 10)];\n\nlet facilitySql = `\n  DELETE FROM room_facilities WHERE room_id = ?;\n`;\nlet facilityParams = [parseInt(room_id, 10)];\n\nif (Array.isArray(payload.facility_ids) && payload.facility_ids.length > 0) {\n  const validFacilityIds = payload.facility_ids.filter(id => !isNaN(parseInt(id, 10)));\n  if (validFacilityIds.length > 0) {\n    facilitySql += validFacilityIds.map(() => `\n      INSERT INTO room_facilities (room_id, facility_id)\n      VALUES (?, ?);\n    `).join('');\n    facilityParams.push(...validFacilityIds.flatMap(id => [parseInt(room_id, 10), parseInt(id, 10)]));\n  }\n}\n\nmsg.topic = sql + updateSql + facilitySql;\nmsg.payload = [...params, ...updateParams, ...facilityParams];\n\nreturn [msg, null];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 740,
+        "wires": [
+            [
+                "1bbf582482b68d30"
+            ],
+            [
+                "3c078bd0c5d8df5f"
+            ]
+        ]
+    },
+    {
+        "id": "393a75a4de27840f",
+        "type": "mysql",
+        "z": "37dd95d269875e4a",
+        "g": "35b9f398219455c3",
+        "mydb": "443dca5366e7983c",
+        "name": "mysql",
+        "x": 1450,
+        "y": 980,
+        "wires": [
+            [
+                "c74f1b8ad4ca48b9",
+                "d5dfed81c3112ccf"
+            ]
+        ]
+    },
+    {
+        "id": "3b5c8c025c7be344",
+        "type": "function",
+        "z": "37dd95d269875e4a",
+        "g": "35b9f398219455c3",
+        "name": "build_query_delete",
+        "func": "const room_id = msg.req?.params?.room_id;\n\nlet deleteSql = `\n  UPDATE rooms \n  SET is_deleted = 1 \n  WHERE room_id = ? AND is_deleted = 0;\n`;\nlet deleteParams = [parseInt(room_id, 10)];\n\nmsg.topic = deleteSql;\nmsg.payload = [...deleteParams];\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1270,
+        "y": 1000,
+        "wires": [
+            [
+                "393a75a4de27840f"
+            ]
+        ]
+    },
+    {
+        "id": "c74f1b8ad4ca48b9",
+        "type": "function",
+        "z": "37dd95d269875e4a",
+        "g": "35b9f398219455c3",
+        "name": "handle_result",
+        "func": "const results = msg.payload || [];\n\nconst roomDeleteResult = results[0] || {};\nif (roomDeleteResult.affectedRows === 0) {\n    msg.statusCode = 400;\n    msg.payload = {\n        ok: false,\n        message: 'Failed to delete room'\n    };\n    return msg;\n}\n\nmsg.statusCode = 200;\nmsg.payload = {\n    ok: true,\n    message: 'Room updated successfully',\n    result: roomDeleteResult.affectedRows\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1640,
+        "y": 980,
+        "wires": [
+            [
+                "9d7fd5160cb070dc"
+            ]
+        ]
+    },
+    {
+        "id": "d5dfed81c3112ccf",
+        "type": "debug",
+        "z": "37dd95d269875e4a",
+        "g": "35b9f398219455c3",
+        "name": "debug 18",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1580,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "d0c8176da8830878",
+        "type": "debug",
+        "z": "37dd95d269875e4a",
+        "g": "35b9f398219455c3",
+        "name": "debug 19",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "27d09c56ab542e0d",
+        "type": "debug",
+        "z": "37dd95d269875e4a",
+        "g": "43e2605169538c26",
+        "name": "debug 20",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1120,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "1fc813a0b0ee5259",
+        "type": "http response",
+        "z": "37dd95d269875e4a",
+        "g": "5313c9ea75a5b369",
+        "name": "response",
+        "statusCode": "",
+        "headers": {
+            "content-type": "application/json"
+        },
+        "x": 1460,
+        "y": 2220,
+        "wires": []
+    },
+    {
+        "id": "cd6dc72ddff52036",
+        "type": "mysql",
+        "z": "37dd95d269875e4a",
+        "g": "5313c9ea75a5b369",
+        "mydb": "443dca5366e7983c",
+        "name": "mysql",
+        "x": 930,
+        "y": 2140,
+        "wires": [
+            [
+                "ad28dc62dcbadec1"
+            ]
+        ]
+    },
+    {
+        "id": "bdd6bce524b5de25",
+        "type": "function",
+        "z": "37dd95d269875e4a",
+        "g": "5313c9ea75a5b369",
+        "name": "build_query",
+        "func": "const filters = msg.req.query || {};\nlet start_time, end_time;\nif (!filters.start_time || !filters.end_time) {\n  msg.statusCode = 400;\n  msg.payload = { ok: false, message: 'start_time and end_time are required' };\n  return [null, msg];\n}\n\nstart_time = new Date(filters.start_time);\nend_time = new Date(filters.end_time);\n\nconst formatDateForSQL = (date) => {\n  const offset = 7 * 60;\n  const adjustedDate = new Date(date.getTime() + offset * 60 * 1000);\n  return adjustedDate.toISOString().replace('T', ' ').substring(0, 19);\n};\nconst sqlStartTime = formatDateForSQL(start_time);\nconst sqlEndTime = formatDateForSQL(end_time);\n\n// Main query for available rooms\nlet sql = `\n  SELECT\n  r.room_id,\n  r.room_name AS name,\n  r.capacity,\n  r.location,\n  GROUP_CONCAT(DISTINCT CONCAT(f.facility_id, ':', f.name) SEPARATOR ',') AS facilities\n  FROM rooms r\n  LEFT JOIN room_facilities rf ON r.room_id = rf.room_id\n  LEFT JOIN facilities f ON rf.facility_id = f.facility_id\n  WHERE r.is_deleted = 0\n  AND NOT EXISTS (\n    SELECT 1\n    FROM bookings b\n    WHERE b.room_id = r.room_id\n      AND b.status IN ('APPROVED', 'PENDING')\n      AND (\n        (b.start_time < ? AND b.end_time > ?) OR\n        (b.start_time >= ? AND b.start_time < ?) OR\n        (b.end_time > ? AND b.end_time <= ?)\n      )\n  )\n\n`;\n\n\nlet params = [\n  sqlEndTime,   // b.start_time < end_time\n  sqlStartTime, // b.end_time > start_time\n  sqlStartTime, // b.start_time >= start_time\n  sqlEndTime,   // b.start_time < end_time\n  sqlStartTime, // b.end_time > start_time\n  sqlEndTime    // b.end_time <= end_time\n];\nlet countParams = [...params];\nlet conditions = [];\n\nif (filters.min_capacity && !isNaN(parseInt(filters.min_capacity, 10))) {\n  conditions.push('r.capacity >= ?');\n  params.push(parseInt(filters.min_capacity, 10));\n  countParams.push(parseInt(filters.min_capacity, 10));\n}\n\nif (filters.facility_id && !isNaN(parseInt(filters.facility_id, 10))) {\n  conditions.push(`\n    r.room_id IN (\n      SELECT rf.room_id\n      FROM room_facilities rf\n      WHERE rf.facility_id = ?\n    )\n  `);\n  params.push(parseInt(filters.facility_id, 10));\n  countParams.push(parseInt(filters.facility_id, 10));\n}\n\n\nif (conditions.length > 0) {\n  sql += ' AND ' + conditions.join(' AND ');\n}\n\nsql += ' GROUP BY r.room_id';\nsql += ' ORDER BY r.room_name ASC';\n\nif (filters.limit && !isNaN(parseInt(filters.limit, 10))) {\n  sql += ' LIMIT ?';\n  params.push(parseInt(filters.limit, 10));\n}\nif (filters.offset && !isNaN(parseInt(filters.offset, 10))) {\n  sql += ' OFFSET ?';\n  params.push(parseInt(filters.offset, 10));\n}\n\nconst countSql = `\n  SELECT COUNT(DISTINCT r.room_id) AS total_count\n  FROM rooms r\n  LEFT JOIN room_facilities rf ON r.room_id = rf.room_id\n  LEFT JOIN facilities f ON rf.facility_id = f.facility_id\n  WHERE r.is_deleted = 0\n    AND NOT EXISTS (\n    SELECT 1\n    FROM bookings b\n    WHERE b.room_id = r.room_id\n      AND b.status IN ('APPROVED', 'PENDING')\n      AND (\n        (b.start_time < ? AND b.end_time > ?) OR\n        (b.start_time >= ? AND b.start_time < ?) OR\n        (b.end_time > ? AND b.end_time <= ?)\n      )\n    )\n    ${conditions.length > 0 ? ' AND ' + conditions.join(' AND ') : ''}\n`;\n\nmsg.topic = `${countSql};${sql}`;\nmsg.payload = [...countParams, ...params];\n\nnode.warn(`Filters: ${JSON.stringify(filters)}`);\nnode.warn(`Main SQL: ${sql}`);\nnode.warn(`Count SQL: ${countSql}`);\nnode.warn(`Count Params: ${JSON.stringify(countParams)}`);\nnode.warn(`Main Params: ${JSON.stringify(params)}`);\nnode.warn(`Total Params: ${JSON.stringify(msg.payload)}`);\n\nreturn [msg, null];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 2180,
+        "wires": [
+            [
+                "cd6dc72ddff52036"
+            ],
+            [
+                "1fc813a0b0ee5259"
+            ]
+        ]
+    },
+    {
+        "id": "ad28dc62dcbadec1",
+        "type": "function",
+        "z": "37dd95d269875e4a",
+        "g": "5313c9ea75a5b369",
+        "name": "handle_result",
+        "func": "const [countResult, mainResult] = msg.payload || [[], []];\n\nconst rooms = mainResult.map(row => ({\n    room_id: row.room_id,\n    name: row.name,\n    capacity: row.capacity,\n    location: row.location,\n    facilities: row.facilities ? row.facilities.split(',').map(f => {\n        const [id, name] = f.split(':');\n        return { facility_id: parseInt(id, 10), name };\n    }) : []\n}));\n\nmsg.payload = {\n    result: rooms,\n    total_count: countResult[0]?.total_count || 0\n};\n\nnode.warn(`Result rows: ${JSON.stringify(rooms)}`);\nnode.warn(`Total count: ${countResult[0]?.total_count || 0}`);\n\nreturn [msg, null];",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1100,
+        "y": 2140,
+        "wires": [
+            [
+                "1fc813a0b0ee5259"
+            ]
+        ]
+    },
+    {
+        "id": "d82a38baa1b33d29",
+        "type": "jwt verify",
+        "z": "37dd95d269875e4a",
+        "g": "5313c9ea75a5b369",
+        "name": "verify_jwt",
+        "alg": [
+            "HS512"
+        ],
+        "jwkurl": "",
+        "secret": "msg.secret",
+        "key": "",
+        "signvar": "bearer",
+        "storetoken": "token",
+        "x": 600,
+        "y": 2140,
+        "wires": [
+            [
+                "bdd6bce524b5de25"
+            ]
+        ]
+    },
+    {
+        "id": "edb201094d6a51c6",
+        "type": "function",
+        "z": "37dd95d269875e4a",
+        "g": "5313c9ea75a5b369",
+        "name": "get_secret_key",
+        "func": "msg.secret = env.get('JWT_SECRET_KEY')\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 2140,
+        "wires": [
+            [
+                "d82a38baa1b33d29"
+            ]
+        ]
+    },
+    {
+        "id": "201417b0dcf73486",
+        "type": "function",
+        "z": "37dd95d269875e4a",
+        "g": "5313c9ea75a5b369",
+        "name": "handle_invalid_token",
+        "func": "msg.statusCode = 500;\nmsg.payload = {\n    ok: false,\n    message: \"Invalid token!\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 860,
+        "y": 2240,
+        "wires": [
+            [
+                "1fc813a0b0ee5259"
+            ]
+        ]
+    },
+    {
+        "id": "4997da6227298859",
+        "type": "catch",
+        "z": "37dd95d269875e4a",
+        "g": "5313c9ea75a5b369",
+        "name": "catch",
+        "scope": "group",
+        "uncaught": false,
+        "x": 510,
+        "y": 2240,
+        "wires": [
+            [
+                "201417b0dcf73486",
+                "a925ca2b3567a3a7"
+            ]
+        ]
+    },
+    {
+        "id": "a925ca2b3567a3a7",
+        "type": "debug",
+        "z": "37dd95d269875e4a",
+        "g": "5313c9ea75a5b369",
+        "name": "debug 11",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "error",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 2280,
+        "wires": []
+    },
+    {
+        "id": "dbeba861c30a2419",
+        "type": "http response",
+        "z": "37dd95d269875e4a",
+        "g": "a3285fd9ae16509c",
+        "name": "response",
+        "statusCode": "",
+        "headers": {
+            "content-type": "application/json"
+        },
+        "x": 1500,
+        "y": 1660,
+        "wires": []
+    },
+    {
+        "id": "d6844f72e50939e2",
+        "type": "mysql",
+        "z": "37dd95d269875e4a",
+        "g": "a3285fd9ae16509c",
+        "mydb": "443dca5366e7983c",
+        "name": "mysql",
+        "x": 930,
+        "y": 1580,
+        "wires": [
+            [
+                "76845cf1372789ee"
+            ]
+        ]
+    },
+    {
+        "id": "b0b0d10d4f67a1d6",
+        "type": "function",
+        "z": "37dd95d269875e4a",
+        "g": "a3285fd9ae16509c",
+        "name": "build_query",
+        "func": "msg.topic = `\n  SELECT \n    room_id,\n    room_name\n  FROM rooms\n  WHERE is_deleted = 0;\n`;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 1580,
+        "wires": [
+            [
+                "d6844f72e50939e2"
+            ]
+        ]
+    },
+    {
+        "id": "76845cf1372789ee",
+        "type": "function",
+        "z": "37dd95d269875e4a",
+        "g": "a3285fd9ae16509c",
+        "name": "handle_result",
+        "func": "const mainResult = msg.payload || [];\n\nconst rooms = mainResult.map(row => ({\n    room_id: row.room_id,\n    name: row.room_name,\n}));\n\nmsg.payload = {\n    ok: true,\n    result: rooms,\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1100,
+        "y": 1580,
+        "wires": [
+            [
+                "dbeba861c30a2419"
+            ]
+        ]
+    },
+    {
+        "id": "a4770e1f4b82cba0",
+        "type": "jwt verify",
+        "z": "37dd95d269875e4a",
+        "g": "a3285fd9ae16509c",
+        "name": "verify_jwt",
+        "alg": [
+            "HS512"
+        ],
+        "jwkurl": "",
+        "secret": "msg.secret",
+        "key": "",
+        "signvar": "bearer",
+        "storetoken": "token",
+        "x": 580,
+        "y": 1580,
+        "wires": [
+            [
+                "b0b0d10d4f67a1d6"
+            ]
+        ]
+    },
+    {
+        "id": "9ddf9b61f1607ede",
+        "type": "function",
+        "z": "37dd95d269875e4a",
+        "g": "a3285fd9ae16509c",
+        "name": "get_secret_key",
+        "func": "msg.secret = env.get('JWT_SECRET_KEY')\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 1580,
+        "wires": [
+            [
+                "a4770e1f4b82cba0"
+            ]
+        ]
+    },
+    {
+        "id": "3131bc55bb666978",
+        "type": "function",
+        "z": "37dd95d269875e4a",
+        "g": "a3285fd9ae16509c",
+        "name": "handle_invalid_token",
+        "func": "msg.statusCode = 401;\nmsg.payload = {\n    ok: false,\n    message: \"Invalid token!\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 920,
+        "y": 1660,
+        "wires": [
+            [
+                "dbeba861c30a2419"
+            ]
+        ]
+    },
+    {
+        "id": "21dba808b3974276",
+        "type": "catch",
+        "z": "37dd95d269875e4a",
+        "g": "a3285fd9ae16509c",
+        "name": "catch",
+        "scope": "group",
+        "uncaught": false,
+        "x": 410,
+        "y": 1660,
+        "wires": [
+            [
+                "3131bc55bb666978"
+            ]
+        ]
+    },
+    {
+        "id": "a383bacc60bb4a43",
+        "type": "http in",
+        "z": "37dd95d269875e4a",
+        "name": "",
+        "url": "/api/rooms/available",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 170,
+        "y": 2220,
+        "wires": [
+            [
+                "edb201094d6a51c6"
+            ]
+        ]
+    },
+    {
+        "id": "ef80f4c1229a47f0",
+        "type": "http in",
+        "z": "37dd95d269875e4a",
+        "name": "",
+        "url": "/api/rooms/active",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 180,
+        "y": 1580,
+        "wires": [
+            [
+                "9ddf9b61f1607ede"
+            ]
+        ]
+    },
+    {
+        "id": "bdd90f60c2ae5d17",
+        "type": "http in",
+        "z": "37dd95d269875e4a",
+        "name": "",
+        "url": "/api/rooms/:room_id",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 170,
+        "y": 1860,
+        "wires": [
+            [
+                "21f2cec970bbfd1c"
+            ]
+        ]
+    },
+    {
+        "id": "884dbc834c6e5c30",
+        "type": "http in",
+        "z": "bd5efab3a54ad20c",
+        "g": "504069dc06829e62",
+        "name": "GET /api/bookings",
+        "url": "/api/bookings",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 170,
+        "y": 80,
+        "wires": [
+            [
+                "f27de9691e262046"
+            ]
+        ]
+    },
+    {
+        "id": "f49e1e067a9d555c",
+        "type": "http response",
+        "z": "bd5efab3a54ad20c",
+        "g": "504069dc06829e62",
+        "name": "response",
+        "statusCode": "",
+        "headers": {
+            "content-type": "application/json"
+        },
+        "x": 1440,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "747405ee397774a0",
+        "type": "mysql",
+        "z": "bd5efab3a54ad20c",
+        "g": "504069dc06829e62",
+        "mydb": "443dca5366e7983c",
+        "name": "mysql",
+        "x": 1090,
+        "y": 80,
+        "wires": [
+            [
+                "bb29fab178cd7225"
+            ]
+        ]
+    },
+    {
+        "id": "892bcbf8f3e47265",
+        "type": "function",
+        "z": "bd5efab3a54ad20c",
+        "g": "504069dc06829e62",
+        "name": "build_query",
+        "func": "const filters = msg.req.query || {};\n\nlet sql = `\n  SELECT \n    b.booking_id,\n    b.title,\n    b.room_id,\n    r.room_name AS room_name,\n    b.user_id,\n    us.username,\n    b.start_time,\n    b.end_time,\n    b.status,\n    ur.username AS action_by,\n    b.action_at,\n    b.action_reason\n  FROM bookings b\n  INNER JOIN users us ON b.user_id = us.user_id\n  LEFT JOIN users ur ON b.action_by = ur.user_id\n  INNER JOIN rooms r ON b.room_id = r.room_id\n  WHERE 1=1\n`;\n\nlet params = [];\nlet countParams = [];\nlet conditions = [];\n\nif (filters.room_name && filters.room_name) {\n  conditions.push('r.room_name LIKE ?');\n  params.push(`%${filters.room_name}%`);\n  countParams.push(`%${filters.room_name.trim()}%`);\n}\n\nif (filters.start_time && filters.start_time) {\n  const start_time = new Date(filters.start_time);\n\n  if (isNaN(start_time.getTime())) {\n    msg.statusCode = 400;\n    msg.payload = {\n      ok: false,\n      message: 'Invalid booking start time or end time'\n    };\n    return [null, msg];\n  }\n\n  conditions.push('b.start_time >= ?');\n  params.push(filters.start_time);\n  countParams.push(filters.start_time);\n}\n\nif (filters.status && filters.status) {\n  conditions.push('b.status = ?');\n  params.push(filters.status.trim());\n  countParams.push(filters.status);\n}\n\nif (conditions.length > 0) {\n  sql += ' AND ' + conditions.join(' AND ');\n}\n\nsql += ' GROUP BY b.booking_id';\n\nsql += ' ORDER BY b.start_time DESC';\n\n// Pagination\nif (filters.limit && !isNaN(parseInt(filters.limit, 10))) {\n  sql += ' LIMIT ?';\n  params.push(parseInt(filters.limit, 10));\n}\nif (filters.offset && !isNaN(parseInt(filters.offset, 10))) {\n  sql += ' OFFSET ?';\n  params.push(parseInt(filters.offset, 10));\n}\n\n// Count query for total rows\nconst countSql = `\n  SELECT COUNT(DISTINCT b.booking_id) AS total_count\n  FROM bookings b\n  INNER JOIN users us ON b.user_id = us.user_id\n  LEFT JOIN users ur ON b.action_by = ur.user_id\n  INNER JOIN rooms r ON b.room_id = r.room_id\n  WHERE 1=1\n   ${conditions.length > 0 ? ' AND ' + conditions.join(' AND ') : ''}\n`;\n\n// Combine queries\nmsg.topic = `${countSql};${sql}`;\nmsg.payload = [...countParams, ...params];\n\n// Debug\nnode.warn(`Filters: ${JSON.stringify(filters)}`);\nnode.warn(`Main SQL: ${sql}`);\nnode.warn(`Count SQL: ${countSql}`);\nnode.warn(`Count Params: ${JSON.stringify(countParams)}`);\nnode.warn(`Main Params: ${JSON.stringify(params)}`);\nnode.warn(`Total Params: ${JSON.stringify(msg.payload)}`);\n\nreturn [msg, null];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 840.1041717529297,
+        "y": 90.09722900390625,
+        "wires": [
+            [
+                "747405ee397774a0"
+            ],
+            [
+                "f49e1e067a9d555c"
+            ]
+        ]
+    },
+    {
+        "id": "bb29fab178cd7225",
+        "type": "function",
+        "z": "bd5efab3a54ad20c",
+        "g": "504069dc06829e62",
+        "name": "handle_result",
+        "func": "const [countResult, mainResult] = msg.payload || [[], []];\n\nconst bookings = mainResult.map(row => ({\n    booking_id: row.booking_id,\n    title: row.title,\n    room_id: row.room_id,\n    room_name: row.room_name,\n    user_id: row.user_id,\n    username: row.username,\n    start_time: row.start_time,\n    end_time: row.end_time,\n    status: row.status,\n    action_by: row.action_by,\n    action_at: row.action_at,\n    action_reason: row.action_reason\n}));\n\n// Format response\nmsg.payload = {\n    result: bookings,\n    total_count: countResult[0]?.total_count || 0\n};\n\n// Debug\nnode.warn(`Result rows: ${JSON.stringify(bookings)}`);\nnode.warn(`Total count: ${countResult[0]?.total_count || 0}`);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1240,
+        "y": 80,
+        "wires": [
+            [
+                "f49e1e067a9d555c"
+            ]
+        ]
+    },
+    {
+        "id": "994f23d2cbc7df98",
+        "type": "jwt verify",
+        "z": "bd5efab3a54ad20c",
+        "g": "504069dc06829e62",
+        "name": "verify_jwt",
+        "alg": [
+            "HS512"
+        ],
+        "jwkurl": "",
+        "secret": "msg.secret",
+        "key": "",
+        "signvar": "bearer",
+        "storetoken": "token",
+        "x": 520,
+        "y": 80,
+        "wires": [
+            [
+                "5e495eac96e9b125"
+            ]
+        ]
+    },
+    {
+        "id": "f27de9691e262046",
+        "type": "function",
+        "z": "bd5efab3a54ad20c",
+        "g": "504069dc06829e62",
+        "name": "get_secret_key",
+        "func": "msg.secret = env.get('JWT_SECRET_KEY')\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 80,
+        "wires": [
+            [
+                "994f23d2cbc7df98"
+            ]
+        ]
+    },
+    {
+        "id": "5e495eac96e9b125",
+        "type": "role-check",
+        "z": "bd5efab3a54ad20c",
+        "g": "504069dc06829e62",
+        "name": "role_check",
+        "requiredRole": "ADMIN",
+        "x": 700,
+        "y": 160,
+        "wires": [
+            [
+                "892bcbf8f3e47265"
+            ],
+            [
+                "f49e1e067a9d555c"
+            ]
+        ]
+    },
+    {
+        "id": "3e9a8064bd5699d9",
+        "type": "function",
+        "z": "bd5efab3a54ad20c",
+        "g": "504069dc06829e62",
+        "name": "handle_invalid_token",
+        "func": "msg.statusCode = 400;\nmsg.payload = {\n    ok: false,\n    message: \"Invalid token!\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 860,
+        "y": 260,
+        "wires": [
+            [
+                "f49e1e067a9d555c"
+            ]
+        ]
+    },
+    {
+        "id": "5cebd9d63084d28f",
+        "type": "catch",
+        "z": "bd5efab3a54ad20c",
+        "g": "504069dc06829e62",
+        "name": "catch",
+        "scope": "group",
+        "uncaught": false,
+        "x": 300,
+        "y": 260,
+        "wires": [
+            [
+                "3e9a8064bd5699d9",
+                "4a5e1ac9b16eef0b"
+            ]
+        ]
+    },
+    {
+        "id": "4a5e1ac9b16eef0b",
+        "type": "debug",
+        "z": "bd5efab3a54ad20c",
+        "g": "504069dc06829e62",
+        "name": "debug 10",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "error",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "725ac9592f3f84e1",
+        "type": "http in",
+        "z": "bd5efab3a54ad20c",
+        "g": "a847a3dcc63466dd",
+        "name": "POST /api/bookings/:booking_id/approve",
+        "url": "/api/bookings/:booking_id/approve",
+        "method": "post",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 200,
+        "y": 420,
+        "wires": [
+            [
+                "f3c149f12edd7bfe"
+            ]
+        ]
+    },
+    {
+        "id": "d7bcb882196787cd",
+        "type": "http response",
+        "z": "bd5efab3a54ad20c",
+        "g": "a847a3dcc63466dd",
+        "name": "response",
+        "statusCode": "",
+        "headers": {
+            "content-type": "application/json"
+        },
+        "x": 1500,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "17a6b9621f067b31",
+        "type": "mysql",
+        "z": "bd5efab3a54ad20c",
+        "g": "a847a3dcc63466dd",
+        "mydb": "443dca5366e7983c",
+        "name": "mysql",
+        "x": 1070,
+        "y": 420,
+        "wires": [
+            [
+                "9ad8c85861a399b2"
+            ]
+        ]
+    },
+    {
+        "id": "ee1292e6c81456c3",
+        "type": "function",
+        "z": "bd5efab3a54ad20c",
+        "g": "a847a3dcc63466dd",
+        "name": "build_query",
+        "func": "const booking_id = msg.req?.params?.booking_id;\n\nif (!booking_id || isNaN(parseInt(booking_id, 10))) {\n  msg.statusCode = 400;\n  msg.payload = { ok: false, message: 'Invalid or missing booking_id' };\n  return [null, msg];\n}\n\nconst user_id = msg.token.user_id;\n\nlet existSql = `\n  SELECT booking_id FROM bookings \n  WHERE booking_id = ? AND status = 'PENDING';\n`;\n\nlet approveSql = `\n  UPDATE bookings \n  SET status = 'APPROVED', action_by = ?, action_at = NOW()\n  WHERE booking_id = ? AND status = 'PENDING';\n`;\n\nlet auditSql = `\n  INSERT INTO audit_logs (booking_id, action, action_by, action_at, action_reason)\n  VALUES (?, 'APPROVED', ?, NOW(), '');\n`;\n\nlet select = `\nSELECT r.room_name, b.start_time, b.end_time, u.user_id\nFROM bookings b \nJOIN rooms r ON b.room_id = r.room_id\nJOIN users u ON b.user_id = u.user_id\nWHERE b.booking_id = ?\nGROUP BY b.room_id\nLIMIT 1;\n`;\n\nlet existParams = [parseInt(booking_id, 10)];\nlet approveParams = [parseInt(user_id, 10), parseInt(booking_id, 10)];\nlet auditParams = [parseInt(booking_id, 10), parseInt(user_id, 10)];\n\n// Combine queries in a transaction\nmsg.topic = `\n  START TRANSACTION;\n  ${existSql}\n  ${approveSql}\n  ${auditSql}\n  ${select}\n  COMMIT;\n`;\nmsg.payload = [...existParams, ...approveParams, ...auditParams, booking_id];\n\n// Debug\nnode.warn(`Booking ID: ${booking_id}`);\nnode.warn(`Admin ID: ${user_id}`);\nnode.warn(`SQL: ${msg.topic}`);\nnode.warn(`Params: ${JSON.stringify(msg.payload)}`);\n\nreturn [msg, null];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 850,
+        "y": 460,
+        "wires": [
+            [
+                "17a6b9621f067b31"
+            ],
+            [
+                "d7bcb882196787cd"
+            ]
+        ]
+    },
+    {
+        "id": "9ad8c85861a399b2",
+        "type": "function",
+        "z": "bd5efab3a54ad20c",
+        "g": "a847a3dcc63466dd",
+        "name": "handle_result",
+        "func": "const results = msg.payload || [];\n\nconst existenceResult = results[0] || [];\nif (!existenceResult || existenceResult.length === 0) {\n    msg.statusCode = 404;\n    msg.payload = {\n        ok: false,\n        message: 'Booking not found or not pending'\n    };\n    return [null,msg];\n}\n\nconst bookingApprovedResult = results[1] || {};\nif (bookingApprovedResult.affectedRows === 0) {\n    msg.statusCode = 400;\n    msg.payload = {\n        ok: false,\n        message: 'Failed to approve booking'\n    };\n    return [null,msg];\n}\n\nconst auditResult = results[2] || {};\nif (auditResult.affectedRows === 0) {\n    msg.statusCode = 400;\n    msg.payload = {\n        ok: false,\n        message: 'Failed to save logs'\n    };\n    return [null,msg];\n}\n\nconst selectResult = results[4] || [];\nconst selectObject = selectResult[0];\nnode.warn(JSON.stringify(selectResult));\nmsg.receiver = selectObject.user_id;\nmsg.notification = `Your booking at room ${selectObject.room_name} time start from ${selectObject.start_time} to ${selectObject.end_time} already approved`;\n\n\nmsg.statusCode = 200;\nmsg.payload = {\n    ok: true,\n    message: 'Booking approved successfully',\n    result: bookingApprovedResult.affectedRows\n};\n\nreturn msg;",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1240,
+        "y": 420,
+        "wires": [
+            [
+                "d7bcb882196787cd",
+                "960c6df0e138e3d6"
+            ],
+            [
+                "8d76aa8f4d6e3a0b"
+            ]
+        ]
+    },
+    {
+        "id": "36a16b1a05171e2b",
+        "type": "jwt verify",
+        "z": "bd5efab3a54ad20c",
+        "g": "a847a3dcc63466dd",
+        "name": "verify_jwt",
+        "alg": [
+            "HS512"
+        ],
+        "jwkurl": "",
+        "secret": "msg.secret",
+        "key": "",
+        "signvar": "bearer",
+        "storetoken": "token",
+        "x": 400,
+        "y": 500,
+        "wires": [
+            [
+                "f562ac3a5d4d9712"
+            ]
+        ]
+    },
+    {
+        "id": "f3c149f12edd7bfe",
+        "type": "function",
+        "z": "bd5efab3a54ad20c",
+        "g": "a847a3dcc63466dd",
+        "name": "get_secret_key",
+        "func": "msg.secret = env.get('JWT_SECRET_KEY')\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 240,
+        "y": 500,
+        "wires": [
+            [
+                "36a16b1a05171e2b"
+            ]
+        ]
+    },
+    {
+        "id": "f562ac3a5d4d9712",
+        "type": "role-check",
+        "z": "bd5efab3a54ad20c",
+        "g": "a847a3dcc63466dd",
+        "name": "role_check",
+        "requiredRole": "ADMIN",
+        "x": 550,
+        "y": 500,
+        "wires": [
+            [
+                "ee1292e6c81456c3"
+            ],
+            [
+                "d7bcb882196787cd"
+            ]
+        ]
+    },
+    {
+        "id": "2e713eb57718d0c5",
+        "type": "function",
+        "z": "bd5efab3a54ad20c",
+        "g": "a847a3dcc63466dd",
+        "name": "handle_invalid_token",
+        "func": "msg.statusCode = 401;\nmsg.payload = {\n    ok: false,\n    message: \"Invalid token!\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
         "y": 600,
         "wires": [
-            []
+            [
+                "d7bcb882196787cd"
+            ]
         ]
     },
     {
-        "id": "d89dd19e8226e94f",
+        "id": "395ab01490064b27",
+        "type": "catch",
+        "z": "bd5efab3a54ad20c",
+        "g": "a847a3dcc63466dd",
+        "name": "catch",
+        "scope": "group",
+        "uncaught": false,
+        "x": 390,
+        "y": 600,
+        "wires": [
+            [
+                "2e713eb57718d0c5",
+                "22b08998a0ff0c4f"
+            ]
+        ]
+    },
+    {
+        "id": "5e77aadfc46105ba",
         "type": "http in",
         "z": "bd5efab3a54ad20c",
-        "name": "GET /my-bookings",
-        "url": "/my-bookings",
-        "method": "get",
+        "g": "f3b4c45c06072b51",
+        "name": "POST /api/bookings/:booking_id/reject",
+        "url": "/api/bookings/:booking_id/reject",
+        "method": "post",
         "upload": false,
         "skipBodyParsing": false,
         "swaggerDoc": "",
+        "x": 190,
+        "y": 700,
+        "wires": [
+            [
+                "5dcaf943a6f299eb"
+            ]
+        ]
+    },
+    {
+        "id": "59fab76c3946fa16",
+        "type": "http response",
+        "z": "bd5efab3a54ad20c",
+        "g": "f3b4c45c06072b51",
+        "name": "response",
+        "statusCode": "",
+        "headers": {
+            "content-type": "application/json"
+        },
+        "x": 1500,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "144df77bf4e0693b",
+        "type": "mysql",
+        "z": "bd5efab3a54ad20c",
+        "g": "f3b4c45c06072b51",
+        "mydb": "443dca5366e7983c",
+        "name": "mysql",
+        "x": 1070,
+        "y": 700,
+        "wires": [
+            [
+                "b9224ee36eb0aa91"
+            ]
+        ]
+    },
+    {
+        "id": "9e52ea2cd5972986",
+        "type": "function",
+        "z": "bd5efab3a54ad20c",
+        "g": "f3b4c45c06072b51",
+        "name": "build_query",
+        "func": "const booking_id = msg.req?.params?.booking_id;\nconst action_reason = msg.payload.action_reason;\nif (!booking_id || isNaN(parseInt(booking_id, 10))) {\n  msg.statusCode = 400;\n  msg.payload = { ok: false, message: 'Invalid or missing booking_id' };\n  return [null, msg];\n}\n\nconst user_id = msg.token.user_id;\n\nlet existSql = `\n  SELECT booking_id FROM bookings \n  WHERE booking_id = ? AND status = 'PENDING';\n`;\n\nlet rejectSql = `\n  UPDATE bookings \n  SET status = 'REJECTED', action_by = ?, action_at = NOW(), action_reason = ?\n  WHERE booking_id = ? AND status = 'PENDING';\n`;\n\nlet auditSql = `\n  INSERT INTO audit_logs (booking_id, action, action_by, action_at, action_reason)\n  VALUES (?, 'REJECTED', ?, NOW(), ?);\n`;\n\nlet existParams = [parseInt(booking_id, 10)];\nlet rejectParams = [parseInt(user_id, 10), action_reason, parseInt(booking_id, 10)];\nlet auditParams = [parseInt(booking_id, 10), parseInt(user_id, 10), action_reason];\n\n// Combine queries in a transaction\nmsg.topic = `\n  START TRANSACTION;\n  ${existSql}\n  ${rejectSql}\n  ${auditSql}\n  COMMIT;\n`;\nmsg.payload = [...existParams, ...rejectParams, ...auditParams];\n\n// Debug\nnode.warn(`Booking ID: ${booking_id}`);\nnode.warn(`Admin ID: ${user_id}`);\nnode.warn(`SQL: ${msg.topic}`);\nnode.warn(`Params: ${JSON.stringify(msg.payload)}`);\n\nreturn [msg, null];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 850,
+        "y": 740,
+        "wires": [
+            [
+                "144df77bf4e0693b"
+            ],
+            [
+                "59fab76c3946fa16"
+            ]
+        ]
+    },
+    {
+        "id": "b9224ee36eb0aa91",
+        "type": "function",
+        "z": "bd5efab3a54ad20c",
+        "g": "f3b4c45c06072b51",
+        "name": "handle_result",
+        "func": "const results = msg.payload || [];\n\nconst existenceResult = results[0] || [];\nif (!existenceResult || existenceResult.length === 0) {\n    msg.statusCode = 404;\n    msg.payload = {\n        ok: false,\n        message: 'Booking not found or not pending'\n    };\n    return msg;\n}\n\nconst bookingRejectedResult = results[1] || {};\nif (bookingRejectedResult.affectedRows === 0) {\n    msg.statusCode = 400;\n    msg.payload = {\n        ok: false,\n        message: 'Failed to reject booking'\n    };\n    return msg;\n}\n\nconst auditResult = results[2] || {};\nif (auditResult.affectedRows === 0) {\n    msg.statusCode = 400;\n    msg.payload = {\n        ok: false,\n        message: 'Failed to reject booking'\n    };\n    return msg;\n}\n\n\nmsg.statusCode = 200;\nmsg.payload = {\n    ok: true,\n    message: 'Booking approved successfully',\n    result: bookingRejectedResult.affectedRows\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1240,
+        "y": 700,
+        "wires": [
+            [
+                "59fab76c3946fa16",
+                "960c6df0e138e3d6"
+            ]
+        ]
+    },
+    {
+        "id": "7739fd1935960220",
+        "type": "jwt verify",
+        "z": "bd5efab3a54ad20c",
+        "g": "f3b4c45c06072b51",
+        "name": "verify_jwt",
+        "alg": [
+            "HS512"
+        ],
+        "jwkurl": "",
+        "secret": "msg.secret",
+        "key": "",
+        "signvar": "bearer",
+        "storetoken": "token",
+        "x": 400,
+        "y": 780,
+        "wires": [
+            [
+                "f0b51bf89200bd2f"
+            ]
+        ]
+    },
+    {
+        "id": "bb4b8f65a13a6207",
+        "type": "function",
+        "z": "bd5efab3a54ad20c",
+        "g": "f3b4c45c06072b51",
+        "name": "get_secret_key",
+        "func": "msg.secret = env.get('JWT_SECRET_KEY')\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 240,
+        "y": 780,
+        "wires": [
+            [
+                "7739fd1935960220"
+            ]
+        ]
+    },
+    {
+        "id": "f0b51bf89200bd2f",
+        "type": "role-check",
+        "z": "bd5efab3a54ad20c",
+        "g": "f3b4c45c06072b51",
+        "name": "role_check",
+        "requiredRole": "ADMIN",
+        "x": 550,
+        "y": 780,
+        "wires": [
+            [
+                "9e52ea2cd5972986"
+            ],
+            [
+                "59fab76c3946fa16"
+            ]
+        ]
+    },
+    {
+        "id": "217482fdda0b6241",
+        "type": "function",
+        "z": "bd5efab3a54ad20c",
+        "g": "f3b4c45c06072b51",
+        "name": "handle_invalid_token",
+        "func": "msg.statusCode = 401;\nmsg.payload = {\n    ok: false,\n    message: \"Invalid token!\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 880,
+        "wires": [
+            [
+                "59fab76c3946fa16"
+            ]
+        ]
+    },
+    {
+        "id": "48116108952192b6",
+        "type": "catch",
+        "z": "bd5efab3a54ad20c",
+        "g": "f3b4c45c06072b51",
+        "name": "catch",
+        "scope": "group",
+        "uncaught": false,
+        "x": 390,
+        "y": 880,
+        "wires": [
+            [
+                "217482fdda0b6241"
+            ]
+        ]
+    },
+    {
+        "id": "5dcaf943a6f299eb",
+        "type": "json",
+        "z": "bd5efab3a54ad20c",
+        "g": "f3b4c45c06072b51",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 450,
+        "y": 700,
+        "wires": [
+            [
+                "bb4b8f65a13a6207"
+            ]
+        ]
+    },
+    {
+        "id": "90a6523c3ca716cf",
+        "type": "http in",
+        "z": "bd5efab3a54ad20c",
+        "g": "111ee870f273a851",
+        "name": "POST /api/bookings/:booking_id/cancel",
+        "url": "/api/bookings/:booking_id/cancel",
+        "method": "post",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 190,
+        "y": 980,
+        "wires": [
+            [
+                "2f17e79c5e0f0a86"
+            ]
+        ]
+    },
+    {
+        "id": "966f0fcf335488fa",
+        "type": "http response",
+        "z": "bd5efab3a54ad20c",
+        "g": "111ee870f273a851",
+        "name": "response",
+        "statusCode": "",
+        "headers": {
+            "content-type": "application/json"
+        },
+        "x": 1500,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "36d18a09266d5611",
+        "type": "mysql",
+        "z": "bd5efab3a54ad20c",
+        "g": "111ee870f273a851",
+        "mydb": "443dca5366e7983c",
+        "name": "mysql",
+        "x": 1070,
+        "y": 980,
+        "wires": [
+            [
+                "25a944af7087d011"
+            ]
+        ]
+    },
+    {
+        "id": "7f171c3b85299b05",
+        "type": "function",
+        "z": "bd5efab3a54ad20c",
+        "g": "111ee870f273a851",
+        "name": "build_query",
+        "func": "const booking_id = msg.req?.params?.booking_id;\nconst action_reason = msg.payload.action_reason;\nif (!booking_id || isNaN(parseInt(booking_id, 10))) {\n  msg.statusCode = 400;\n  msg.payload = { ok: false, message: 'Invalid or missing booking_id' };\n  return [null, msg];\n}\n\nconst user_id = msg.token.user_id;\n\nlet existSql = `\n  SELECT booking_id FROM bookings \n  WHERE booking_id = ? AND status = 'APPROVED';\n`;\n\nlet cancelSql = `\n  UPDATE bookings \n  SET status = 'CANCELLED', action_by = ?, action_at = NOW(), action_reason = ?\n  WHERE booking_id = ? AND status = 'APPROVED';\n`;\n\nlet auditSql = `\n  INSERT INTO audit_logs (booking_id, action, action_by, action_at, action_reason)\n  VALUES (?, 'CANCELLED', ?, NOW(), ?);\n`;\n\nlet existParams = [parseInt(booking_id, 10)];\nlet cancelParams = [parseInt(user_id, 10), action_reason, parseInt(booking_id, 10)];\nlet auditParams = [parseInt(booking_id, 10), parseInt(user_id, 10), action_reason];\n\n// Combine queries in a transaction\nmsg.topic = `\n  START TRANSACTION;\n  ${existSql}\n  ${cancelSql}\n  ${auditSql}\n  COMMIT;\n`;\nmsg.payload = [...existParams, ...cancelParams, ...auditParams];\n\n// Debug\nnode.warn(`Booking ID: ${booking_id}`);\nnode.warn(`Admin ID: ${user_id}`);\nnode.warn(`SQL: ${msg.topic}`);\nnode.warn(`Params: ${JSON.stringify(msg.payload)}`);\n\nreturn [msg, null];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 850,
+        "y": 1020,
+        "wires": [
+            [
+                "36d18a09266d5611"
+            ],
+            [
+                "966f0fcf335488fa"
+            ]
+        ]
+    },
+    {
+        "id": "25a944af7087d011",
+        "type": "function",
+        "z": "bd5efab3a54ad20c",
+        "g": "111ee870f273a851",
+        "name": "handle_result",
+        "func": "const results = msg.payload || [];\n\nconst existenceResult = results[0] || [];\nif (!existenceResult || existenceResult.length === 0) {\n    msg.statusCode = 404;\n    msg.payload = {\n        ok: false,\n        message: 'Booking not found or not approved'\n    };\n    return msg;\n}\n\nconst bookingCancelResult = results[1] || {};\nif (bookingCancelResult.affectedRows === 0) {\n    msg.statusCode = 400;\n    msg.payload = {\n        ok: false,\n        message: 'Failed to cancel booking'\n    };\n    return msg;\n}\n\nconst auditResult = results[2] || {};\nif (auditResult.affectedRows === 0) {\n    msg.statusCode = 400;\n    msg.payload = {\n        ok: false,\n        message: 'Failed to cancel booking'\n    };\n    return msg;\n}\n\n\nmsg.statusCode = 200;\nmsg.payload = {\n    ok: true,\n    message: 'Booking cancelled successfully',\n    result: bookingCancelResult.affectedRows\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1240,
+        "y": 980,
+        "wires": [
+            [
+                "966f0fcf335488fa",
+                "960c6df0e138e3d6"
+            ]
+        ]
+    },
+    {
+        "id": "5d7e50b43b350d65",
+        "type": "jwt verify",
+        "z": "bd5efab3a54ad20c",
+        "g": "111ee870f273a851",
+        "name": "verify_jwt",
+        "alg": [
+            "HS512"
+        ],
+        "jwkurl": "",
+        "secret": "msg.secret",
+        "key": "",
+        "signvar": "bearer",
+        "storetoken": "token",
+        "x": 400,
+        "y": 1060,
+        "wires": [
+            [
+                "5e621944d897d89e"
+            ]
+        ]
+    },
+    {
+        "id": "1afbc0c54d215cec",
+        "type": "function",
+        "z": "bd5efab3a54ad20c",
+        "g": "111ee870f273a851",
+        "name": "get_secret_key",
+        "func": "msg.secret = env.get('JWT_SECRET_KEY')\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 240,
+        "y": 1060,
+        "wires": [
+            [
+                "5d7e50b43b350d65"
+            ]
+        ]
+    },
+    {
+        "id": "5e621944d897d89e",
+        "type": "role-check",
+        "z": "bd5efab3a54ad20c",
+        "g": "111ee870f273a851",
+        "name": "role_check",
+        "requiredRole": "ADMIN",
+        "x": 550,
+        "y": 1060,
+        "wires": [
+            [
+                "7f171c3b85299b05"
+            ],
+            [
+                "966f0fcf335488fa"
+            ]
+        ]
+    },
+    {
+        "id": "ae1e9765fa04833c",
+        "type": "function",
+        "z": "bd5efab3a54ad20c",
+        "g": "111ee870f273a851",
+        "name": "handle_invalid_token",
+        "func": "msg.statusCode = 401;\nmsg.payload = {\n    ok: false,\n    message: \"Invalid token!\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 1160,
+        "wires": [
+            [
+                "966f0fcf335488fa"
+            ]
+        ]
+    },
+    {
+        "id": "07d99d217a9c3146",
+        "type": "catch",
+        "z": "bd5efab3a54ad20c",
+        "g": "111ee870f273a851",
+        "name": "catch",
+        "scope": "group",
+        "uncaught": false,
+        "x": 390,
+        "y": 1160,
+        "wires": [
+            [
+                "ae1e9765fa04833c"
+            ]
+        ]
+    },
+    {
+        "id": "2f17e79c5e0f0a86",
+        "type": "json",
+        "z": "bd5efab3a54ad20c",
+        "g": "111ee870f273a851",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 450,
+        "y": 980,
+        "wires": [
+            [
+                "1afbc0c54d215cec"
+            ]
+        ]
+    },
+    {
+        "id": "a7a050dd92954768",
+        "type": "http in",
+        "z": "bd5efab3a54ad20c",
+        "g": "224b4e5df0a4aff1",
+        "name": "POST /api/bookings",
+        "url": "/api/bookings",
+        "method": "post",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 130,
+        "y": 1380,
+        "wires": [
+            [
+                "a1e31873174aa9c6"
+            ]
+        ]
+    },
+    {
+        "id": "c8276d90f5b27e27",
+        "type": "http response",
+        "z": "bd5efab3a54ad20c",
+        "g": "224b4e5df0a4aff1",
+        "name": "response",
+        "statusCode": "",
+        "headers": {
+            "content-type": "application/json"
+        },
+        "x": 1500,
+        "y": 1400,
+        "wires": []
+    },
+    {
+        "id": "1f40028b455c3ee7",
+        "type": "mysql",
+        "z": "bd5efab3a54ad20c",
+        "g": "224b4e5df0a4aff1",
+        "mydb": "443dca5366e7983c",
+        "name": "mysql",
+        "x": 1010,
+        "y": 1300,
+        "wires": [
+            [
+                "7fa30fa1e35c73bb"
+            ]
+        ]
+    },
+    {
+        "id": "59619a6753f556ba",
+        "type": "function",
+        "z": "bd5efab3a54ad20c",
+        "g": "224b4e5df0a4aff1",
+        "name": "build_query",
+        "func": "const payload = msg.payload || {};\n\nif (!payload.room_id || !payload.title || !payload.start_time || !payload.end_time) {\n  msg.statusCode = 400;\n  msg.payload = { \n    ok: false,\n    message: 'Missing required fields! Please input all fields!' };\n  return [null, msg];\n}\n\nconst start_time = new Date(payload.start_time);\nconst end_time = new Date(payload.end_time);\nconst user_id  = msg.token.user_id;\n\nif (isNaN(start_time.getTime()) || isNaN(end_time.getTime())) {\n    msg.statusCode = 400;\n    msg.payload = {\n        ok: false,\n        message: 'Invalid booking start time or end time'\n    };\n    return [null, msg];\n}\n\nif (start_time > end_time) {\n    msg.statusCode = 400;\n    msg.payload = {\n        ok: false,\n        message: 'Booking start time cannot be after end time'\n    };\n    return [null, msg];\n}\n\nconst now = new Date();\nif (start_time < now) {\n    msg.statusCode = 400;\n    msg.payload = {\n        ok: false,\n        message: 'Booking start time cannot be in the past'\n    };\n    return [null, msg];\n}\n\nlet existSql =  `\n  SELECT 1 FROM bookings\n  WHERE room_id = ?\n  AND start_time < ? AND end_time > ?\n  \n`\nlet sql = `\n  INSERT INTO bookings (room_id, user_id, title, start_time, end_time)\n  VALUES (?, ?, ?, ?, ?);\n  SELECT booking_id, room_id, status, start_time FROM bookings WHERE booking_id = LAST_INSERT_ID();\n`;\n\nmsg.topic = `${existSql}; ${sql}`;\nmsg.payload = [\n  parseInt(payload.room_id, 10), end_time, start_time, // Parameters for existSql\n  parseInt(payload.room_id, 10), user_id, payload.title, start_time, end_time // Parameters for INSERT\n];\nnode.warn(sql);\n\nreturn [msg, null];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 1380,
+        "wires": [
+            [
+                "1f40028b455c3ee7"
+            ],
+            [
+                "c8276d90f5b27e27"
+            ]
+        ]
+    },
+    {
+        "id": "7fa30fa1e35c73bb",
+        "type": "function",
+        "z": "bd5efab3a54ad20c",
+        "g": "224b4e5df0a4aff1",
+        "name": "handle_result",
+        "func": "const results = msg.payload || [];\n\n\nconst existenceResult = results[0] || [];\nif (existenceResult && existenceResult.length !== 0) {\n    msg.statusCode = 400;\n    msg.payload = {\n        ok: false,\n        message: 'Room not available at this time'\n    };\n    return msg;\n}\n\n// Get booking result (INSERT metadata)\nconst bookingResult = results[1] || {};\nif (!bookingResult || !bookingResult.affectedRows) {\n    msg.statusCode = 400;\n    msg.payload = {\n        ok: false,\n        message: 'Failed to create booking'\n    };\n    return msg;\n}\n\n// Get the inserted row\nconst insertedRow = results[2] && results[2][0] ? results[2][0] : null;\nmsg.booking = insertedRow;\nmsg.statusCode = 201;\nmsg.payload = {\n    ok: true,\n    message: 'Booking created successfully',\n    result: bookingResult.affectedRows\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1160,
+        "y": 1300,
+        "wires": [
+            [
+                "c8276d90f5b27e27",
+                "a7b22cdff551f99d",
+                "d0689467ab220886"
+            ]
+        ]
+    },
+    {
+        "id": "decb45220f690651",
+        "type": "jwt verify",
+        "z": "bd5efab3a54ad20c",
+        "g": "224b4e5df0a4aff1",
+        "name": "verify_jwt",
+        "alg": [
+            "HS512"
+        ],
+        "jwkurl": "",
+        "secret": "msg.secret",
+        "key": "",
+        "signvar": "bearer",
+        "storetoken": "token",
+        "x": 700,
+        "y": 1380,
+        "wires": [
+            [
+                "59619a6753f556ba"
+            ]
+        ]
+    },
+    {
+        "id": "4c2d55d3b2ae811a",
+        "type": "function",
+        "z": "bd5efab3a54ad20c",
+        "g": "224b4e5df0a4aff1",
+        "name": "get_secret_key",
+        "func": "msg.secret = env.get('JWT_SECRET_KEY')\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 1380,
+        "wires": [
+            [
+                "decb45220f690651"
+            ]
+        ]
+    },
+    {
+        "id": "8f776e8533361a7b",
+        "type": "function",
+        "z": "bd5efab3a54ad20c",
+        "g": "224b4e5df0a4aff1",
+        "name": "handle_invalid_token",
+        "func": "msg.statusCode = 401;\nmsg.payload = {\n    ok: false,\n    message: \"Invalid token!\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 1480,
+        "wires": [
+            [
+                "c8276d90f5b27e27"
+            ]
+        ]
+    },
+    {
+        "id": "488e589395636742",
+        "type": "catch",
+        "z": "bd5efab3a54ad20c",
+        "g": "224b4e5df0a4aff1",
+        "name": "catch",
+        "scope": "group",
+        "uncaught": false,
         "x": 270,
-        "y": 120,
+        "y": 1480,
         "wires": [
-            []
+            [
+                "8f776e8533361a7b",
+                "5452fc51071cf111"
+            ]
         ]
     },
     {
-        "id": "3d52c22525c9e01f",
-        "type": "http in",
+        "id": "a1e31873174aa9c6",
+        "type": "json",
         "z": "bd5efab3a54ad20c",
-        "name": "POST /my-bookings/:booking_id/cancel",
-        "url": "/my-bookings/:booking_id/cancel",
-        "method": "post",
-        "upload": false,
-        "skipBodyParsing": false,
-        "swaggerDoc": "",
+        "g": "224b4e5df0a4aff1",
+        "name": "parse_object",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
         "x": 330,
-        "y": 220,
+        "y": 1380,
         "wires": [
-            []
+            [
+                "4c2d55d3b2ae811a"
+            ]
         ]
     },
     {
-        "id": "1ff3c68dc62441e7",
-        "type": "http in",
+        "id": "bc1d3039e6fec733",
+        "type": "link out",
         "z": "bd5efab3a54ad20c",
-        "name": "POST /bookings",
-        "url": "/bookings",
-        "method": "post",
-        "upload": false,
-        "skipBodyParsing": false,
-        "swaggerDoc": "",
-        "x": 260,
-        "y": 340,
+        "g": "224b4e5df0a4aff1",
+        "name": "schedule-update",
+        "mode": "link",
+        "links": [
+            "64b287a5cceee242"
+        ],
+        "x": 1535,
+        "y": 1300,
+        "wires": []
+    },
+    {
+        "id": "a7b22cdff551f99d",
+        "type": "function",
+        "z": "bd5efab3a54ad20c",
+        "g": "224b4e5df0a4aff1",
+        "name": "function 3",
+        "func": "const insertedRow = msg.booking;\nmsg = null;\nmsg = {\n    payload: {\n        room_id: insertedRow.room_id,\n        booking_id: insertedRow.booking_id,\n        status: \"PENDING\",\n        start_time: insertedRow.start_time\n    },\n    topic: \"schedule-update\"\n}\nnode.send(msg)",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1420,
+        "y": 1300,
         "wires": [
-            []
+            [
+                "bc1d3039e6fec733"
+            ]
         ]
     },
     {
-        "id": "764eec3794775bdd",
-        "type": "http in",
+        "id": "809f9cc877822a87",
+        "type": "inject",
         "z": "bd5efab3a54ad20c",
-        "name": "GET /bookings",
-        "url": "/bookings",
-        "method": "get",
-        "upload": false,
-        "skipBodyParsing": false,
-        "swaggerDoc": "",
-        "x": 260,
+        "g": "224b4e5df0a4aff1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1260,
+        "y": 1260,
+        "wires": [
+            [
+                "a7b22cdff551f99d"
+            ]
+        ]
+    },
+    {
+        "id": "d0689467ab220886",
+        "type": "debug",
+        "z": "bd5efab3a54ad20c",
+        "g": "224b4e5df0a4aff1",
+        "name": "debug 14",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1220,
+        "y": 1360,
+        "wires": []
+    },
+    {
+        "id": "5452fc51071cf111",
+        "type": "debug",
+        "z": "bd5efab3a54ad20c",
+        "g": "224b4e5df0a4aff1",
+        "name": "debug 15",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 440,
+        "y": 1440,
+        "wires": []
+    },
+    {
+        "id": "960c6df0e138e3d6",
+        "type": "function",
+        "z": "bd5efab3a54ad20c",
+        "g": "a847a3dcc63466dd",
+        "name": "notification",
+        "func": "const noti = msg.notification;\nconst receiver_id = msg.receiver;\nmsg = null;\nmsg = {\n    payload: noti,\n    receiver: receiver_id,\n    topic: \"notification\"\n}\nnode.send(msg);",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1730,
         "y": 480,
         "wires": [
-            []
+            [
+                "d3135d685060af63"
+            ]
         ]
+    },
+    {
+        "id": "d3135d685060af63",
+        "type": "link out",
+        "z": "bd5efab3a54ad20c",
+        "g": "a847a3dcc63466dd",
+        "name": "notification",
+        "mode": "link",
+        "links": [
+            "64b287a5cceee242"
+        ],
+        "x": 1955,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "8d76aa8f4d6e3a0b",
+        "type": "http response",
+        "z": "bd5efab3a54ad20c",
+        "g": "a847a3dcc63466dd",
+        "name": "response",
+        "statusCode": "",
+        "headers": {
+            "content-type": "application/json"
+        },
+        "x": 1380,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "22b08998a0ff0c4f",
+        "type": "debug",
+        "z": "bd5efab3a54ad20c",
+        "g": "a847a3dcc63466dd",
+        "name": "debug 16",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "error",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 920,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "b231190898d2d7f8",
+        "type": "e-mail",
+        "z": "bd5efab3a54ad20c",
+        "server": "smtp.gmail.com",
+        "port": "465",
+        "authtype": "BASIC",
+        "saslformat": true,
+        "token": "oauth2Response.access_token",
+        "secure": true,
+        "tls": true,
+        "name": "thaidqce171563@fpt.edu.vn",
+        "dname": "test",
+        "x": 570,
+        "y": 1800,
+        "wires": []
+    },
+    {
+        "id": "212d72788d32feda",
+        "type": "inject",
+        "z": "bd5efab3a54ad20c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 180,
+        "y": 1780,
+        "wires": [
+            [
+                "735443c60466f071"
+            ]
+        ]
+    },
+    {
+        "id": "735443c60466f071",
+        "type": "function",
+        "z": "bd5efab3a54ad20c",
+        "name": "function 4",
+        "func": "msg.payload = \"hihehee\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 1800,
+        "wires": [
+            [
+                "b231190898d2d7f8"
+            ]
+        ]
+    },
+    {
+        "id": "4bc1e1e3301be371",
+        "type": "http in",
+        "z": "1f9ad198f05c78e0",
+        "g": "7451396dbeecdd0d",
+        "name": "GET /api/my-bookings",
+        "url": "/api/my-bookings",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 180,
+        "y": 100,
+        "wires": [
+            [
+                "1994a1d8db5bae35"
+            ]
+        ]
+    },
+    {
+        "id": "1f14ed077d48e282",
+        "type": "http response",
+        "z": "1f9ad198f05c78e0",
+        "g": "7451396dbeecdd0d",
+        "name": "response",
+        "statusCode": "",
+        "headers": {
+            "content-type": "application/json"
+        },
+        "x": 1480,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "694abf437cc3aff9",
+        "type": "mysql",
+        "z": "1f9ad198f05c78e0",
+        "g": "7451396dbeecdd0d",
+        "mydb": "443dca5366e7983c",
+        "name": "mysql",
+        "x": 890,
+        "y": 100,
+        "wires": [
+            [
+                "aa1ea3764e89ebf5"
+            ]
+        ]
+    },
+    {
+        "id": "d467e2ed1c706795",
+        "type": "function",
+        "z": "1f9ad198f05c78e0",
+        "g": "7451396dbeecdd0d",
+        "name": "build_query",
+        "func": "const filters = msg.req.query || {};\n\nconst user_id = msg.token.user_id\n\nlet sql = `\n  SELECT \n    b.booking_id,\n    b.title,\n    b.room_id,\n    r.room_name AS room_name,\n    b.user_id,\n    us.username,\n    b.start_time,\n    b.end_time,\n    b.status,\n    ur.username AS action_by,\n    b.action_at,\n    b.action_reason\n  FROM bookings b\n  INNER JOIN users us ON b.user_id = us.user_id\n  LEFT JOIN users ur ON b.action_by = ur.user_id\n  INNER JOIN rooms r ON b.room_id = r.room_id\n  WHERE b.user_id = ${user_id}\n`;\n\nlet params = [];\nlet countParams = [];\nlet conditions = [];\n\nif (filters.room_name && filters.room_name) {\n  conditions.push('r.room_name LIKE ?');\n  params.push(`%${filters.room_name}%`);\n  countParams.push(`%${filters.room_name.trim()}%`);\n}\n\nif (filters.start_time) {\n  const start_time = new Date(filters.start_time);\n\n  if (isNaN(start_time.getTime())) {\n    msg.statusCode = 400;\n    msg.payload = {\n      ok: false,\n      message: 'Invalid start time'\n    };\n    return [null, msg];\n  }\n  conditions.push('b.start_time >= ?');\n  params.push(filters.start_time);\n  countParams.push(filters.start_time);\n}\n\nif (filters.status && filters.status) {\n  conditions.push('b.status = ?');\n  params.push(filters.status.trim());\n  countParams.push(filters.status);\n}\n\nif (conditions.length > 0) {\n  sql += ' AND ' + conditions.join(' AND ');\n}\n\nsql += ' GROUP BY b.booking_id';\n\nsql += ' ORDER BY b.start_time DESC';\n\n// Pagination\nif (filters.limit && !isNaN(parseInt(filters.limit, 10))) {\n  sql += ' LIMIT ?';\n  params.push(parseInt(filters.limit, 10));\n}\nif (filters.offset && !isNaN(parseInt(filters.offset, 10))) {\n  sql += ' OFFSET ?';\n  params.push(parseInt(filters.offset, 10));\n}\n\n// Count query for total rows\nconst countSql = `\n  SELECT COUNT(DISTINCT b.booking_id) AS total_count\n  FROM bookings b\n  INNER JOIN users us ON b.user_id = us.user_id\n  LEFT JOIN users ur ON b.action_by = ur.user_id\n  INNER JOIN rooms r ON b.room_id = r.room_id\n  WHERE b.user_id = ${user_id}\n   ${conditions.length > 0 ? ' AND ' + conditions.join(' AND ') : ''}\n`;\n\n// Combine queries\nmsg.topic = `${countSql};${sql}`;\nmsg.payload = [...countParams, ...params];\n\n// Debug\nnode.warn(`Filters: ${JSON.stringify(filters)}`);\nnode.warn(`Main SQL: ${sql}`);\nnode.warn(`Count SQL: ${countSql}`);\nnode.warn(`Count Params: ${JSON.stringify(countParams)}`);\nnode.warn(`Main Params: ${JSON.stringify(params)}`);\nnode.warn(`Total Params: ${JSON.stringify(msg.payload)}`);\n\nreturn [msg, null];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 100,
+        "wires": [
+            [
+                "694abf437cc3aff9"
+            ],
+            [
+                "1f14ed077d48e282"
+            ]
+        ]
+    },
+    {
+        "id": "aa1ea3764e89ebf5",
+        "type": "function",
+        "z": "1f9ad198f05c78e0",
+        "g": "7451396dbeecdd0d",
+        "name": "handle_result",
+        "func": "const [countResult, mainResult] = msg.payload || [[], []];\n\nif(!mainResult || mainResult.length === 0){\n    msg.statusCode = 404\n    msg.payload = {\n        ok: false,\n        message: \"Booking not found\"\n    }\n    return msg;\n}\n\nconst bookings = mainResult.map(row => ({\n    booking_id: row.booking_id,\n    title: row.title,\n    room_id: row.room_id,\n    room_name: row.room_name,\n    user_id: row.user_id,\n    username: row.username,\n    start_time: row.start_time,\n    end_time: row.end_time,\n    status: row.status,\n    action_by: row.action_by,\n    action_at: row.action_at,\n    action_reason: row.action_reason\n}));\n\n// Format response\nmsg.payload = {\n    result: bookings,\n    total_count: countResult[0]?.total_count || 0\n};\n\n// Debug\nnode.warn(`Result rows: ${JSON.stringify(bookings)}`);\nnode.warn(`Total count: ${countResult[0]?.total_count || 0}`);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1100,
+        "y": 100,
+        "wires": [
+            [
+                "1f14ed077d48e282"
+            ]
+        ]
+    },
+    {
+        "id": "6ccf5e0db011d125",
+        "type": "jwt verify",
+        "z": "1f9ad198f05c78e0",
+        "g": "7451396dbeecdd0d",
+        "name": "verify_jwt",
+        "alg": [
+            "HS512"
+        ],
+        "jwkurl": "",
+        "secret": "msg.secret",
+        "key": "",
+        "signvar": "bearer",
+        "storetoken": "token",
+        "x": 560,
+        "y": 100,
+        "wires": [
+            [
+                "d467e2ed1c706795"
+            ]
+        ]
+    },
+    {
+        "id": "1994a1d8db5bae35",
+        "type": "function",
+        "z": "1f9ad198f05c78e0",
+        "g": "7451396dbeecdd0d",
+        "name": "get_secret_key",
+        "func": "msg.secret = env.get('JWT_SECRET_KEY')\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 100,
+        "wires": [
+            [
+                "6ccf5e0db011d125"
+            ]
+        ]
+    },
+    {
+        "id": "dad71a52c698f1f0",
+        "type": "function",
+        "z": "1f9ad198f05c78e0",
+        "g": "7451396dbeecdd0d",
+        "name": "handle_invalid_token",
+        "func": "msg.statusCode = 400;\nmsg.payload = {\n    ok: false,\n    message: \"Invalid token!\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 920,
+        "y": 180,
+        "wires": [
+            [
+                "1f14ed077d48e282"
+            ]
+        ]
+    },
+    {
+        "id": "c1715a202d930714",
+        "type": "catch",
+        "z": "1f9ad198f05c78e0",
+        "g": "7451396dbeecdd0d",
+        "name": "catch",
+        "scope": "group",
+        "uncaught": false,
+        "x": 490,
+        "y": 180,
+        "wires": [
+            [
+                "dad71a52c698f1f0"
+            ]
+        ]
+    },
+    {
+        "id": "90c0eef733541071",
+        "type": "http in",
+        "z": "1f9ad198f05c78e0",
+        "g": "d08782927857db71",
+        "name": "POST /api/my-bookings/:booking_id/cancel",
+        "url": "/api/my-bookings/:booking_id/cancel",
+        "method": "post",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 200,
+        "y": 360,
+        "wires": [
+            [
+                "4a29b7e628b685a0"
+            ]
+        ]
+    },
+    {
+        "id": "2daef27ecde9bc49",
+        "type": "http response",
+        "z": "1f9ad198f05c78e0",
+        "g": "d08782927857db71",
+        "name": "response",
+        "statusCode": "",
+        "headers": {
+            "content-type": "application/json"
+        },
+        "x": 1540,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "d66f47967ece8973",
+        "type": "mysql",
+        "z": "1f9ad198f05c78e0",
+        "g": "d08782927857db71",
+        "mydb": "443dca5366e7983c",
+        "name": "mysql",
+        "x": 1090,
+        "y": 340,
+        "wires": [
+            [
+                "2f687e1ccb4bc830"
+            ]
+        ]
+    },
+    {
+        "id": "f88f6ebc293717bf",
+        "type": "function",
+        "z": "1f9ad198f05c78e0",
+        "g": "d08782927857db71",
+        "name": "build_query",
+        "func": "const booking_id = msg.req?.params?.booking_id;\nif (!booking_id || isNaN(parseInt(booking_id, 10))) {\n  msg.statusCode = 400;\n  msg.payload = { ok: false, message: 'Invalid or missing booking_id' };\n  return [null, msg];\n}\n\nconst user_id = msg.token.user_id;\n\nlet existSql = `\n  SELECT 1 FROM bookings \n  WHERE booking_id = ? AND status = 'PENDING';\n`;\n\nlet cancelSql = `\n  UPDATE bookings \n  SET status = 'CANCELLED', action_by = ?, action_at = NOW()\n  WHERE booking_id = ? AND user_id = ? AND status = 'PENDING';\n`;\n\nlet existParams = [parseInt(booking_id, 10)];\nlet cancelParams = [parseInt(user_id, 10), parseInt(booking_id, 10), parseInt(user_id, 10)];\n\n// Combine queries in a transaction\nmsg.topic = `\n  ${existSql}\n  ${cancelSql}\n`;\nmsg.payload = [...existParams, ...cancelParams];\n\n// Debug\nnode.warn(`Booking ID: ${booking_id}`);\nnode.warn(`Admin ID: ${user_id}`);\nnode.warn(`SQL: ${msg.topic}`);\nnode.warn(`Params: ${JSON.stringify(msg.payload)}`);\n\nreturn [msg, null];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 360,
+        "wires": [
+            [
+                "d66f47967ece8973"
+            ],
+            [
+                "2daef27ecde9bc49"
+            ]
+        ]
+    },
+    {
+        "id": "2f687e1ccb4bc830",
+        "type": "function",
+        "z": "1f9ad198f05c78e0",
+        "g": "d08782927857db71",
+        "name": "handle_result",
+        "func": "const results = msg.payload || [];\n\nconst existenceResult = results[0] || [];\nif (!existenceResult || existenceResult.length === 0) {\n    msg.statusCode = 404;\n    msg.payload = {\n        ok: false,\n        message: 'Booking not found or not PENDING'\n    };\n    return msg;\n}\n\nconst bookingCancelResult = results[1] || {};\nif (bookingCancelResult.affectedRows === 0) {\n    msg.statusCode = 400;\n    msg.payload = {\n        ok: false,\n        message: 'Failed to cancel booking'\n    };\n    return msg;\n}\n\nmsg.statusCode = 200;\nmsg.payload = {\n    ok: true,\n    message: 'Booking cancelled successfully',\n    result: bookingCancelResult.affectedRows\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1280,
+        "y": 340,
+        "wires": [
+            [
+                "2daef27ecde9bc49"
+            ]
+        ]
+    },
+    {
+        "id": "aebeee91a1e69f0e",
+        "type": "jwt verify",
+        "z": "1f9ad198f05c78e0",
+        "g": "d08782927857db71",
+        "name": "verify_jwt",
+        "alg": [
+            "HS512"
+        ],
+        "jwkurl": "",
+        "secret": "msg.secret",
+        "key": "",
+        "signvar": "bearer",
+        "storetoken": "token",
+        "x": 760,
+        "y": 360,
+        "wires": [
+            [
+                "f88f6ebc293717bf",
+                "e1457a63b4ab7e12"
+            ]
+        ]
+    },
+    {
+        "id": "8089bf6139fa5cc1",
+        "type": "function",
+        "z": "1f9ad198f05c78e0",
+        "g": "d08782927857db71",
+        "name": "get_secret_key",
+        "func": "msg.secret = env.get('JWT_SECRET_KEY')\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 360,
+        "wires": [
+            [
+                "aebeee91a1e69f0e"
+            ]
+        ]
+    },
+    {
+        "id": "ede2942c134e8197",
+        "type": "function",
+        "z": "1f9ad198f05c78e0",
+        "g": "d08782927857db71",
+        "name": "handle_invalid_token",
+        "func": "msg.statusCode = 401;\nmsg.payload = {\n    ok: false,\n    message: \"Invalid token!\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 840,
+        "y": 460,
+        "wires": [
+            [
+                "2daef27ecde9bc49"
+            ]
+        ]
+    },
+    {
+        "id": "b6d2c489811ca47d",
+        "type": "catch",
+        "z": "1f9ad198f05c78e0",
+        "g": "d08782927857db71",
+        "name": "catch",
+        "scope": "group",
+        "uncaught": false,
+        "x": 450,
+        "y": 460,
+        "wires": [
+            [
+                "ede2942c134e8197"
+            ]
+        ]
+    },
+    {
+        "id": "4a29b7e628b685a0",
+        "type": "json",
+        "z": "1f9ad198f05c78e0",
+        "g": "d08782927857db71",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 450,
+        "y": 360,
+        "wires": [
+            [
+                "8089bf6139fa5cc1"
+            ]
+        ]
+    },
+    {
+        "id": "e1457a63b4ab7e12",
+        "type": "debug",
+        "z": "1f9ad198f05c78e0",
+        "g": "d08782927857db71",
+        "name": "debug 12",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "token",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 980,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "1559a397916dbc81",
+        "type": "http in",
+        "z": "ef473e5856f6634c",
+        "g": "01efc9251ab27577",
+        "name": "GET /api/schedules",
+        "url": "/api/schedules",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 170,
+        "y": 260,
+        "wires": [
+            [
+                "681f51eb831cf4e4"
+            ]
+        ]
+    },
+    {
+        "id": "156d551f9094bd51",
+        "type": "http response",
+        "z": "ef473e5856f6634c",
+        "g": "01efc9251ab27577",
+        "name": "response",
+        "statusCode": "",
+        "headers": {
+            "content-type": "application/json"
+        },
+        "x": 1440,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "63959d4082a511b2",
+        "type": "mysql",
+        "z": "ef473e5856f6634c",
+        "g": "01efc9251ab27577",
+        "mydb": "443dca5366e7983c",
+        "name": "mysql",
+        "x": 930,
+        "y": 260,
+        "wires": [
+            [
+                "7508071c22bef509"
+            ]
+        ]
+    },
+    {
+        "id": "45db05f2a8852e07",
+        "type": "function",
+        "z": "ef473e5856f6634c",
+        "g": "01efc9251ab27577",
+        "name": "build_query",
+        "func": "const filters = msg.req.query || {};\n\nif (!filters.start_time || !filters.end_time || !filters.room_id) {\n  msg.statusCode = 400;\n  msg.payload = {\n    ok: false,\n    message: \"Missing required fields!\"\n  }\n  return [null, msg];\n}\nconst start_time = new Date(filters.start_time);\nconst end_time = new Date(filters.end_time);\n\nif (isNaN(start_time.getTime()) || isNaN(end_time.getTime())) {\n  msg.statusCode = 400;\n  msg.payload = {\n    ok: false,\n    message: 'Invalid booking start time or end time'\n  };\n  return [null, msg];\n}\n\nif (start_time > end_time) {\n  msg.statusCode = 400;\n  msg.payload = {\n    ok: false,\n    message: 'Booking start time cannot be after end time'\n  };\n  return [null, msg];\n}\n\nconst formatDateForSQL = (date) => {\n  const offset = 7 * 60;\n  const adjustedDate = new Date(date.getTime() + offset * 60 * 1000);\n  return adjustedDate.toISOString().replace('T', ' ').substring(0, 19);\n};\nconst sqlStartTime = formatDateForSQL(start_time);\nconst sqlEndTime = formatDateForSQL(end_time);\n\nmsg.topic = `\n  SELECT \n    booking_id,\n    title,\n    start_time,\n    end_time,\n    status\n  FROM bookings\n  WHERE status IN ('PENDING', 'APPROVED')\n  AND room_id = ?\n  AND start_time >= ? AND end_time <= ?\n`;\n\nmsg.payload = [parseInt(filters.room_id, 10), sqlStartTime, sqlEndTime]\n\nreturn [msg, null];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 260,
+        "wires": [
+            [
+                "63959d4082a511b2"
+            ],
+            [
+                "156d551f9094bd51"
+            ]
+        ]
+    },
+    {
+        "id": "7508071c22bef509",
+        "type": "function",
+        "z": "ef473e5856f6634c",
+        "g": "01efc9251ab27577",
+        "name": "handle_result",
+        "func": "const mainResult = msg.payload || [];\n\nif(!mainResult || mainResult.length == 0){\n    msg.statusCode = 400;\n    return msg;\n}\n\nconst bookings = mainResult.map(row => ({\n    booking_id: row.booking_id,\n    start_time: row.start_time,\n    end_time: row.end_time,\n    status: row.status,\n    \n}));\n\n// Format response\nmsg.statusCode = 200;\nmsg.payload = {\n    result: bookings,\n};\n\n// Debug\nnode.warn(`Result rows: ${JSON.stringify(bookings)}`);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1160,
+        "y": 260,
+        "wires": [
+            [
+                "156d551f9094bd51"
+            ]
+        ]
+    },
+    {
+        "id": "22a843db0fbf92fb",
+        "type": "jwt verify",
+        "z": "ef473e5856f6634c",
+        "g": "01efc9251ab27577",
+        "name": "verify_jwt",
+        "alg": [
+            "HS512"
+        ],
+        "jwkurl": "",
+        "secret": "msg.secret",
+        "key": "",
+        "signvar": "bearer",
+        "storetoken": "token",
+        "x": 520,
+        "y": 260,
+        "wires": [
+            [
+                "45db05f2a8852e07"
+            ]
+        ]
+    },
+    {
+        "id": "681f51eb831cf4e4",
+        "type": "function",
+        "z": "ef473e5856f6634c",
+        "g": "01efc9251ab27577",
+        "name": "get_secret_key",
+        "func": "msg.secret = env.get('JWT_SECRET_KEY')\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 260,
+        "wires": [
+            [
+                "22a843db0fbf92fb"
+            ]
+        ]
+    },
+    {
+        "id": "2c726c3038e4c793",
+        "type": "function",
+        "z": "ef473e5856f6634c",
+        "g": "01efc9251ab27577",
+        "name": "handle_invalid_token",
+        "func": "msg.statusCode = 400;\nmsg.payload = {\n    ok: false,\n    message: \"Invalid token!\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 860,
+        "y": 440,
+        "wires": [
+            [
+                "156d551f9094bd51"
+            ]
+        ]
+    },
+    {
+        "id": "24d024c054437478",
+        "type": "catch",
+        "z": "ef473e5856f6634c",
+        "g": "01efc9251ab27577",
+        "name": "catch",
+        "scope": "group",
+        "uncaught": false,
+        "x": 300,
+        "y": 440,
+        "wires": [
+            [
+                "2c726c3038e4c793",
+                "b3994344d4d8bc13"
+            ]
+        ]
+    },
+    {
+        "id": "b3994344d4d8bc13",
+        "type": "debug",
+        "z": "ef473e5856f6634c",
+        "g": "01efc9251ab27577",
+        "name": "debug 13",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "error",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 480,
+        "wires": []
     }
 ]

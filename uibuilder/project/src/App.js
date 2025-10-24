@@ -1,4 +1,5 @@
-import React from 'react';
+/* global uibuilder */
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import Login from './pages/Login';
@@ -8,6 +9,9 @@ import MyBookings from './pages/user/MyBookings';
 import Schedule from './pages/user/Schedule';
 import RoomManagement from './pages/admin/RoomManagement';
 import BookingsManagement from './pages/admin/BookingsManagement';
+import { useAuth } from './context/AuthContext';
+import uibuilderSocket from './configs/uibuilderSocket';
+import { toast } from 'react-toastify';
 
 const theme = createTheme({
   palette: {
@@ -17,22 +21,42 @@ const theme = createTheme({
 });
 
 function App() {
-  const isLoggedIn = !!localStorage.getItem('token');
-  const role = localStorage.getItem('role');
+  const { currentUser, loading } = useAuth();
+  const isLoggedIn = !!currentUser;
+  const role = currentUser?.user?.role || null;
+  const userId = currentUser?.user?.user_id || null;
+
+  useEffect(() => {
+    // Initialize uibuilder
+    uibuilderSocket.init();
+  }, []);
+
+  uibuilder.onChange('msg', (msg) => {
+    console.log('App received msg via uibuilderSocket:', msg);
+    if(msg.topic === 'notification' && userId === msg.receiver) {
+      console.log('App received notification:', msg.payload);
+      toast.info(msg.payload);
+    }
+  });
+
+  if (loading) {
+    return <div>Loading app...</div>;
+  }
 
   return (
     <ThemeProvider theme={theme}>
-      <Router>
+      <Router basename="/project">
         <Routes>
-          <Route path="/project/login" element={<Login />} />
-          <Route path="/project/" element={isLoggedIn ? <DashboardLayout role={role} /> : <Navigate to="/project/login" />}>
-            <Route index element={<Navigate to={role === 'ADMIN' ? '/project/admin/rooms' : '/project/available-rooms'} />} />
-            <Route path="available-rooms" element={role === 'USER' || role === 'ADMIN' ? <AvailableRooms /> : <Navigate to="/project/" />} />
+          <Route path="/login" element={isLoggedIn ? <Navigate to="/" /> : <Login />} />
+          <Route path="/" element={isLoggedIn ? <DashboardLayout role={role} /> : <Navigate to="/login" />}>
+            <Route index element={<Navigate to={role === 'ADMIN' ? '/admin/rooms' : '/available-rooms'} />} />
+            <Route path="available-rooms" element={role === 'USER' || role === 'ADMIN' ? <AvailableRooms /> : <Navigate to="/" />} />
             <Route path="my-bookings" element={role === 'USER' || role === 'ADMIN' ? <MyBookings /> : <Navigate to="/" />} />
             <Route path="schedule" element={role === 'USER' || role === 'ADMIN' ? <Schedule /> : <Navigate to="/" />} />
             <Route path="admin/rooms" element={role === 'ADMIN' ? <RoomManagement /> : <Navigate to="/" />} />
             <Route path="admin/bookings" element={role === 'ADMIN' ? <BookingsManagement /> : <Navigate to="/" />} />
           </Route>
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </Router>
     </ThemeProvider>
