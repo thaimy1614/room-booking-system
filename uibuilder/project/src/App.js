@@ -33,10 +33,8 @@ function App() {
   }, []);
 
   uibuilder.onChange('msg', (msg) => {
-    console.log('App received msg via uibuilderSocket:', msg);
-    if(msg.topic === 'notification' && userId === msg.receiver) {
-      console.log('App received notification:', msg.payload);
-      toast.info(msg.payload);
+    if(msg.topic === 'notification' && userId === msg.payload.receiver) {
+      toast.info(msg.payload.message);
     }
   });
 

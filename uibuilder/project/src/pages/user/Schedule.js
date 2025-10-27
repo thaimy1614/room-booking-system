@@ -62,8 +62,6 @@ function RoomSchedule() {
 
 
   uibuilder.onChange('msg', (msg) => {
-    console.log('Received msg via uibuilderSocket:', msg);
-    console.log('Current roomId:', roomId);
     // need to check weekStart and weekEnd to see if the updated booking affects current schedule
     if (msg.topic === 'schedule-update' && msg.room_id === roomId && dayjs(msg.payload.start_time).isBetween(weekStart, weekStart.add(5, 'day').endOf('day'))) {
       console.log('Received schedule update:', msg.topic);
@@ -71,12 +69,19 @@ function RoomSchedule() {
         const updatedBooking = msg.payload;
         const existingIndex = prevSchedule.findIndex(b => b.booking_id === updatedBooking.booking_id);
         let newSchedule = [...prevSchedule];
-        if (existingIndex !== -1) {
-          // Update existing booking
-          newSchedule[existingIndex] = updatedBooking;
+        if (updatedBooking.status === 'CANCELLED' || updatedBooking.status === 'REJECTED') {
+          // Remove booking from schedule
+          if (existingIndex !== -1) {
+            newSchedule.splice(existingIndex, 1);
+          }
         } else {
-          // Add new booking
-          newSchedule.push(updatedBooking);
+          if (existingIndex !== -1) {
+            // Update existing booking
+            newSchedule[existingIndex] = updatedBooking;
+          } else {
+            // Add new booking
+            newSchedule.push(updatedBooking);
+          }
         }
         return newSchedule;
       });

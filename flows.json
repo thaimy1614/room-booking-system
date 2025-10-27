@@ -72,6 +72,14 @@
         "env": []
     },
     {
+        "id": "7b1d8464d4eeb295",
+        "type": "tab",
+        "label": "Socket Flow",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "e713e992ef10c6ef",
         "type": "group",
         "z": "6e18303f78d73c6e",
@@ -380,14 +388,12 @@
             "f562ac3a5d4d9712",
             "2e713eb57718d0c5",
             "395ab01490064b27",
-            "8d76aa8f4d6e3a0b",
-            "960c6df0e138e3d6",
-            "d3135d685060af63",
-            "22b08998a0ff0c4f"
+            "22b08998a0ff0c4f",
+            "ddc131cabdfcb416"
         ],
         "x": 14,
         "y": 379,
-        "w": 1982,
+        "w": 1592,
         "h": 262
     },
     {
@@ -414,7 +420,8 @@
             "f0b51bf89200bd2f",
             "217482fdda0b6241",
             "48116108952192b6",
-            "5dcaf943a6f299eb"
+            "5dcaf943a6f299eb",
+            "a55b1940896b73fb"
         ],
         "x": 14,
         "y": 659,
@@ -445,7 +452,8 @@
             "5e621944d897d89e",
             "ae1e9765fa04833c",
             "07d99d217a9c3146",
-            "2f17e79c5e0f0a86"
+            "2f17e79c5e0f0a86",
+            "e1fd38f80a61b4d1"
         ],
         "x": 14,
         "y": 939,
@@ -476,11 +484,10 @@
             "8f776e8533361a7b",
             "488e589395636742",
             "a1e31873174aa9c6",
-            "bc1d3039e6fec733",
-            "a7b22cdff551f99d",
             "809f9cc877822a87",
             "d0689467ab220886",
-            "5452fc51071cf111"
+            "5452fc51071cf111",
+            "831c579302862374"
         ],
         "x": 14,
         "y": 1219,
@@ -540,7 +547,8 @@
             "ede2942c134e8197",
             "b6d2c489811ca47d",
             "4a29b7e628b685a0",
-            "e1457a63b4ab7e12"
+            "e1457a63b4ab7e12",
+            "8a68fe56d0ce9d2b"
         ],
         "x": 14,
         "y": 299,
@@ -666,6 +674,52 @@
         "y": 119,
         "w": 1472,
         "h": 362
+    },
+    {
+        "id": "3b28d018233610dd",
+        "type": "group",
+        "z": "7b1d8464d4eeb295",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "bc1d3039e6fec733",
+            "a7b22cdff551f99d",
+            "20b6c09cf936e09b"
+        ],
+        "x": 284,
+        "y": 359,
+        "w": 502,
+        "h": 82
+    },
+    {
+        "id": "44c1d437b2505fb5",
+        "type": "group",
+        "z": "7b1d8464d4eeb295",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "960c6df0e138e3d6",
+            "d3135d685060af63",
+            "83a70607a20416e0"
+        ],
+        "x": 284,
+        "y": 179,
+        "w": 502,
+        "h": 82
     },
     {
         "id": "8ba1cb52c18f200a",
@@ -3285,8 +3339,8 @@
         "headers": {
             "content-type": "application/json"
         },
-        "x": 1500,
-        "y": 500,
+        "x": 1520,
+        "y": 600,
         "wires": []
     },
     {
@@ -3296,8 +3350,8 @@
         "g": "a847a3dcc63466dd",
         "mydb": "443dca5366e7983c",
         "name": "mysql",
-        "x": 1070,
-        "y": 420,
+        "x": 1170,
+        "y": 440,
         "wires": [
             [
                 "9ad8c85861a399b2"
@@ -3310,7 +3364,7 @@
         "z": "bd5efab3a54ad20c",
         "g": "a847a3dcc63466dd",
         "name": "build_query",
-        "func": "const booking_id = msg.req?.params?.booking_id;\n\nif (!booking_id || isNaN(parseInt(booking_id, 10))) {\n  msg.statusCode = 400;\n  msg.payload = { ok: false, message: 'Invalid or missing booking_id' };\n  return [null, msg];\n}\n\nconst user_id = msg.token.user_id;\n\nlet existSql = `\n  SELECT booking_id FROM bookings \n  WHERE booking_id = ? AND status = 'PENDING';\n`;\n\nlet approveSql = `\n  UPDATE bookings \n  SET status = 'APPROVED', action_by = ?, action_at = NOW()\n  WHERE booking_id = ? AND status = 'PENDING';\n`;\n\nlet auditSql = `\n  INSERT INTO audit_logs (booking_id, action, action_by, action_at, action_reason)\n  VALUES (?, 'APPROVED', ?, NOW(), '');\n`;\n\nlet select = `\nSELECT r.room_name, b.start_time, b.end_time, u.user_id\nFROM bookings b \nJOIN rooms r ON b.room_id = r.room_id\nJOIN users u ON b.user_id = u.user_id\nWHERE b.booking_id = ?\nGROUP BY b.room_id\nLIMIT 1;\n`;\n\nlet existParams = [parseInt(booking_id, 10)];\nlet approveParams = [parseInt(user_id, 10), parseInt(booking_id, 10)];\nlet auditParams = [parseInt(booking_id, 10), parseInt(user_id, 10)];\n\n// Combine queries in a transaction\nmsg.topic = `\n  START TRANSACTION;\n  ${existSql}\n  ${approveSql}\n  ${auditSql}\n  ${select}\n  COMMIT;\n`;\nmsg.payload = [...existParams, ...approveParams, ...auditParams, booking_id];\n\n// Debug\nnode.warn(`Booking ID: ${booking_id}`);\nnode.warn(`Admin ID: ${user_id}`);\nnode.warn(`SQL: ${msg.topic}`);\nnode.warn(`Params: ${JSON.stringify(msg.payload)}`);\n\nreturn [msg, null];",
+        "func": "const booking_id = msg.req?.params?.booking_id;\n\nif (!booking_id || isNaN(parseInt(booking_id, 10))) {\n  msg.statusCode = 400;\n  msg.payload = { ok: false, message: 'Invalid or missing booking_id' };\n  return [null, msg];\n}\n\nconst user_id = msg.token.user_id;\n\nlet existSql = `\n  SELECT booking_id FROM bookings \n  WHERE booking_id = ? AND status = 'PENDING';\n`;\n\nlet approveSql = `\n  UPDATE bookings \n  SET status = 'APPROVED', action_by = ?, action_at = NOW()\n  WHERE booking_id = ? AND status = 'PENDING';\n`;\n\nlet auditSql = `\n  INSERT INTO audit_logs (booking_id, action, action_by, action_at, action_reason)\n  VALUES (?, 'APPROVED', ?, NOW(), '');\n`;\n\nlet select = `\nSELECT r.room_id, b.booking_id, r.room_name, b.start_time, b.end_time, u.user_id, b.status\nFROM bookings b \nJOIN rooms r ON b.room_id = r.room_id\nJOIN users u ON b.user_id = u.user_id\nWHERE b.booking_id = ?\nGROUP BY b.room_id\nLIMIT 1;\n`;\n\nlet existParams = [parseInt(booking_id, 10)];\nlet approveParams = [parseInt(user_id, 10), parseInt(booking_id, 10)];\nlet auditParams = [parseInt(booking_id, 10), parseInt(user_id, 10)];\n\n// Combine queries in a transaction\nmsg.topic = `\n  START TRANSACTION;\n  ${existSql}\n  ${approveSql}\n  ${auditSql}\n  ${select}\n  COMMIT;\n`;\nmsg.payload = [...existParams, ...approveParams, ...auditParams, booking_id];\n\n// Debug\nnode.warn(`Booking ID: ${booking_id}`);\nnode.warn(`Admin ID: ${user_id}`);\nnode.warn(`SQL: ${msg.topic}`);\nnode.warn(`Params: ${JSON.stringify(msg.payload)}`);\n\nreturn [msg, null];",
         "outputs": 2,
         "timeout": 0,
         "noerr": 0,
@@ -3334,22 +3388,22 @@
         "z": "bd5efab3a54ad20c",
         "g": "a847a3dcc63466dd",
         "name": "handle_result",
-        "func": "const results = msg.payload || [];\n\nconst existenceResult = results[0] || [];\nif (!existenceResult || existenceResult.length === 0) {\n    msg.statusCode = 404;\n    msg.payload = {\n        ok: false,\n        message: 'Booking not found or not pending'\n    };\n    return [null,msg];\n}\n\nconst bookingApprovedResult = results[1] || {};\nif (bookingApprovedResult.affectedRows === 0) {\n    msg.statusCode = 400;\n    msg.payload = {\n        ok: false,\n        message: 'Failed to approve booking'\n    };\n    return [null,msg];\n}\n\nconst auditResult = results[2] || {};\nif (auditResult.affectedRows === 0) {\n    msg.statusCode = 400;\n    msg.payload = {\n        ok: false,\n        message: 'Failed to save logs'\n    };\n    return [null,msg];\n}\n\nconst selectResult = results[4] || [];\nconst selectObject = selectResult[0];\nnode.warn(JSON.stringify(selectResult));\nmsg.receiver = selectObject.user_id;\nmsg.notification = `Your booking at room ${selectObject.room_name} time start from ${selectObject.start_time} to ${selectObject.end_time} already approved`;\n\n\nmsg.statusCode = 200;\nmsg.payload = {\n    ok: true,\n    message: 'Booking approved successfully',\n    result: bookingApprovedResult.affectedRows\n};\n\nreturn msg;",
+        "func": "const results = msg.payload || [];\n\nconst existenceResult = results[0] || [];\nif (!existenceResult || existenceResult.length === 0) {\n    msg.statusCode = 404;\n    msg.payload = {\n        ok: false,\n        message: 'Booking not found or not pending'\n    };\n    return [null,msg];\n}\n\nconst bookingApprovedResult = results[1] || {};\nif (bookingApprovedResult.affectedRows === 0) {\n    msg.statusCode = 400;\n    msg.payload = {\n        ok: false,\n        message: 'Failed to approve booking'\n    };\n    return [null,msg];\n}\n\nconst auditResult = results[2] || {};\nif (auditResult.affectedRows === 0) {\n    msg.statusCode = 400;\n    msg.payload = {\n        ok: false,\n        message: 'Failed to save logs'\n    };\n    return [null,msg];\n}\n\nconst selectResult = results[4] || [];\nconst selectObject = selectResult[0];\nnode.warn(JSON.stringify(selectResult));\n\nmsg.statusCode = 200;\nmsg.payload = {\n    ok: true,\n    message: 'Booking approved successfully',\n    result: selectObject\n};\n\nreturn msg;",
         "outputs": 2,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1240,
-        "y": 420,
+        "x": 1340,
+        "y": 440,
         "wires": [
             [
                 "d7bcb882196787cd",
-                "960c6df0e138e3d6"
+                "ddc131cabdfcb416"
             ],
             [
-                "8d76aa8f4d6e3a0b"
+                "d7bcb882196787cd"
             ]
         ]
     },
@@ -3506,7 +3560,7 @@
         "z": "bd5efab3a54ad20c",
         "g": "f3b4c45c06072b51",
         "name": "build_query",
-        "func": "const booking_id = msg.req?.params?.booking_id;\nconst action_reason = msg.payload.action_reason;\nif (!booking_id || isNaN(parseInt(booking_id, 10))) {\n  msg.statusCode = 400;\n  msg.payload = { ok: false, message: 'Invalid or missing booking_id' };\n  return [null, msg];\n}\n\nconst user_id = msg.token.user_id;\n\nlet existSql = `\n  SELECT booking_id FROM bookings \n  WHERE booking_id = ? AND status = 'PENDING';\n`;\n\nlet rejectSql = `\n  UPDATE bookings \n  SET status = 'REJECTED', action_by = ?, action_at = NOW(), action_reason = ?\n  WHERE booking_id = ? AND status = 'PENDING';\n`;\n\nlet auditSql = `\n  INSERT INTO audit_logs (booking_id, action, action_by, action_at, action_reason)\n  VALUES (?, 'REJECTED', ?, NOW(), ?);\n`;\n\nlet existParams = [parseInt(booking_id, 10)];\nlet rejectParams = [parseInt(user_id, 10), action_reason, parseInt(booking_id, 10)];\nlet auditParams = [parseInt(booking_id, 10), parseInt(user_id, 10), action_reason];\n\n// Combine queries in a transaction\nmsg.topic = `\n  START TRANSACTION;\n  ${existSql}\n  ${rejectSql}\n  ${auditSql}\n  COMMIT;\n`;\nmsg.payload = [...existParams, ...rejectParams, ...auditParams];\n\n// Debug\nnode.warn(`Booking ID: ${booking_id}`);\nnode.warn(`Admin ID: ${user_id}`);\nnode.warn(`SQL: ${msg.topic}`);\nnode.warn(`Params: ${JSON.stringify(msg.payload)}`);\n\nreturn [msg, null];",
+        "func": "const booking_id = msg.req?.params?.booking_id;\nconst action_reason = msg.payload.action_reason;\nif (!booking_id || isNaN(parseInt(booking_id, 10))) {\n  msg.statusCode = 400;\n  msg.payload = { ok: false, message: 'Invalid or missing booking_id' };\n  return [null, msg];\n}\n\nconst user_id = msg.token.user_id;\n\nlet existSql = `\n  SELECT booking_id FROM bookings \n  WHERE booking_id = ? AND status = 'PENDING';\n`;\n\nlet rejectSql = `\n  UPDATE bookings \n  SET status = 'REJECTED', action_by = ?, action_at = NOW(), action_reason = ?\n  WHERE booking_id = ? AND status = 'PENDING';\n`;\n\nlet auditSql = `\n  INSERT INTO audit_logs (booking_id, action, action_by, action_at, action_reason)\n  VALUES (?, 'REJECTED', ?, NOW(), ?);\n`;\n\nlet select = `\nSELECT r.room_id, b.booking_id, r.room_name, b.start_time, b.end_time, u.user_id, b.status\nFROM bookings b \nJOIN rooms r ON b.room_id = r.room_id\nJOIN users u ON b.user_id = u.user_id\nWHERE b.booking_id = ?\nGROUP BY b.room_id\nLIMIT 1;\n`;\n\nlet existParams = [parseInt(booking_id, 10)];\nlet rejectParams = [parseInt(user_id, 10), action_reason, parseInt(booking_id, 10)];\nlet auditParams = [parseInt(booking_id, 10), parseInt(user_id, 10), action_reason];\n\n// Combine queries in a transaction\nmsg.topic = `\n  START TRANSACTION;\n  ${existSql}\n  ${rejectSql}\n  ${auditSql}\n  ${select}\n  COMMIT;\n`;\nmsg.payload = [...existParams, ...rejectParams, ...auditParams, booking_id];\n\n// Debug\nnode.warn(`Booking ID: ${booking_id}`);\nnode.warn(`Admin ID: ${user_id}`);\nnode.warn(`SQL: ${msg.topic}`);\nnode.warn(`Params: ${JSON.stringify(msg.payload)}`);\n\nreturn [msg, null];",
         "outputs": 2,
         "timeout": 0,
         "noerr": 0,
@@ -3530,8 +3584,8 @@
         "z": "bd5efab3a54ad20c",
         "g": "f3b4c45c06072b51",
         "name": "handle_result",
-        "func": "const results = msg.payload || [];\n\nconst existenceResult = results[0] || [];\nif (!existenceResult || existenceResult.length === 0) {\n    msg.statusCode = 404;\n    msg.payload = {\n        ok: false,\n        message: 'Booking not found or not pending'\n    };\n    return msg;\n}\n\nconst bookingRejectedResult = results[1] || {};\nif (bookingRejectedResult.affectedRows === 0) {\n    msg.statusCode = 400;\n    msg.payload = {\n        ok: false,\n        message: 'Failed to reject booking'\n    };\n    return msg;\n}\n\nconst auditResult = results[2] || {};\nif (auditResult.affectedRows === 0) {\n    msg.statusCode = 400;\n    msg.payload = {\n        ok: false,\n        message: 'Failed to reject booking'\n    };\n    return msg;\n}\n\n\nmsg.statusCode = 200;\nmsg.payload = {\n    ok: true,\n    message: 'Booking approved successfully',\n    result: bookingRejectedResult.affectedRows\n};\n\nreturn msg;",
-        "outputs": 1,
+        "func": "const results = msg.payload || [];\n\nconst existenceResult = results[0] || [];\nif (!existenceResult || existenceResult.length === 0) {\n    msg.statusCode = 404;\n    msg.payload = {\n        ok: false,\n        message: 'Booking not found or not pending'\n    };\n    return [null, msg];\n}\n\nconst bookingRejectedResult = results[1] || {};\nif (bookingRejectedResult.affectedRows === 0) {\n    msg.statusCode = 400;\n    msg.payload = {\n        ok: false,\n        message: 'Failed to reject booking'\n    };\n    return [null, msg];\n}\n\nconst auditResult = results[2] || {};\nif (auditResult.affectedRows === 0) {\n    msg.statusCode = 400;\n    msg.payload = {\n        ok: false,\n        message: 'Failed to reject booking'\n    };\n    return [null, msg];\n}\n\n\nconst selectResult = results[4] || [];\nconst selectObject = selectResult[0];\n\nmsg.statusCode = 200;\nmsg.payload = {\n    ok: true,\n    message: 'Booking approved successfully',\n    result: selectObject\n};\n\nreturn [msg, null];",
+        "outputs": 2,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
@@ -3540,6 +3594,10 @@
         "x": 1240,
         "y": 700,
         "wires": [
+            [
+                "59fab76c3946fa16",
+                "a55b1940896b73fb"
+            ],
             [
                 "59fab76c3946fa16"
             ]
@@ -3714,7 +3772,7 @@
         "z": "bd5efab3a54ad20c",
         "g": "111ee870f273a851",
         "name": "build_query",
-        "func": "const booking_id = msg.req?.params?.booking_id;\nconst action_reason = msg.payload.action_reason;\nif (!booking_id || isNaN(parseInt(booking_id, 10))) {\n  msg.statusCode = 400;\n  msg.payload = { ok: false, message: 'Invalid or missing booking_id' };\n  return [null, msg];\n}\n\nconst user_id = msg.token.user_id;\n\nlet existSql = `\n  SELECT booking_id FROM bookings \n  WHERE booking_id = ? AND status = 'APPROVED';\n`;\n\nlet cancelSql = `\n  UPDATE bookings \n  SET status = 'CANCELLED', action_by = ?, action_at = NOW(), action_reason = ?\n  WHERE booking_id = ? AND status = 'APPROVED';\n`;\n\nlet auditSql = `\n  INSERT INTO audit_logs (booking_id, action, action_by, action_at, action_reason)\n  VALUES (?, 'CANCELLED', ?, NOW(), ?);\n`;\n\nlet existParams = [parseInt(booking_id, 10)];\nlet cancelParams = [parseInt(user_id, 10), action_reason, parseInt(booking_id, 10)];\nlet auditParams = [parseInt(booking_id, 10), parseInt(user_id, 10), action_reason];\n\n// Combine queries in a transaction\nmsg.topic = `\n  START TRANSACTION;\n  ${existSql}\n  ${cancelSql}\n  ${auditSql}\n  COMMIT;\n`;\nmsg.payload = [...existParams, ...cancelParams, ...auditParams];\n\n// Debug\nnode.warn(`Booking ID: ${booking_id}`);\nnode.warn(`Admin ID: ${user_id}`);\nnode.warn(`SQL: ${msg.topic}`);\nnode.warn(`Params: ${JSON.stringify(msg.payload)}`);\n\nreturn [msg, null];",
+        "func": "const booking_id = msg.req?.params?.booking_id;\nconst action_reason = msg.payload.action_reason;\nif (!booking_id || isNaN(parseInt(booking_id, 10))) {\n  msg.statusCode = 400;\n  msg.payload = { ok: false, message: 'Invalid or missing booking_id' };\n  return [null, msg];\n}\n\nconst user_id = msg.token.user_id;\n\nlet existSql = `\n  SELECT booking_id FROM bookings \n  WHERE booking_id = ? AND status = 'APPROVED';\n`;\n\nlet cancelSql = `\n  UPDATE bookings \n  SET status = 'CANCELLED', action_by = ?, action_at = NOW(), action_reason = ?\n  WHERE booking_id = ? AND status = 'APPROVED';\n`;\n\nlet auditSql = `\n  INSERT INTO audit_logs (booking_id, action, action_by, action_at, action_reason)\n  VALUES (?, 'CANCELLED', ?, NOW(), ?);\n`;\n\nlet existParams = [parseInt(booking_id, 10)];\nlet cancelParams = [parseInt(user_id, 10), action_reason, parseInt(booking_id, 10)];\nlet auditParams = [parseInt(booking_id, 10), parseInt(user_id, 10), action_reason];\n\nlet select = `\nSELECT r.room_id, b.booking_id, r.room_name, b.start_time, b.end_time, u.user_id, b.status\nFROM bookings b \nJOIN rooms r ON b.room_id = r.room_id\nJOIN users u ON b.user_id = u.user_id\nWHERE b.booking_id = ?\nGROUP BY b.room_id\nLIMIT 1;\n`;\n\n// Combine queries in a transaction\nmsg.topic = `\n  START TRANSACTION;\n  ${existSql}\n  ${cancelSql}\n  ${auditSql}\n  ${select}\n  COMMIT;\n`;\nmsg.payload = [...existParams, ...cancelParams, ...auditParams, booking_id];\n\n// Debug\nnode.warn(`Booking ID: ${booking_id}`);\nnode.warn(`Admin ID: ${user_id}`);\nnode.warn(`SQL: ${msg.topic}`);\nnode.warn(`Params: ${JSON.stringify(msg.payload)}`);\n\nreturn [msg, null];",
         "outputs": 2,
         "timeout": 0,
         "noerr": 0,
@@ -3738,8 +3796,8 @@
         "z": "bd5efab3a54ad20c",
         "g": "111ee870f273a851",
         "name": "handle_result",
-        "func": "const results = msg.payload || [];\n\nconst existenceResult = results[0] || [];\nif (!existenceResult || existenceResult.length === 0) {\n    msg.statusCode = 404;\n    msg.payload = {\n        ok: false,\n        message: 'Booking not found or not approved'\n    };\n    return msg;\n}\n\nconst bookingCancelResult = results[1] || {};\nif (bookingCancelResult.affectedRows === 0) {\n    msg.statusCode = 400;\n    msg.payload = {\n        ok: false,\n        message: 'Failed to cancel booking'\n    };\n    return msg;\n}\n\nconst auditResult = results[2] || {};\nif (auditResult.affectedRows === 0) {\n    msg.statusCode = 400;\n    msg.payload = {\n        ok: false,\n        message: 'Failed to cancel booking'\n    };\n    return msg;\n}\n\n\nmsg.statusCode = 200;\nmsg.payload = {\n    ok: true,\n    message: 'Booking cancelled successfully',\n    result: bookingCancelResult.affectedRows\n};\n\nreturn msg;",
-        "outputs": 1,
+        "func": "const results = msg.payload || [];\n\nconst existenceResult = results[0] || [];\nif (!existenceResult || existenceResult.length === 0) {\n    msg.statusCode = 404;\n    msg.payload = {\n        ok: false,\n        message: 'Booking not found or not approved'\n    };\n    return [null, msg];\n}\n\nconst bookingCancelResult = results[1] || {};\nif (bookingCancelResult.affectedRows === 0) {\n    msg.statusCode = 400;\n    msg.payload = {\n        ok: false,\n        message: 'Failed to cancel booking'\n    };\n    return [null, msg];\n}\n\nconst auditResult = results[2] || {};\nif (auditResult.affectedRows === 0) {\n    msg.statusCode = 400;\n    msg.payload = {\n        ok: false,\n        message: 'Failed to cancel booking'\n    };\n    return [null, msg];\n}\n\nconst selectResult = results[4] || [];\nconst selectObject = selectResult[0];\n\nmsg.statusCode = 200;\nmsg.payload = {\n    ok: true,\n    message: 'Booking cancelled successfully',\n    result: selectObject\n};\n\nreturn [msg, null];",
+        "outputs": 2,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
@@ -3748,6 +3806,10 @@
         "x": 1240,
         "y": 980,
         "wires": [
+            [
+                "966f0fcf335488fa",
+                "e1fd38f80a61b4d1"
+            ],
             [
                 "966f0fcf335488fa"
             ]
@@ -3946,7 +4008,7 @@
         "z": "bd5efab3a54ad20c",
         "g": "224b4e5df0a4aff1",
         "name": "handle_result",
-        "func": "const results = msg.payload || [];\n\n\nconst existenceResult = results[0] || [];\nif (existenceResult && existenceResult.length !== 0) {\n    msg.statusCode = 400;\n    msg.payload = {\n        ok: false,\n        message: 'Room not available at this time'\n    };\n    return msg;\n}\n\n// Get booking result (INSERT metadata)\nconst bookingResult = results[1] || {};\nif (!bookingResult || !bookingResult.affectedRows) {\n    msg.statusCode = 400;\n    msg.payload = {\n        ok: false,\n        message: 'Failed to create booking'\n    };\n    return msg;\n}\n\n// Get the inserted row\nconst insertedRow = results[2] && results[2][0] ? results[2][0] : null;\nmsg.booking = insertedRow;\nmsg.statusCode = 201;\nmsg.payload = {\n    ok: true,\n    message: 'Booking created successfully',\n    result: bookingResult.affectedRows\n};\n\nreturn msg;",
+        "func": "const results = msg.payload || [];\n\n\nconst existenceResult = results[0] || [];\nif (existenceResult && existenceResult.length !== 0) {\n    msg.statusCode = 400;\n    msg.payload = {\n        ok: false,\n        message: 'Room not available at this time'\n    };\n    return msg;\n}\n\n// Get booking result (INSERT metadata)\nconst bookingResult = results[1] || {};\nif (!bookingResult || !bookingResult.affectedRows) {\n    msg.statusCode = 400;\n    msg.payload = {\n        ok: false,\n        message: 'Failed to create booking'\n    };\n    return msg;\n}\n\n// Get the inserted row\nconst insertedRow = results[2] && results[2][0] ? results[2][0] : null;\nmsg.booking = insertedRow;\nmsg.statusCode = 201;\nmsg.payload = {\n    ok: true,\n    message: 'Booking created successfully',\n    result: insertedRow\n};\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -3958,8 +4020,8 @@
         "wires": [
             [
                 "c8276d90f5b27e27",
-                "a7b22cdff551f99d",
-                "d0689467ab220886"
+                "d0689467ab220886",
+                "831c579302862374"
             ]
         ]
     },
@@ -4062,41 +4124,6 @@
         ]
     },
     {
-        "id": "bc1d3039e6fec733",
-        "type": "link out",
-        "z": "bd5efab3a54ad20c",
-        "g": "224b4e5df0a4aff1",
-        "name": "schedule-update",
-        "mode": "link",
-        "links": [
-            "64b287a5cceee242"
-        ],
-        "x": 1535,
-        "y": 1300,
-        "wires": []
-    },
-    {
-        "id": "a7b22cdff551f99d",
-        "type": "function",
-        "z": "bd5efab3a54ad20c",
-        "g": "224b4e5df0a4aff1",
-        "name": "function 3",
-        "func": "const insertedRow = msg.booking;\nmsg = null;\nmsg = {\n    payload: {\n        booking_id: insertedRow.booking_id,\n        status: \"PENDING\",\n        start_time: insertedRow.start_time,\n        end_time : insertedRow.end_time,\n        title: insertedRow.title\n    },\n    room_id: insertedRow.room_id,\n    topic: \"schedule-update\"\n}\nnode.send(msg)",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1420,
-        "y": 1300,
-        "wires": [
-            [
-                "bc1d3039e6fec733"
-            ]
-        ]
-    },
-    {
         "id": "809f9cc877822a87",
         "type": "inject",
         "z": "bd5efab3a54ad20c",
@@ -4117,9 +4144,7 @@
         "x": 1260,
         "y": 1260,
         "wires": [
-            [
-                "a7b22cdff551f99d"
-            ]
+            []
         ]
     },
     {
@@ -4156,55 +4181,6 @@
         "statusType": "auto",
         "x": 440,
         "y": 1440,
-        "wires": []
-    },
-    {
-        "id": "960c6df0e138e3d6",
-        "type": "function",
-        "z": "bd5efab3a54ad20c",
-        "g": "a847a3dcc63466dd",
-        "name": "notification",
-        "func": "const noti = msg.notification;\nconst receiver_id = msg.receiver;\nmsg = null;\nmsg = {\n    payload: noti,\n    receiver: receiver_id,\n    topic: \"notification\"\n}\nnode.send(msg);",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1730,
-        "y": 480,
-        "wires": [
-            [
-                "d3135d685060af63"
-            ]
-        ]
-    },
-    {
-        "id": "d3135d685060af63",
-        "type": "link out",
-        "z": "bd5efab3a54ad20c",
-        "g": "a847a3dcc63466dd",
-        "name": "notification",
-        "mode": "link",
-        "links": [
-            "64b287a5cceee242"
-        ],
-        "x": 1955,
-        "y": 480,
-        "wires": []
-    },
-    {
-        "id": "8d76aa8f4d6e3a0b",
-        "type": "http response",
-        "z": "bd5efab3a54ad20c",
-        "g": "a847a3dcc63466dd",
-        "name": "response",
-        "statusCode": "",
-        "headers": {
-            "content-type": "application/json"
-        },
-        "x": 1380,
-        "y": 580,
         "wires": []
     },
     {
@@ -4290,6 +4266,65 @@
                 "b231190898d2d7f8"
             ]
         ]
+    },
+    {
+        "id": "831c579302862374",
+        "type": "link out",
+        "z": "bd5efab3a54ad20c",
+        "g": "224b4e5df0a4aff1",
+        "name": "link out 2",
+        "mode": "link",
+        "links": [
+            "20b6c09cf936e09b"
+        ],
+        "x": 1425,
+        "y": 1300,
+        "wires": []
+    },
+    {
+        "id": "ddc131cabdfcb416",
+        "type": "link out",
+        "z": "bd5efab3a54ad20c",
+        "g": "a847a3dcc63466dd",
+        "name": "link out 3",
+        "mode": "link",
+        "links": [
+            "20b6c09cf936e09b",
+            "83a70607a20416e0"
+        ],
+        "x": 1525,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "a55b1940896b73fb",
+        "type": "link out",
+        "z": "bd5efab3a54ad20c",
+        "g": "f3b4c45c06072b51",
+        "name": "link out 4",
+        "mode": "link",
+        "links": [
+            "20b6c09cf936e09b",
+            "83a70607a20416e0"
+        ],
+        "x": 1475,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "e1fd38f80a61b4d1",
+        "type": "link out",
+        "z": "bd5efab3a54ad20c",
+        "g": "111ee870f273a851",
+        "name": "link out 5",
+        "mode": "link",
+        "links": [
+            "20b6c09cf936e09b",
+            "83a70607a20416e0"
+        ],
+        "x": 1505,
+        "y": 1000,
+        "wires": []
     },
     {
         "id": "4bc1e1e3301be371",
@@ -4518,7 +4553,7 @@
         "z": "1f9ad198f05c78e0",
         "g": "d08782927857db71",
         "name": "build_query",
-        "func": "const booking_id = msg.req?.params?.booking_id;\nif (!booking_id || isNaN(parseInt(booking_id, 10))) {\n  msg.statusCode = 400;\n  msg.payload = { ok: false, message: 'Invalid or missing booking_id' };\n  return [null, msg];\n}\n\nconst user_id = msg.token.user_id;\n\nlet existSql = `\n  SELECT 1 FROM bookings \n  WHERE booking_id = ? AND status = 'PENDING';\n`;\n\nlet cancelSql = `\n  UPDATE bookings \n  SET status = 'CANCELLED', action_by = ?, action_at = NOW()\n  WHERE booking_id = ? AND user_id = ? AND status = 'PENDING';\n`;\n\nlet existParams = [parseInt(booking_id, 10)];\nlet cancelParams = [parseInt(user_id, 10), parseInt(booking_id, 10), parseInt(user_id, 10)];\n\n// Combine queries in a transaction\nmsg.topic = `\n  ${existSql}\n  ${cancelSql}\n`;\nmsg.payload = [...existParams, ...cancelParams];\n\n// Debug\nnode.warn(`Booking ID: ${booking_id}`);\nnode.warn(`Admin ID: ${user_id}`);\nnode.warn(`SQL: ${msg.topic}`);\nnode.warn(`Params: ${JSON.stringify(msg.payload)}`);\n\nreturn [msg, null];",
+        "func": "const booking_id = msg.req?.params?.booking_id;\nif (!booking_id || isNaN(parseInt(booking_id, 10))) {\n  msg.statusCode = 400;\n  msg.payload = { ok: false, message: 'Invalid or missing booking_id' };\n  return [null, msg];\n}\n\nconst user_id = msg.token.user_id;\n\nlet existSql = `\n  SELECT 1 FROM bookings \n  WHERE booking_id = ? AND status = 'PENDING';\n`;\n\nlet cancelSql = `\n  UPDATE bookings \n  SET status = 'CANCELLED', action_by = ?, action_at = NOW()\n  WHERE booking_id = ? AND user_id = ? AND status = 'PENDING';\n`;\n\nlet existParams = [parseInt(booking_id, 10)];\nlet cancelParams = [parseInt(user_id, 10), parseInt(booking_id, 10), parseInt(user_id, 10)];\nlet select = `\nSELECT r.room_id, b.booking_id, r.room_name, b.start_time, b.end_time, u.user_id, b.status\nFROM bookings b \nJOIN rooms r ON b.room_id = r.room_id\nJOIN users u ON b.user_id = u.user_id\nWHERE b.booking_id = ?\nGROUP BY b.room_id\nLIMIT 1;\n`;\n// Combine queries in a transaction\nmsg.topic = `\n  ${existSql}\n  ${cancelSql}\n  ${select}\n`;\nmsg.payload = [...existParams, ...cancelParams, booking_id];\n\n// Debug\nnode.warn(`Booking ID: ${booking_id}`);\nnode.warn(`Admin ID: ${user_id}`);\nnode.warn(`SQL: ${msg.topic}`);\nnode.warn(`Params: ${JSON.stringify(msg.payload)}`);\n\nreturn [msg, null];",
         "outputs": 2,
         "timeout": 0,
         "noerr": 0,
@@ -4542,8 +4577,8 @@
         "z": "1f9ad198f05c78e0",
         "g": "d08782927857db71",
         "name": "handle_result",
-        "func": "const results = msg.payload || [];\n\nconst existenceResult = results[0] || [];\nif (!existenceResult || existenceResult.length === 0) {\n    msg.statusCode = 404;\n    msg.payload = {\n        ok: false,\n        message: 'Booking not found or not PENDING'\n    };\n    return msg;\n}\n\nconst bookingCancelResult = results[1] || {};\nif (bookingCancelResult.affectedRows === 0) {\n    msg.statusCode = 400;\n    msg.payload = {\n        ok: false,\n        message: 'Failed to cancel booking'\n    };\n    return msg;\n}\n\nmsg.statusCode = 200;\nmsg.payload = {\n    ok: true,\n    message: 'Booking cancelled successfully',\n    result: bookingCancelResult.affectedRows\n};\n\nreturn msg;",
-        "outputs": 1,
+        "func": "const results = msg.payload || [];\n\nconst existenceResult = results[0] || [];\nif (!existenceResult || existenceResult.length === 0) {\n    msg.statusCode = 404;\n    msg.payload = {\n        ok: false,\n        message: 'Booking not found or not PENDING'\n    };\n    return [null, msg];\n}\n\nconst bookingCancelResult = results[1] || {};\nif (bookingCancelResult.affectedRows === 0) {\n    msg.statusCode = 400;\n    msg.payload = {\n        ok: false,\n        message: 'Failed to cancel booking'\n    };\n    return [null, msg];\n}\n\nconst selectResult = results[2] || [];\nconst selectObject = selectResult[0];\n\nmsg.statusCode = 200;\nmsg.payload = {\n    ok: true,\n    message: 'Booking cancelled successfully',\n    result: selectObject\n};\n\nreturn [msg, null];",
+        "outputs": 2,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
@@ -4552,6 +4587,10 @@
         "x": 1280,
         "y": 340,
         "wires": [
+            [
+                "2daef27ecde9bc49",
+                "8a68fe56d0ce9d2b"
+            ],
             [
                 "2daef27ecde9bc49"
             ]
@@ -4671,6 +4710,20 @@
         "statusType": "auto",
         "x": 980,
         "y": 420,
+        "wires": []
+    },
+    {
+        "id": "8a68fe56d0ce9d2b",
+        "type": "link out",
+        "z": "1f9ad198f05c78e0",
+        "g": "d08782927857db71",
+        "name": "link out 6",
+        "mode": "link",
+        "links": [
+            "20b6c09cf936e09b"
+        ],
+        "x": 1505,
+        "y": 340,
         "wires": []
     },
     {
@@ -5111,6 +5164,116 @@
         "wires": [
             [
                 "e6fac01ece71eb84"
+            ]
+        ]
+    },
+    {
+        "id": "960c6df0e138e3d6",
+        "type": "function",
+        "z": "7b1d8464d4eeb295",
+        "g": "44c1d437b2505fb5",
+        "name": "notification",
+        "func": "const affectedRow = msg.payload.result\nconst notificationMsg = {\n    topic: \"notification\",\n    payload: {\n        receiver: affectedRow.user_id,\n        message: `Your booking at room ${affectedRow.room_id}, time start from ${affectedRow.start_time} to ${affectedRow.end_time} already ${String(affectedRow.status).toLowerCase()}`\n    }\n};\n\nnode.send(notificationMsg);\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 220,
+        "wires": [
+            [
+                "d3135d685060af63"
+            ]
+        ]
+    },
+    {
+        "id": "d3135d685060af63",
+        "type": "link out",
+        "z": "7b1d8464d4eeb295",
+        "g": "44c1d437b2505fb5",
+        "name": "notification",
+        "mode": "link",
+        "links": [
+            "64b287a5cceee242"
+        ],
+        "x": 745,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "83a70607a20416e0",
+        "type": "link in",
+        "z": "7b1d8464d4eeb295",
+        "g": "44c1d437b2505fb5",
+        "name": "trigger_notification_channel",
+        "links": [
+            "ddc131cabdfcb416",
+            "a55b1940896b73fb",
+            "e1fd38f80a61b4d1"
+        ],
+        "x": 325,
+        "y": 220,
+        "wires": [
+            [
+                "960c6df0e138e3d6"
+            ]
+        ]
+    },
+    {
+        "id": "bc1d3039e6fec733",
+        "type": "link out",
+        "z": "7b1d8464d4eeb295",
+        "g": "3b28d018233610dd",
+        "name": "schedule-update",
+        "mode": "link",
+        "links": [
+            "64b287a5cceee242"
+        ],
+        "x": 745,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "a7b22cdff551f99d",
+        "type": "function",
+        "z": "7b1d8464d4eeb295",
+        "g": "3b28d018233610dd",
+        "name": "schedule_update",
+        "func": "const affectedRow = msg.payload.result;\nnode.warn(affectedRow)\nconst scheduleMsg = {\n    topic: \"schedule-update\",\n    payload: {\n        status: affectedRow.status,\n        booking_id: affectedRow.booking_id,\n        start_time: affectedRow.start_time,\n        end_time: affectedRow.end_time       \n    },\n    room_id: affectedRow.room_id\n};\n\nnode.send(scheduleMsg);",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 400,
+        "wires": [
+            [
+                "bc1d3039e6fec733"
+            ]
+        ]
+    },
+    {
+        "id": "20b6c09cf936e09b",
+        "type": "link in",
+        "z": "7b1d8464d4eeb295",
+        "g": "3b28d018233610dd",
+        "name": "trigger_schedule_update_channel",
+        "links": [
+            "ddc131cabdfcb416",
+            "a55b1940896b73fb",
+            "e1fd38f80a61b4d1",
+            "8a68fe56d0ce9d2b",
+            "831c579302862374"
+        ],
+        "x": 325,
+        "y": 400,
+        "wires": [
+            [
+                "a7b22cdff551f99d"
             ]
         ]
     }
