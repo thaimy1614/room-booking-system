@@ -222,9 +222,6 @@ function BookingsManagement() {
                 <TableCell sx={{ fontWeight: 'bold' }}>Start</TableCell>
                 <TableCell sx={{ fontWeight: 'bold' }}>End</TableCell>
                 <TableCell sx={{ fontWeight: 'bold' }}>Status</TableCell>
-                <TableCell sx={{ fontWeight: 'bold' }}>Action By</TableCell>
-                <TableCell sx={{ fontWeight: 'bold' }}>Action At</TableCell>
-                <TableCell sx={{ fontWeight: 'bold' }}>Action Reason</TableCell>
                 <TableCell sx={{ fontWeight: 'bold' }}>Actions</TableCell>
               </TableRow>
             </TableHead>
@@ -245,15 +242,6 @@ function BookingsManagement() {
                     <TableCell>{dayjs(b.end_time).format('YYYY-MM-DD HH:mm')}</TableCell>
                     <TableCell>
                       <Chip label={b.status} color={getStatusColor(b.status)} />
-                    </TableCell>
-                    <TableCell>{b.status !== 'PENDING' ? b.action_by || 'N/A' : '-'}</TableCell>
-                    <TableCell>
-                      {b.status !== 'PENDING' && b.action_at
-                        ? dayjs(b.action_at).format('YYYY-MM-DD HH:mm')
-                        : '-'}
-                    </TableCell>
-                    <TableCell>
-                      {b.status !== 'APPROVED' && b.status !== 'PENDING' ? b.action_reason || 'N/A' : '-'}
                     </TableCell>
                     <TableCell>
                       {b.status === 'PENDING' && (
