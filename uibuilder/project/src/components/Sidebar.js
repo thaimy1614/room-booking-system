@@ -36,6 +36,9 @@ function Sidebar({ role }) {
           <motion.div variants={linkVariants} whileHover="hover">
             <Nav.Link as={Link} to="/admin/bookings"><AdminPanelSettingsIcon sx={{ mr: 1 }} /> Bookings Management</Nav.Link>
           </motion.div>
+          <motion.div variants={linkVariants} whileHover="hover">
+            <Nav.Link as={Link} to="/admin/audit-logs"><AdminPanelSettingsIcon sx={{ mr: 1 }} /> Audit Logs</Nav.Link>
+          </motion.div>
         </>
       )}
     </Nav>

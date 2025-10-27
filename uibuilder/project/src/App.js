@@ -12,6 +12,7 @@ import BookingsManagement from './pages/admin/BookingsManagement';
 import { useAuth } from './context/AuthContext';
 import uibuilderSocket from './configs/uibuilderSocket';
 import { toast } from 'react-toastify';
+import AuditLogs from './pages/admin/AuditLogs';
 
 const theme = createTheme({
   palette: {
@@ -55,6 +56,7 @@ function App() {
             <Route path="schedule" element={role === 'USER' || role === 'ADMIN' ? <Schedule /> : <Navigate to="/" />} />
             <Route path="admin/rooms" element={role === 'ADMIN' ? <RoomManagement /> : <Navigate to="/" />} />
             <Route path="admin/bookings" element={role === 'ADMIN' ? <BookingsManagement /> : <Navigate to="/" />} />
+            <Route path="admin/audit-logs" element={role === 'ADMIN' ? <AuditLogs /> : <Navigate to="/" />} />
           </Route>
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
