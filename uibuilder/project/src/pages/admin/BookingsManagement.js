@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, use } from 'react';
 import { toast } from 'react-toastify';
 import {
   TextField,
@@ -33,6 +33,8 @@ import {
   handleRejectBooking,
   handleCancelBooking,
 } from '../../services/BookingAPIs';
+import { useAuth } from '../../context/AuthContext';
+import { getUserInfo } from '../../services/LocalStorageService';
 
 function BookingsManagement() {
   const [bookings, setBookings] = useState([]);
@@ -45,6 +47,7 @@ function BookingsManagement() {
   const [actionType, setActionType] = useState('');
   const [selectedBooking, setSelectedBooking] = useState(null);
   const [reason, setReason] = useState('');
+  const userId = JSON.parse(localStorage.getItem('user')).user_id;
 
   // Filter states
   const [filterRoomName, setFilterRoomName] = useState('');

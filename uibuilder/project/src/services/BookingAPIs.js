@@ -16,7 +16,7 @@ export const handleGetBookingsWithFilters = async (filters) => {
 
 export const handleApproveBooking = async (bookingId) => {
   try {
-    const response = await axios.post(`/bookings/${bookingId}/approve`, {}, {
+    const response = await axios.post(`/bookings/approve`, { booking_id: bookingId }, {
       headers: {
         'Content-Type': 'application/json',
         'Authorization': `Bearer ${localStorage.getItem('token')}`,
@@ -30,7 +30,7 @@ export const handleApproveBooking = async (bookingId) => {
 
 export const handleRejectBooking = async (bookingId, reason) => {
   try {
-    const response = await axios.post(`/bookings/${bookingId}/reject`, { action_reason: reason }, {
+    const response = await axios.post(`/bookings/reject`, { action_reason: reason, booking_id: bookingId }, {
       headers: {
         'Content-Type': 'application/json',
         'Authorization': `Bearer ${localStorage.getItem('token')}`,
@@ -44,7 +44,7 @@ export const handleRejectBooking = async (bookingId, reason) => {
 
 export const handleCancelBooking = async (bookingId, reason) => {
   try {
-    const response = await axios.post(`/bookings/${bookingId}/cancel`, { action_reason: reason }, {
+    const response = await axios.post(`/bookings/cancel`, { action_reason: reason, booking_id: bookingId }, {
       headers: {
         'Content-Type': 'application/json',
         'Authorization': `Bearer ${localStorage.getItem('token')}`,
