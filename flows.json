@@ -24,14 +24,6 @@
         "env": []
     },
     {
-        "id": "503bea98da0fd5c1",
-        "type": "tab",
-        "label": "Room Flow 1",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
         "id": "37dd95d269875e4a",
         "type": "tab",
         "label": "Room Flow 2",
@@ -196,12 +188,14 @@
             "f4503f000a8c8298",
             "1fda12a0f63cfad1",
             "7817a703d1be77aa",
-            "464f66952bdab47e"
+            "464f66952bdab47e",
+            "03ca3a88533e851b",
+            "63c845f4a7559173"
         ],
         "x": 74,
         "y": 19,
         "w": 1472,
-        "h": 262
+        "h": 302
     },
     {
         "id": "43e2605169538c26",
@@ -227,12 +221,14 @@
             "96b0ad5d6251979a",
             "d69a2c26cc9f11f4",
             "f4a6b7abba1b853d",
-            "9c0d4d10d5da0824"
+            "9c0d4d10d5da0824",
+            "17707c68f920a188",
+            "a031401ecd3508de"
         ],
         "x": 54,
         "y": 339,
         "w": 1532,
-        "h": 262
+        "h": 302
     },
     {
         "id": "731b84d8bf335b59",
@@ -257,10 +253,12 @@
             "961abd4227914836",
             "5d94436a08194e41",
             "8e3fbc7cd8b9157c",
-            "bdd90f60c2ae5d17"
+            "bdd90f60c2ae5d17",
+            "c74226e5de532eb0",
+            "db5c186592d2a610"
         ],
         "x": 54,
-        "y": 1479,
+        "y": 1459,
         "w": 1532,
         "h": 262
     },
@@ -278,7 +276,6 @@
             "color": "#a4a4a4"
         },
         "nodes": [
-            "e5bc05878d40a519",
             "3c078bd0c5d8df5f",
             "1bbf582482b68d30",
             "28385584a48e4371",
@@ -288,7 +285,10 @@
             "5c63a40e03c4acc2",
             "7bb450e6dbd39a15",
             "4201ab2e0ef62410",
-            "71c313ebddc64a42"
+            "71c313ebddc64a42",
+            "bd8f97fec7558845",
+            "a9d70497e0f3ef64",
+            "0d97231f6269a296"
         ],
         "x": 34,
         "y": 659,
@@ -321,7 +321,9 @@
             "8b7921bc8d96309c",
             "393a75a4de27840f",
             "3b5c8c025c7be344",
-            "c74f1b8ad4ca48b9"
+            "c74f1b8ad4ca48b9",
+            "c0eaa6845aa0eafc",
+            "3fc5c22a589843b9"
         ],
         "x": 34,
         "y": 939,
@@ -342,7 +344,6 @@
             "color": "#a4a4a4"
         },
         "nodes": [
-            "884dbc834c6e5c30",
             "f49e1e067a9d555c",
             "747405ee397774a0",
             "892bcbf8f3e47265",
@@ -352,7 +353,8 @@
             "5e495eac96e9b125",
             "3e9a8064bd5699d9",
             "5cebd9d63084d28f",
-            "4a5e1ac9b16eef0b"
+            "4a5e1ac9b16eef0b",
+            "884dbc834c6e5c30"
         ],
         "x": 54,
         "y": 39,
@@ -506,12 +508,14 @@
             "edb201094d6a51c6",
             "a383bacc60bb4a43",
             "201417b0dcf73486",
-            "4997da6227298859"
+            "4997da6227298859",
+            "c9b09c78d983da48",
+            "d38c116554111b17"
         ],
         "x": 94,
-        "y": 1799,
+        "y": 1739,
         "w": 1472,
-        "h": 182
+        "h": 222
     },
     {
         "id": "a3285fd9ae16509c",
@@ -535,12 +539,14 @@
             "9ddf9b61f1607ede",
             "ef80f4c1229a47f0",
             "3131bc55bb666978",
-            "21dba808b3974276"
+            "21dba808b3974276",
+            "9fa742df7df4ab9d",
+            "089d6f77a91f1151"
         ],
         "x": 74,
-        "y": 1279,
+        "y": 1239,
         "w": 1512,
-        "h": 162
+        "h": 202
     },
     {
         "id": "7d57500539d60d1e",
@@ -651,7 +657,6 @@
             "70926ee0c56f5289",
             "0c20f55bc978cdac",
             "a325ed36b7a36cbd",
-            "f1b8d920672d9cc3",
             "2876a7001beb3eb4",
             "753577e69d565b49",
             "bae75b83d0b38da1",
@@ -660,7 +665,10 @@
             "4e89a1054bae3441",
             "2b36261bd517fbfe",
             "0924975e479915e9",
-            "5b0d9a0e193a130f"
+            "5b0d9a0e193a130f",
+            "897273774df7fcfc",
+            "9c33635f345b25e7",
+            "b1df615bc7d3d852"
         ],
         "x": 14,
         "y": 359,
@@ -706,7 +714,8 @@
             "fc5ea47cc62cf18c",
             "e944b42d36dd1686",
             "90fb6e79f160d504",
-            "2d1caa2cc7f191f9"
+            "2d1caa2cc7f191f9",
+            "47ae447451fd8118"
         ],
         "x": 14,
         "y": 1179,
@@ -752,7 +761,8 @@
             "09f0bb0669b6a0af",
             "55e160807079571b",
             "da5c0f351906902b",
-            "650f1579f1d62527"
+            "650f1579f1d62527",
+            "2784bf0207fb79f1"
         ],
         "x": 14,
         "y": 1619,
@@ -781,7 +791,7 @@
         "type": "swagger-doc",
         "summary": "API login",
         "description": "",
-        "tags": "",
+        "tags": "auth",
         "parameters": [],
         "responses": {
             "default": {
@@ -820,7 +830,7 @@
         "type": "swagger-doc",
         "summary": "",
         "description": "",
-        "tags": "",
+        "tags": "facilities",
         "parameters": [],
         "responses": {
             "default": {
@@ -834,7 +844,7 @@
         "type": "swagger-doc",
         "summary": "",
         "description": "",
-        "tags": "",
+        "tags": "rooms",
         "parameters": [
             {
                 "name": "name",
@@ -859,6 +869,524 @@
                 "in": "query",
                 "required": false,
                 "type": "integer"
+            }
+        ],
+        "responses": {
+            "default": {
+                "description": ""
+            }
+        },
+        "deprecated": false
+    },
+    {
+        "id": "626d3e02856c1e8d",
+        "type": "swagger-doc",
+        "summary": "",
+        "description": "",
+        "tags": "rooms",
+        "parameters": [],
+        "responses": {
+            "default": {
+                "description": ""
+            }
+        },
+        "requestBody": {
+            "description": "",
+            "content": {
+                "application/json": {
+                    "schema": {
+                        "type": "object",
+                        "properties": {
+                            "name": {
+                                "type": "string",
+                                "example": "A01"
+                            },
+                            "capacity": {
+                                "type": "number",
+                                "example": "10"
+                            },
+                            "location": {
+                                "type": "string",
+                                "example": "Floor 1, A building"
+                            },
+                            "facility_ids": {
+                                "type": "array",
+                                "example": "[1, 2, 3]"
+                            }
+                        },
+                        "required": [
+                            "name",
+                            "capacity",
+                            "location",
+                            "facility_ids"
+                        ]
+                    }
+                }
+            }
+        },
+        "deprecated": false
+    },
+    {
+        "id": "b58757df08e36ba6",
+        "type": "swagger-doc",
+        "summary": "",
+        "description": "",
+        "tags": "rooms",
+        "parameters": [
+            {
+                "name": "room_id",
+                "in": "path",
+                "description": "Room ID",
+                "required": true,
+                "type": "integer"
+            }
+        ],
+        "responses": {
+            "default": {
+                "description": ""
+            }
+        },
+        "requestBody": {
+            "description": "",
+            "content": {
+                "application/json": {
+                    "schema": {
+                        "type": "object",
+                        "properties": {
+                            "name": {
+                                "type": "string",
+                                "example": "A01"
+                            },
+                            "capacity": {
+                                "type": "number",
+                                "example": "10"
+                            },
+                            "location": {
+                                "type": "string",
+                                "example": "Floor 1, A building"
+                            },
+                            "facility_ids": {
+                                "type": "array",
+                                "example": "[1, 2, 3]"
+                            }
+                        },
+                        "required": [
+                            "name",
+                            "capacity",
+                            "location",
+                            "facility_ids"
+                        ]
+                    }
+                }
+            }
+        },
+        "deprecated": false
+    },
+    {
+        "id": "001a5c8915d25374",
+        "type": "swagger-doc",
+        "summary": "",
+        "description": "",
+        "tags": "rooms",
+        "parameters": [
+            {
+                "name": "room_id",
+                "in": "path",
+                "required": false
+            }
+        ],
+        "responses": {
+            "default": {
+                "description": ""
+            }
+        },
+        "deprecated": false
+    },
+    {
+        "id": "1d44248fdfa89dbd",
+        "type": "swagger-doc",
+        "summary": "",
+        "description": "",
+        "tags": "rooms",
+        "parameters": [],
+        "responses": {
+            "default": {
+                "description": ""
+            }
+        },
+        "deprecated": false
+    },
+    {
+        "id": "15242996b35b834d",
+        "type": "swagger-doc",
+        "summary": "",
+        "description": "",
+        "tags": "rooms",
+        "parameters": [
+            {
+                "name": "room_id",
+                "in": "path",
+                "required": false,
+                "type": "number"
+            }
+        ],
+        "responses": {
+            "default": {
+                "description": ""
+            }
+        },
+        "deprecated": false
+    },
+    {
+        "id": "30f9eae301534002",
+        "type": "swagger-doc",
+        "summary": "",
+        "description": "",
+        "tags": "rooms",
+        "parameters": [],
+        "responses": {
+            "default": {
+                "description": ""
+            }
+        },
+        "deprecated": false
+    },
+    {
+        "id": "0712b4ea054f8946",
+        "type": "swagger-doc",
+        "summary": "",
+        "description": "",
+        "tags": "bookings",
+        "parameters": [
+            {
+                "name": "room_name",
+                "in": "query",
+                "required": false,
+                "type": "string"
+            },
+            {
+                "name": "start_time",
+                "in": "query",
+                "required": false,
+                "type": "string"
+            },
+            {
+                "name": "end_time",
+                "in": "query",
+                "required": false,
+                "type": "string"
+            },
+            {
+                "name": "status",
+                "in": "query",
+                "required": false,
+                "type": "string"
+            }
+        ],
+        "responses": {
+            "default": {
+                "description": ""
+            }
+        },
+        "deprecated": false
+    },
+    {
+        "id": "9c31e44552665096",
+        "type": "swagger-doc",
+        "summary": "",
+        "description": "",
+        "tags": "bookings",
+        "parameters": [
+            {
+                "name": "booking_id",
+                "in": "path",
+                "required": true,
+                "type": "integer"
+            }
+        ],
+        "responses": {
+            "default": {
+                "description": ""
+            }
+        },
+        "deprecated": false
+    },
+    {
+        "id": "783314020467f92a",
+        "type": "swagger-doc",
+        "summary": "",
+        "description": "",
+        "tags": "bookings",
+        "parameters": [],
+        "responses": {
+            "default": {
+                "description": ""
+            }
+        },
+        "requestBody": {
+            "description": "",
+            "content": {
+                "application/json": {
+                    "schema": {
+                        "type": "object",
+                        "properties": {
+                            "room_id": {
+                                "type": "number",
+                                "example": "1"
+                            },
+                            "title": {
+                                "type": "string",
+                                "example": "meeting"
+                            },
+                            "start_time": {
+                                "type": "string",
+                                "example": "2025-10-20T10:00:00"
+                            },
+                            "end_time": {
+                                "type": "string",
+                                "example": "2025-10-20T11:00:00"
+                            }
+                        },
+                        "required": [
+                            "room_id",
+                            "title",
+                            "end_time",
+                            "start_time"
+                        ]
+                    }
+                }
+            }
+        },
+        "deprecated": false
+    },
+    {
+        "id": "9d44b144c22a41cb",
+        "type": "swagger-doc",
+        "summary": "",
+        "description": "",
+        "tags": "bookings",
+        "parameters": [
+            {
+                "name": "booking_id",
+                "in": "path",
+                "required": true,
+                "type": "integer"
+            }
+        ],
+        "responses": {
+            "default": {
+                "description": ""
+            }
+        },
+        "requestBody": {
+            "description": "",
+            "content": {
+                "application/json": {
+                    "schema": {
+                        "type": "object",
+                        "properties": {
+                            "reason": {
+                                "type": "string",
+                                "example": "Reason"
+                            }
+                        },
+                        "required": [
+                            "reason"
+                        ]
+                    }
+                }
+            }
+        },
+        "deprecated": false
+    },
+    {
+        "id": "b3a53d07c5bede1b",
+        "type": "swagger-doc",
+        "summary": "",
+        "description": "",
+        "tags": "bookings",
+        "parameters": [
+            {
+                "name": "booking_id",
+                "in": "path",
+                "required": true,
+                "type": "integer"
+            }
+        ],
+        "responses": {
+            "default": {
+                "description": ""
+            }
+        },
+        "requestBody": {
+            "description": "",
+            "content": {
+                "application/json": {
+                    "schema": {
+                        "type": "object",
+                        "properties": {
+                            "reason": {
+                                "type": "string",
+                                "example": "Reason"
+                            }
+                        },
+                        "required": [
+                            "reason"
+                        ]
+                    }
+                }
+            }
+        },
+        "deprecated": false
+    },
+    {
+        "id": "0012e4184beb4eda",
+        "type": "swagger-doc",
+        "summary": "",
+        "description": "",
+        "tags": "my bookings",
+        "parameters": [
+            {
+                "name": "room_name",
+                "in": "query",
+                "required": false,
+                "type": "string"
+            },
+            {
+                "name": "start_time",
+                "in": "query",
+                "required": false,
+                "type": "string"
+            },
+            {
+                "name": "status",
+                "in": "query",
+                "required": false,
+                "type": "string"
+            },
+            {
+                "name": "limit",
+                "in": "query",
+                "required": true,
+                "type": "integer"
+            },
+            {
+                "name": "offset",
+                "in": "query",
+                "required": true,
+                "type": "integer"
+            }
+        ],
+        "responses": {
+            "default": {
+                "description": ""
+            }
+        },
+        "deprecated": false
+    },
+    {
+        "id": "13c01cadfd978a95",
+        "type": "swagger-doc",
+        "summary": "",
+        "description": "",
+        "tags": "my bookings",
+        "parameters": [
+            {
+                "name": "booking_id",
+                "in": "path",
+                "required": false,
+                "type": "integer"
+            }
+        ],
+        "responses": {
+            "default": {
+                "description": ""
+            }
+        },
+        "requestBody": {
+            "description": "",
+            "content": {
+                "application/json": {
+                    "schema": {
+                        "type": "object",
+                        "properties": {
+                            "reason": {
+                                "type": "string",
+                                "example": "Reason"
+                            }
+                        },
+                        "required": [
+                            "reason"
+                        ]
+                    }
+                }
+            }
+        },
+        "deprecated": false
+    },
+    {
+        "id": "fdbe95dd413cfef8",
+        "type": "swagger-doc",
+        "summary": "",
+        "description": "",
+        "tags": "schedule",
+        "parameters": [
+            {
+                "name": "room_id",
+                "in": "query",
+                "required": true,
+                "type": "integer"
+            },
+            {
+                "name": "start_time",
+                "in": "query",
+                "required": true,
+                "type": "string"
+            },
+            {
+                "name": "end_time",
+                "in": "query",
+                "required": true,
+                "type": "string"
+            }
+        ],
+        "responses": {
+            "default": {
+                "description": ""
+            }
+        },
+        "deprecated": false
+    },
+    {
+        "id": "de5d441597bd8d11",
+        "type": "swagger-doc",
+        "summary": "",
+        "description": "",
+        "tags": "audit logs",
+        "parameters": [
+            {
+                "name": "room_name",
+                "in": "query",
+                "required": false,
+                "type": "string"
+            },
+            {
+                "name": "start_time",
+                "in": "query",
+                "required": false,
+                "type": "string"
+            },
+            {
+                "name": "username",
+                "in": "query",
+                "required": false,
+                "type": "string"
+            },
+            {
+                "name": "status",
+                "in": "query",
+                "required": false,
+                "type": "string"
             }
         ],
         "responses": {
@@ -941,68 +1469,6 @@
         "headers": {},
         "x": 980,
         "y": 220,
-        "wires": []
-    },
-    {
-        "id": "3b693b50f30d7d65",
-        "type": "inject",
-        "z": "959654febd2675df",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 120,
-        "y": 340,
-        "wires": [
-            [
-                "7edadbbe7a39f16f"
-            ]
-        ]
-    },
-    {
-        "id": "7edadbbe7a39f16f",
-        "type": "function",
-        "z": "959654febd2675df",
-        "name": "function 2",
-        "func": "\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 280,
-        "y": 340,
-        "wires": [
-            [
-                "baa3d5f2eb79a531"
-            ]
-        ]
-    },
-    {
-        "id": "baa3d5f2eb79a531",
-        "type": "link out",
-        "z": "959654febd2675df",
-        "name": "link out 1",
-        "mode": "link",
-        "links": [
-            "64b287a5cceee242"
-        ],
-        "x": 425,
-        "y": 340,
         "wires": []
     },
     {
@@ -1795,7 +2261,7 @@
         "z": "37dd95d269875e4a",
         "g": "aa1e98539aa1c396",
         "name": "handle_invalid_token",
-        "func": "msg.statusCode = 401;\nmsg.payload = {\n    ok: false,\n    message: \"Invalid token!\"\n}\nreturn msg;",
+        "func": "msg.statusCode = 401;\nmsg.payload = {\n    ok: false,\n    message: \"Invalid or missing token!\"\n}\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -1816,7 +2282,10 @@
         "z": "37dd95d269875e4a",
         "g": "aa1e98539aa1c396",
         "name": "catch",
-        "scope": "group",
+        "scope": [
+            "69be1a66d4cf79b6",
+            "1fda12a0f63cfad1"
+        ],
         "uncaught": false,
         "x": 330,
         "y": 240,
@@ -1836,7 +2305,7 @@
         "method": "post",
         "upload": false,
         "skipBodyParsing": false,
-        "swaggerDoc": "",
+        "swaggerDoc": "626d3e02856c1e8d",
         "x": 160,
         "y": 380,
         "wires": [
@@ -1986,7 +2455,7 @@
         "z": "37dd95d269875e4a",
         "g": "43e2605169538c26",
         "name": "handle_invalid_token",
-        "func": "msg.statusCode = 401;\nmsg.payload = {\n    ok: false,\n    message: \"Invalid token!\"\n}\nreturn msg;",
+        "func": "msg.statusCode = 401;\nmsg.payload = {\n    ok: false,\n    message: \"Invalid or missing token!\"\n}\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -2007,7 +2476,10 @@
         "z": "37dd95d269875e4a",
         "g": "43e2605169538c26",
         "name": "catch",
-        "scope": "group",
+        "scope": [
+            "22d0dc9c70904d93",
+            "96b0ad5d6251979a"
+        ],
         "uncaught": false,
         "x": 390,
         "y": 560,
@@ -2045,7 +2517,7 @@
             "content-type": "application/json"
         },
         "x": 1500,
-        "y": 1600,
+        "y": 1580,
         "wires": []
     },
     {
@@ -2056,7 +2528,7 @@
         "mydb": "443dca5366e7983c",
         "name": "mysql",
         "x": 1050,
-        "y": 1520,
+        "y": 1500,
         "wires": [
             [
                 "a1ed93e7596aee60"
@@ -2077,7 +2549,7 @@
         "finalize": "",
         "libs": [],
         "x": 910,
-        "y": 1520,
+        "y": 1500,
         "wires": [
             [
                 "6fc035c0c6e89a92"
@@ -2098,7 +2570,7 @@
         "finalize": "",
         "libs": [],
         "x": 1220,
-        "y": 1520,
+        "y": 1500,
         "wires": [
             [
                 "8f6dc201eb39db7f"
@@ -2120,7 +2592,7 @@
         "signvar": "bearer",
         "storetoken": "token",
         "x": 580,
-        "y": 1520,
+        "y": 1500,
         "wires": [
             [
                 "961abd4227914836"
@@ -2141,7 +2613,7 @@
         "finalize": "",
         "libs": [],
         "x": 400,
-        "y": 1520,
+        "y": 1500,
         "wires": [
             [
                 "1dba4f40f290cccf"
@@ -2156,7 +2628,7 @@
         "name": "role_check",
         "requiredRole": "ADMIN",
         "x": 750,
-        "y": 1600,
+        "y": 1580,
         "wires": [
             [
                 "006a159ba1dfc5a1"
@@ -2172,7 +2644,7 @@
         "z": "37dd95d269875e4a",
         "g": "731b84d8bf335b59",
         "name": "handle_invalid_token",
-        "func": "msg.statusCode = 401;\nmsg.payload = {\n    ok: false,\n    message: \"Invalid token!\"\n}\nreturn msg;",
+        "func": "msg.statusCode = 401;\nmsg.payload = {\n    ok: false,\n    message: \"Invalid or missing token!\"\n}\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -2180,7 +2652,7 @@
         "finalize": "",
         "libs": [],
         "x": 880,
-        "y": 1700,
+        "y": 1680,
         "wires": [
             [
                 "8f6dc201eb39db7f"
@@ -2193,32 +2665,16 @@
         "z": "37dd95d269875e4a",
         "g": "731b84d8bf335b59",
         "name": "catch",
-        "scope": "group",
+        "scope": [
+            "1dba4f40f290cccf",
+            "961abd4227914836"
+        ],
         "uncaught": false,
         "x": 370,
-        "y": 1700,
+        "y": 1680,
         "wires": [
             [
                 "5d94436a08194e41"
-            ]
-        ]
-    },
-    {
-        "id": "e5bc05878d40a519",
-        "type": "http in",
-        "z": "37dd95d269875e4a",
-        "g": "bddb83f6550c1c97",
-        "name": "PUT /api/rooms/:room_id",
-        "url": "/api/rooms/:room_id",
-        "method": "put",
-        "upload": false,
-        "skipBodyParsing": false,
-        "swaggerDoc": "",
-        "x": 170,
-        "y": 700,
-        "wires": [
-            [
-                "4201ab2e0ef62410"
             ]
         ]
     },
@@ -2339,7 +2795,7 @@
         "z": "37dd95d269875e4a",
         "g": "bddb83f6550c1c97",
         "name": "handle_invalid_token",
-        "func": "msg.statusCode = 401;\nmsg.payload = {\n    ok: false,\n    message: \"Invalid token!\"\n}\nreturn msg;",
+        "func": "msg.statusCode = 401;\nmsg.payload = {\n    ok: false,\n    message: \"Invalid or missing token!\"\n}\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -2360,7 +2816,10 @@
         "z": "37dd95d269875e4a",
         "g": "bddb83f6550c1c97",
         "name": "catch",
-        "scope": "group",
+        "scope": [
+            "06f562fde793b236",
+            "ecfa6dbba57472fe"
+        ],
         "uncaught": false,
         "x": 410,
         "y": 880,
@@ -2397,7 +2856,7 @@
         "method": "delete",
         "upload": false,
         "skipBodyParsing": false,
-        "swaggerDoc": "",
+        "swaggerDoc": "001a5c8915d25374",
         "x": 180,
         "y": 1000,
         "wires": [
@@ -2550,7 +3009,7 @@
         "z": "37dd95d269875e4a",
         "g": "35b9f398219455c3",
         "name": "handle_invalid_token",
-        "func": "msg.statusCode = 401;\nmsg.payload = {\n    ok: false,\n    message: \"Invalid token!\"\n}\nreturn msg;",
+        "func": "msg.statusCode = 401;\nmsg.payload = {\n    ok: false,\n    message: \"Invalid or missing token!\"\n}\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -2571,7 +3030,10 @@
         "z": "37dd95d269875e4a",
         "g": "35b9f398219455c3",
         "name": "catch",
-        "scope": "group",
+        "scope": [
+            "29f02c5b5fc0e4e3",
+            "8d87ea4ed40cebc3"
+        ],
         "uncaught": false,
         "x": 410,
         "y": 1180,
@@ -2673,7 +3135,7 @@
             "content-type": "application/json"
         },
         "x": 1480,
-        "y": 1920,
+        "y": 1860,
         "wires": []
     },
     {
@@ -2684,7 +3146,7 @@
         "mydb": "443dca5366e7983c",
         "name": "mysql",
         "x": 950,
-        "y": 1840,
+        "y": 1780,
         "wires": [
             [
                 "ad28dc62dcbadec1"
@@ -2705,7 +3167,7 @@
         "finalize": "",
         "libs": [],
         "x": 790,
-        "y": 1880,
+        "y": 1820,
         "wires": [
             [
                 "cd6dc72ddff52036"
@@ -2729,7 +3191,7 @@
         "finalize": "",
         "libs": [],
         "x": 1120,
-        "y": 1840,
+        "y": 1780,
         "wires": [
             [
                 "1fc813a0b0ee5259"
@@ -2751,7 +3213,7 @@
         "signvar": "bearer",
         "storetoken": "token",
         "x": 620,
-        "y": 1840,
+        "y": 1780,
         "wires": [
             [
                 "bdd6bce524b5de25"
@@ -2772,7 +3234,7 @@
         "finalize": "",
         "libs": [],
         "x": 440,
-        "y": 1840,
+        "y": 1780,
         "wires": [
             [
                 "d82a38baa1b33d29"
@@ -2790,7 +3252,7 @@
             "content-type": "application/json"
         },
         "x": 1500,
-        "y": 1400,
+        "y": 1360,
         "wires": []
     },
     {
@@ -2801,7 +3263,7 @@
         "mydb": "443dca5366e7983c",
         "name": "mysql",
         "x": 930,
-        "y": 1320,
+        "y": 1280,
         "wires": [
             [
                 "76845cf1372789ee"
@@ -2822,7 +3284,7 @@
         "finalize": "",
         "libs": [],
         "x": 750,
-        "y": 1320,
+        "y": 1280,
         "wires": [
             [
                 "d6844f72e50939e2"
@@ -2843,7 +3305,7 @@
         "finalize": "",
         "libs": [],
         "x": 1100,
-        "y": 1320,
+        "y": 1280,
         "wires": [
             [
                 "dbeba861c30a2419"
@@ -2865,7 +3327,7 @@
         "signvar": "bearer",
         "storetoken": "token",
         "x": 580,
-        "y": 1320,
+        "y": 1280,
         "wires": [
             [
                 "b0b0d10d4f67a1d6"
@@ -2886,7 +3348,7 @@
         "finalize": "",
         "libs": [],
         "x": 400,
-        "y": 1320,
+        "y": 1280,
         "wires": [
             [
                 "a4770e1f4b82cba0"
@@ -2903,9 +3365,9 @@
         "method": "get",
         "upload": false,
         "skipBodyParsing": false,
-        "swaggerDoc": "",
+        "swaggerDoc": "30f9eae301534002",
         "x": 230,
-        "y": 1840,
+        "y": 1780,
         "wires": [
             [
                 "edb201094d6a51c6"
@@ -2922,9 +3384,9 @@
         "method": "get",
         "upload": false,
         "skipBodyParsing": false,
-        "swaggerDoc": "",
+        "swaggerDoc": "1d44248fdfa89dbd",
         "x": 200,
-        "y": 1320,
+        "y": 1280,
         "wires": [
             [
                 "9ddf9b61f1607ede"
@@ -2941,9 +3403,9 @@
         "method": "get",
         "upload": false,
         "skipBodyParsing": false,
-        "swaggerDoc": "",
+        "swaggerDoc": "15242996b35b834d",
         "x": 190,
-        "y": 1520,
+        "y": 1500,
         "wires": [
             [
                 "21f2cec970bbfd1c"
@@ -2956,7 +3418,7 @@
         "z": "37dd95d269875e4a",
         "g": "a3285fd9ae16509c",
         "name": "handle_invalid_token",
-        "func": "msg.statusCode = 401;\nmsg.payload = {\n    ok: false,\n    message: \"Invalid token!\"\n}\nreturn msg;",
+        "func": "msg.statusCode = 401;\nmsg.payload = {\n    ok: false,\n    message: \"Invalid or missing token!\"\n}\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -2964,7 +3426,7 @@
         "finalize": "",
         "libs": [],
         "x": 920,
-        "y": 1400,
+        "y": 1360,
         "wires": [
             [
                 "dbeba861c30a2419"
@@ -2977,10 +3439,12 @@
         "z": "37dd95d269875e4a",
         "g": "a3285fd9ae16509c",
         "name": "catch",
-        "scope": "group",
+        "scope": [
+            "a4770e1f4b82cba0"
+        ],
         "uncaught": false,
         "x": 410,
-        "y": 1400,
+        "y": 1360,
         "wires": [
             [
                 "3131bc55bb666978"
@@ -2993,7 +3457,7 @@
         "z": "37dd95d269875e4a",
         "g": "5313c9ea75a5b369",
         "name": "handle_invalid_token",
-        "func": "msg.statusCode = 500;\nmsg.payload = {\n    ok: false,\n    message: \"Invalid token!\"\n}\nreturn msg;",
+        "func": "msg.statusCode = 500;\nmsg.payload = {\n    ok: false,\n    message: \"Invalid or missing token!\"\n}\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -3001,7 +3465,7 @@
         "finalize": "",
         "libs": [],
         "x": 880,
-        "y": 1940,
+        "y": 1880,
         "wires": [
             [
                 "1fc813a0b0ee5259"
@@ -3014,10 +3478,12 @@
         "z": "37dd95d269875e4a",
         "g": "5313c9ea75a5b369",
         "name": "catch",
-        "scope": "group",
+        "scope": [
+            "d82a38baa1b33d29"
+        ],
         "uncaught": false,
         "x": 530,
-        "y": 1940,
+        "y": 1880,
         "wires": [
             [
                 "201417b0dcf73486"
@@ -3025,21 +3491,280 @@
         ]
     },
     {
-        "id": "884dbc834c6e5c30",
-        "type": "http in",
-        "z": "bd5efab3a54ad20c",
-        "g": "504069dc06829e62",
-        "name": "GET /api/bookings",
-        "url": "/api/bookings",
-        "method": "get",
-        "upload": false,
-        "skipBodyParsing": false,
-        "swaggerDoc": "",
-        "x": 170,
-        "y": 80,
+        "id": "03ca3a88533e851b",
+        "type": "catch",
+        "z": "37dd95d269875e4a",
+        "g": "aa1e98539aa1c396",
+        "name": "catch_unhandled_errors",
+        "scope": "group",
+        "uncaught": true,
+        "x": 390,
+        "y": 280,
         "wires": [
             [
-                "f27de9691e262046"
+                "63c845f4a7559173"
+            ]
+        ]
+    },
+    {
+        "id": "63c845f4a7559173",
+        "type": "function",
+        "z": "37dd95d269875e4a",
+        "g": "aa1e98539aa1c396",
+        "name": "handle_unhandled_errors",
+        "func": "msg.statusCode = 500;\nmsg.payload = {\n    ok: false,\n    message: \"Internal Server Error\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 850,
+        "y": 280,
+        "wires": [
+            [
+                "8c40e70770102473"
+            ]
+        ]
+    },
+    {
+        "id": "17707c68f920a188",
+        "type": "catch",
+        "z": "37dd95d269875e4a",
+        "g": "43e2605169538c26",
+        "name": "catch_unhandled_errors",
+        "scope": "group",
+        "uncaught": true,
+        "x": 450,
+        "y": 600,
+        "wires": [
+            [
+                "a031401ecd3508de"
+            ]
+        ]
+    },
+    {
+        "id": "a031401ecd3508de",
+        "type": "function",
+        "z": "37dd95d269875e4a",
+        "g": "43e2605169538c26",
+        "name": "handle_unhandled_errors",
+        "func": "msg.statusCode = 500;\nmsg.payload = {\n    ok: false,\n    message: \"Internal Server Error\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 600,
+        "wires": [
+            [
+                "b2db5fd42dcc0f04"
+            ]
+        ]
+    },
+    {
+        "id": "bd8f97fec7558845",
+        "type": "catch",
+        "z": "37dd95d269875e4a",
+        "g": "bddb83f6550c1c97",
+        "name": "catch_unhandled_errors",
+        "scope": "group",
+        "uncaught": true,
+        "x": 470,
+        "y": 840,
+        "wires": [
+            [
+                "a9d70497e0f3ef64"
+            ]
+        ]
+    },
+    {
+        "id": "a9d70497e0f3ef64",
+        "type": "function",
+        "z": "37dd95d269875e4a",
+        "g": "bddb83f6550c1c97",
+        "name": "handle_unhandled_errors",
+        "func": "msg.statusCode = 500;\nmsg.payload = {\n    ok: false,\n    message: \"Internal Server Error\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 840,
+        "wires": [
+            [
+                "3c078bd0c5d8df5f"
+            ]
+        ]
+    },
+    {
+        "id": "c0eaa6845aa0eafc",
+        "type": "catch",
+        "z": "37dd95d269875e4a",
+        "g": "35b9f398219455c3",
+        "name": "catch_unhandled_errors",
+        "scope": "group",
+        "uncaught": true,
+        "x": 450,
+        "y": 1140,
+        "wires": [
+            [
+                "3fc5c22a589843b9"
+            ]
+        ]
+    },
+    {
+        "id": "3fc5c22a589843b9",
+        "type": "function",
+        "z": "37dd95d269875e4a",
+        "g": "35b9f398219455c3",
+        "name": "handle_unhandled_errors",
+        "func": "msg.statusCode = 500;\nmsg.payload = {\n    ok: false,\n    message: \"Internal Server Error\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 1140,
+        "wires": [
+            [
+                "9d7fd5160cb070dc"
+            ]
+        ]
+    },
+    {
+        "id": "9fa742df7df4ab9d",
+        "type": "catch",
+        "z": "37dd95d269875e4a",
+        "g": "a3285fd9ae16509c",
+        "name": "catch_unhandled_errors",
+        "scope": "group",
+        "uncaught": true,
+        "x": 470,
+        "y": 1400,
+        "wires": [
+            [
+                "089d6f77a91f1151"
+            ]
+        ]
+    },
+    {
+        "id": "089d6f77a91f1151",
+        "type": "function",
+        "z": "37dd95d269875e4a",
+        "g": "a3285fd9ae16509c",
+        "name": "handle_unhandled_errors",
+        "func": "msg.statusCode = 500;\nmsg.payload = {\n    ok: false,\n    message: \"Internal Server Error\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 1400,
+        "wires": [
+            [
+                "dbeba861c30a2419"
+            ]
+        ]
+    },
+    {
+        "id": "c74226e5de532eb0",
+        "type": "catch",
+        "z": "37dd95d269875e4a",
+        "g": "731b84d8bf335b59",
+        "name": "catch_unhandled_errors",
+        "scope": "group",
+        "uncaught": true,
+        "x": 430,
+        "y": 1640,
+        "wires": [
+            [
+                "db5c186592d2a610"
+            ]
+        ]
+    },
+    {
+        "id": "db5c186592d2a610",
+        "type": "function",
+        "z": "37dd95d269875e4a",
+        "g": "731b84d8bf335b59",
+        "name": "handle_unhandled_errors",
+        "func": "msg.statusCode = 500;\nmsg.payload = {\n    ok: false,\n    message: \"Internal Server Error\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 890,
+        "y": 1640,
+        "wires": [
+            [
+                "8f6dc201eb39db7f"
+            ]
+        ]
+    },
+    {
+        "id": "c9b09c78d983da48",
+        "type": "catch",
+        "z": "37dd95d269875e4a",
+        "g": "5313c9ea75a5b369",
+        "name": "catch_unhandled_errors",
+        "scope": "group",
+        "uncaught": true,
+        "x": 590,
+        "y": 1920,
+        "wires": [
+            [
+                "d38c116554111b17"
+            ]
+        ]
+    },
+    {
+        "id": "d38c116554111b17",
+        "type": "function",
+        "z": "37dd95d269875e4a",
+        "g": "5313c9ea75a5b369",
+        "name": "handle_unhandled_errors",
+        "func": "msg.statusCode = 500;\nmsg.payload = {\n    ok: false,\n    message: \"Internal Server Error\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1050,
+        "y": 1920,
+        "wires": [
+            [
+                "1fc813a0b0ee5259"
+            ]
+        ]
+    },
+    {
+        "id": "0d97231f6269a296",
+        "type": "http in",
+        "z": "37dd95d269875e4a",
+        "g": "bddb83f6550c1c97",
+        "name": "PUT /api/rooms/:room_id",
+        "url": "/api/rooms/:room_id",
+        "method": "put",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "b58757df08e36ba6",
+        "x": 170,
+        "y": 700,
+        "wires": [
+            [
+                "4201ab2e0ef62410"
             ]
         ]
     },
@@ -3244,9 +3969,9 @@
         "method": "post",
         "upload": false,
         "skipBodyParsing": false,
-        "swaggerDoc": "",
+        "swaggerDoc": "783314020467f92a",
         "x": 150,
-        "y": 980,
+        "y": 860,
         "wires": [
             [
                 "a1e31873174aa9c6"
@@ -3572,17 +4297,18 @@
         "type": "http in",
         "z": "bd5efab3a54ad20c",
         "g": "e3ede9509861dd36",
-        "name": "POST /api/bookings/approve",
-        "url": "/api/bookings/approve",
+        "name": "POST /api/bookings/:booking_id/approve",
+        "url": "/api/bookings/:booking_id/approve",
         "method": "post",
         "upload": false,
         "skipBodyParsing": false,
-        "swaggerDoc": "",
-        "x": 160,
+        "swaggerDoc": "9c31e44552665096",
+        "x": 200,
         "y": 400,
         "wires": [
             [
-                "f1b8d920672d9cc3"
+                "9c33635f345b25e7",
+                "c28d5c1b6a874681"
             ]
         ]
     },
@@ -3592,15 +4318,15 @@
         "z": "bd5efab3a54ad20c",
         "g": "e3ede9509861dd36",
         "name": "build_params",
-        "func": "// Parse booking_id and user_id from request\nconst body = msg.payload;\nmsg.booking_id = body.booking_id;\nmsg.user_id = msg.token.user_id;\nmsg.topic = \"START TRANSACTION;\";\nreturn msg;",
+        "func": "msg.booking_id = msg.req.params.booking_id || {};\nmsg.user_id = msg.token.user_id;\nmsg.topic = \"START TRANSACTION;\";\nreturn msg;",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 460,
-        "y": 400,
+        "x": 520,
+        "y": 480,
         "wires": [
             [
                 "2d9d91e3916d3cbc"
@@ -3620,7 +4346,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 880,
+        "x": 960,
         "y": 400,
         "wires": [
             [
@@ -3641,7 +4367,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 730,
+        "x": 790,
         "y": 540,
         "wires": [
             [
@@ -3665,8 +4391,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1120,
-        "y": 500,
+        "x": 1180,
+        "y": 520,
         "wires": [
             [
                 "70926ee0c56f5289"
@@ -3689,7 +4415,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1530,
+        "x": 1590,
         "y": 480,
         "wires": [
             [
@@ -3741,7 +4467,7 @@
         "name": "response_error",
         "statusCode": "400",
         "headers": {},
-        "x": 2020,
+        "x": 2060,
         "y": 600,
         "wires": []
     },
@@ -3752,7 +4478,7 @@
         "g": "e3ede9509861dd36",
         "mydb": "443dca5366e7983c",
         "name": "",
-        "x": 660,
+        "x": 740,
         "y": 400,
         "wires": [
             [
@@ -3767,8 +4493,8 @@
         "g": "e3ede9509861dd36",
         "mydb": "443dca5366e7983c",
         "name": "",
-        "x": 620,
-        "y": 480,
+        "x": 1180,
+        "y": 400,
         "wires": [
             [
                 "af7ba6e49f107e79"
@@ -3782,8 +4508,8 @@
         "g": "e3ede9509861dd36",
         "mydb": "443dca5366e7983c",
         "name": "",
-        "x": 920,
-        "y": 500,
+        "x": 980,
+        "y": 520,
         "wires": [
             [
                 "8892cfa1146e77aa"
@@ -3797,11 +4523,11 @@
         "g": "e3ede9509861dd36",
         "mydb": "443dca5366e7983c",
         "name": "",
-        "x": 1880,
+        "x": 1560,
         "y": 540,
         "wires": [
             [
-                "7c9dd83c0d5efa4a"
+                "b1df615bc7d3d852"
             ]
         ]
     },
@@ -3812,8 +4538,8 @@
         "g": "e3ede9509861dd36",
         "mydb": "443dca5366e7983c",
         "name": "",
-        "x": 1320,
-        "y": 460,
+        "x": 1380,
+        "y": 480,
         "wires": [
             [
                 "7f92e639274d0d44"
@@ -3847,23 +4573,6 @@
         "wires": [
             [
                 "2876a7001beb3eb4"
-            ]
-        ]
-    },
-    {
-        "id": "f1b8d920672d9cc3",
-        "type": "json",
-        "z": "bd5efab3a54ad20c",
-        "g": "e3ede9509861dd36",
-        "name": "",
-        "property": "payload",
-        "action": "obj",
-        "pretty": false,
-        "x": 130,
-        "y": 460,
-        "wires": [
-            [
-                "c28d5c1b6a874681"
             ]
         ]
     },
@@ -3918,7 +4627,7 @@
         "key": "",
         "signvar": "bearer",
         "storetoken": "token",
-        "x": 320,
+        "x": 200,
         "y": 600,
         "wires": [
             [
@@ -3940,7 +4649,7 @@
         "finalize": "",
         "libs": [],
         "x": 160,
-        "y": 600,
+        "y": 540,
         "wires": [
             [
                 "bae75b83d0b38da1"
@@ -3954,7 +4663,7 @@
         "g": "e3ede9509861dd36",
         "name": "role_check",
         "requiredRole": "ADMIN",
-        "x": 470,
+        "x": 350,
         "y": 600,
         "wires": [
             [
@@ -4016,7 +4725,8 @@
         "y": 720,
         "wires": [
             [
-                "5b0d9a0e193a130f"
+                "5b0d9a0e193a130f",
+                "897273774df7fcfc"
             ]
         ]
     },
@@ -4046,13 +4756,13 @@
         "type": "http in",
         "z": "bd5efab3a54ad20c",
         "g": "b83eba8ab2a13179",
-        "name": "POST /api/bookings/reject",
-        "url": "/api/bookings/reject",
+        "name": "POST /api/bookings/:booking_id/reject",
+        "url": "/api/bookings/:booking_id/reject",
         "method": "post",
         "upload": false,
         "skipBodyParsing": false,
-        "swaggerDoc": "",
-        "x": 150,
+        "swaggerDoc": "9d44b144c22a41cb",
+        "x": 190,
         "y": 1220,
         "wires": [
             [
@@ -4066,14 +4776,14 @@
         "z": "bd5efab3a54ad20c",
         "g": "b83eba8ab2a13179",
         "name": "build_params",
-        "func": "// Parse booking_id and user_id from request\nconst body = msg.payload;\nmsg.booking_id = body.booking_id;\nmsg.user_id = msg.token.user_id;\nmsg.reason = body.action_reason;\nmsg.topic = \"START TRANSACTION;\";\nreturn msg;",
+        "func": "// Parse booking_id and user_id from request\nconst body = msg.payload;\nmsg.booking_id = msg.req.params.booking_id || {};\nmsg.user_id = msg.token.user_id;\nmsg.reason = body.action_reason;\nmsg.topic = \"START TRANSACTION;\";\nreturn msg;",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 460,
+        "x": 520,
         "y": 1220,
         "wires": [
             [
@@ -4094,7 +4804,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 880,
+        "x": 980,
         "y": 1220,
         "wires": [
             [
@@ -4226,7 +4936,7 @@
         "g": "b83eba8ab2a13179",
         "mydb": "443dca5366e7983c",
         "name": "",
-        "x": 660,
+        "x": 740,
         "y": 1220,
         "wires": [
             [
@@ -4271,11 +4981,11 @@
         "g": "b83eba8ab2a13179",
         "mydb": "443dca5366e7983c",
         "name": "",
-        "x": 1880,
+        "x": 1500,
         "y": 1360,
         "wires": [
             [
-                "83121f413b1f8062"
+                "47ae447451fd8118"
             ]
         ]
     },
@@ -4520,13 +5230,13 @@
         "type": "http in",
         "z": "bd5efab3a54ad20c",
         "g": "4180c6902cea3879",
-        "name": "POST /api/bookings/cancel",
-        "url": "/api/bookings/cancel",
+        "name": "POST /api/bookings/:booking_id/cancel",
+        "url": "/api/bookings/:booking_id/cancel",
         "method": "post",
         "upload": false,
         "skipBodyParsing": false,
-        "swaggerDoc": "",
-        "x": 150,
+        "swaggerDoc": "b3a53d07c5bede1b",
+        "x": 190,
         "y": 1660,
         "wires": [
             [
@@ -4540,14 +5250,14 @@
         "z": "bd5efab3a54ad20c",
         "g": "4180c6902cea3879",
         "name": "build_params",
-        "func": "// Parse booking_id and user_id from request\nconst body = msg.payload;\nmsg.booking_id = body.booking_id;\nmsg.user_id = msg.token.user_id;\nmsg.reason = body.action_reason;\nmsg.topic = \"START TRANSACTION;\";\nreturn msg;",
+        "func": "// Parse booking_id and user_id from request\nconst body = msg.payload;\nmsg.booking_id = msg.req.params.booking_id || {};\nmsg.user_id = msg.token.user_id;\nmsg.reason = body.action_reason;\nmsg.topic = \"START TRANSACTION;\";\nreturn msg;",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 460,
+        "x": 540,
         "y": 1660,
         "wires": [
             [
@@ -4568,7 +5278,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 880,
+        "x": 1000,
         "y": 1660,
         "wires": [
             [
@@ -4700,7 +5410,7 @@
         "g": "4180c6902cea3879",
         "mydb": "443dca5366e7983c",
         "name": "",
-        "x": 660,
+        "x": 760,
         "y": 1660,
         "wires": [
             [
@@ -4745,11 +5455,11 @@
         "g": "4180c6902cea3879",
         "mydb": "443dca5366e7983c",
         "name": "",
-        "x": 1880,
+        "x": 1520,
         "y": 1800,
         "wires": [
             [
-                "d1dc58abaa8fdd02"
+                "2784bf0207fb79f1"
             ]
         ]
     },
@@ -4990,6 +5700,124 @@
         ]
     },
     {
+        "id": "884dbc834c6e5c30",
+        "type": "http in",
+        "z": "bd5efab3a54ad20c",
+        "g": "504069dc06829e62",
+        "name": "GET /api/bookings",
+        "url": "/api/bookings",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "0712b4ea054f8946",
+        "x": 170,
+        "y": 80,
+        "wires": [
+            [
+                "f27de9691e262046"
+            ]
+        ]
+    },
+    {
+        "id": "897273774df7fcfc",
+        "type": "debug",
+        "z": "bd5efab3a54ad20c",
+        "g": "e3ede9509861dd36",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "error",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "9c33635f345b25e7",
+        "type": "debug",
+        "z": "bd5efab3a54ad20c",
+        "g": "e3ede9509861dd36",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "req",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "b1df615bc7d3d852",
+        "type": "function",
+        "z": "bd5efab3a54ad20c",
+        "g": "e3ede9509861dd36",
+        "name": "handle_error_response",
+        "func": "msg.statusCode = 400;\nmsg.payload = {\n    ok: false,\n    message: \"Cannot approve this booking!\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1830,
+        "y": 560,
+        "wires": [
+            [
+                "7c9dd83c0d5efa4a"
+            ]
+        ]
+    },
+    {
+        "id": "47ae447451fd8118",
+        "type": "function",
+        "z": "bd5efab3a54ad20c",
+        "g": "b83eba8ab2a13179",
+        "name": "handle_error_response",
+        "func": "msg.statusCode = 400;\nmsg.payload = {\n    ok: false,\n    message: \"Cannot reject this booking!\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1770,
+        "y": 1360,
+        "wires": [
+            [
+                "83121f413b1f8062"
+            ]
+        ]
+    },
+    {
+        "id": "2784bf0207fb79f1",
+        "type": "function",
+        "z": "bd5efab3a54ad20c",
+        "g": "4180c6902cea3879",
+        "name": "handle_error_response",
+        "func": "msg.statusCode = 400;\nmsg.payload = {\n    ok: false,\n    message: \"Cannot cancel this booking!\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1770,
+        "y": 1800,
+        "wires": [
+            [
+                "d1dc58abaa8fdd02"
+            ]
+        ]
+    },
+    {
         "id": "4bc1e1e3301be371",
         "type": "http in",
         "z": "1f9ad198f05c78e0",
@@ -4999,7 +5827,7 @@
         "method": "get",
         "upload": false,
         "skipBodyParsing": false,
-        "swaggerDoc": "",
+        "swaggerDoc": "0012e4184beb4eda",
         "x": 180,
         "y": 100,
         "wires": [
@@ -5172,7 +6000,7 @@
         "method": "post",
         "upload": false,
         "skipBodyParsing": false,
-        "swaggerDoc": "",
+        "swaggerDoc": "13c01cadfd978a95",
         "x": 200,
         "y": 360,
         "wires": [
@@ -5223,7 +6051,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 910,
+        "x": 930,
         "y": 360,
         "wires": [
             [
@@ -5371,7 +6199,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 980,
+        "x": 960,
         "y": 420,
         "wires": []
     },
@@ -5399,7 +6227,7 @@
         "method": "get",
         "upload": false,
         "skipBodyParsing": false,
-        "swaggerDoc": "",
+        "swaggerDoc": "fdbe95dd413cfef8",
         "x": 190,
         "y": 120,
         "wires": [
@@ -5591,7 +6419,7 @@
         "method": "get",
         "upload": false,
         "skipBodyParsing": false,
-        "swaggerDoc": "",
+        "swaggerDoc": "de5d441597bd8d11",
         "x": 250,
         "y": 160,
         "wires": [
@@ -5872,15 +6700,7 @@
         "g": "44c1d437b2505fb5",
         "name": "trigger_notification_channel",
         "links": [
-            "ddc131cabdfcb416",
-            "a55b1940896b73fb",
-            "e1fd38f80a61b4d1",
             "753577e69d565b49",
-            "10b7f75aeb3611fa",
-            "fd92adc2f0b14202",
-            "f3b43c53847c0b44",
-            "503babdf7e28f1f9",
-            "26910459146b543b",
             "d6a9ba42a3b788cc",
             "8033a98a0b984807"
         ],
@@ -5934,17 +6754,9 @@
         "g": "3b28d018233610dd",
         "name": "trigger_schedule_update_channel",
         "links": [
-            "ddc131cabdfcb416",
-            "a55b1940896b73fb",
-            "e1fd38f80a61b4d1",
             "8a68fe56d0ce9d2b",
             "831c579302862374",
             "753577e69d565b49",
-            "10b7f75aeb3611fa",
-            "fd92adc2f0b14202",
-            "f3b43c53847c0b44",
-            "503babdf7e28f1f9",
-            "26910459146b543b",
             "d6a9ba42a3b788cc",
             "8033a98a0b984807"
         ],

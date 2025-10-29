@@ -3,6 +3,7 @@
     "description": "A Node-RED Project",
     "version": "0.0.1",
     "dependencies": {
+        "@digital-tvilling/node-red-openapi-generator": "^1.1.1",
         "dotenv": "^17.2.3",
         "node-red": "^4.1.0",
         "node-red-contrib-bcrypt": "~0.1.6",
