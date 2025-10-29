@@ -353,8 +353,9 @@
             "5e495eac96e9b125",
             "3e9a8064bd5699d9",
             "5cebd9d63084d28f",
-            "4a5e1ac9b16eef0b",
-            "884dbc834c6e5c30"
+            "884dbc834c6e5c30",
+            "23bcda06d730b551",
+            "68ef2017d8d63028"
         ],
         "x": 54,
         "y": 39,
@@ -388,12 +389,14 @@
             "809f9cc877822a87",
             "d0689467ab220886",
             "5452fc51071cf111",
-            "831c579302862374"
+            "831c579302862374",
+            "793ab45e4a9c57b7",
+            "b923140d6bc0a35a"
         ],
         "x": 34,
         "y": 819,
         "w": 1572,
-        "h": 302
+        "h": 342
     },
     {
         "id": "7451396dbeecdd0d",
@@ -417,12 +420,14 @@
             "6ccf5e0db011d125",
             "1994a1d8db5bae35",
             "dad71a52c698f1f0",
-            "c1715a202d930714"
+            "c1715a202d930714",
+            "2b3116444771ed19",
+            "4f53c1fc3ad29e5d"
         ],
         "x": 54,
         "y": 59,
         "w": 1512,
-        "h": 162
+        "h": 202
     },
     {
         "id": "d08782927857db71",
@@ -449,12 +454,14 @@
             "b6d2c489811ca47d",
             "4a29b7e628b685a0",
             "e1457a63b4ab7e12",
-            "8a68fe56d0ce9d2b"
+            "8a68fe56d0ce9d2b",
+            "4fe731263751ee6a",
+            "aa15b3e082f78521"
         ],
         "x": 14,
         "y": 299,
         "w": 1612,
-        "h": 202
+        "h": 242
     },
     {
         "id": "01efc9251ab27577",
@@ -479,12 +486,13 @@
             "681f51eb831cf4e4",
             "2c726c3038e4c793",
             "24d024c054437478",
-            "b3994344d4d8bc13"
+            "94bdb6158ef11a00",
+            "80a880d798c8e049"
         ],
         "x": 74,
         "y": 79,
         "w": 1472,
-        "h": 302
+        "h": 262
     },
     {
         "id": "5313c9ea75a5b369",
@@ -3909,7 +3917,7 @@
         "z": "bd5efab3a54ad20c",
         "g": "504069dc06829e62",
         "name": "handle_invalid_token",
-        "func": "msg.statusCode = 400;\nmsg.payload = {\n    ok: false,\n    message: \"Invalid token!\"\n}\nreturn msg;",
+        "func": "msg.statusCode = 401;\nmsg.payload = {\n    ok: false,\n    message: \"Invalid or missing token!\"\n}\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -3930,34 +3938,18 @@
         "z": "bd5efab3a54ad20c",
         "g": "504069dc06829e62",
         "name": "catch",
-        "scope": "group",
+        "scope": [
+            "994f23d2cbc7df98",
+            "5e495eac96e9b125"
+        ],
         "uncaught": false,
         "x": 300,
         "y": 260,
         "wires": [
             [
-                "3e9a8064bd5699d9",
-                "4a5e1ac9b16eef0b"
+                "3e9a8064bd5699d9"
             ]
         ]
-    },
-    {
-        "id": "4a5e1ac9b16eef0b",
-        "type": "debug",
-        "z": "bd5efab3a54ad20c",
-        "g": "504069dc06829e62",
-        "name": "debug 10",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "error",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 520,
-        "y": 300,
-        "wires": []
     },
     {
         "id": "a7a050dd92954768",
@@ -4103,7 +4095,7 @@
         "z": "bd5efab3a54ad20c",
         "g": "224b4e5df0a4aff1",
         "name": "handle_invalid_token",
-        "func": "msg.statusCode = 401;\nmsg.payload = {\n    ok: false,\n    message: \"Invalid token!\"\n}\nreturn msg;",
+        "func": "msg.statusCode = 401;\nmsg.payload = {\n    ok: false,\n    message: \"Invalid or missing token!\"\n}\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -4124,7 +4116,9 @@
         "z": "bd5efab3a54ad20c",
         "g": "224b4e5df0a4aff1",
         "name": "catch",
-        "scope": "group",
+        "scope": [
+            "decb45220f690651"
+        ],
         "uncaught": false,
         "x": 290,
         "y": 1080,
@@ -5818,6 +5812,78 @@
         ]
     },
     {
+        "id": "793ab45e4a9c57b7",
+        "type": "catch",
+        "z": "bd5efab3a54ad20c",
+        "g": "224b4e5df0a4aff1",
+        "name": "catch_unhandled_errors",
+        "scope": "group",
+        "uncaught": true,
+        "x": 350,
+        "y": 1120,
+        "wires": [
+            [
+                "b923140d6bc0a35a"
+            ]
+        ]
+    },
+    {
+        "id": "b923140d6bc0a35a",
+        "type": "function",
+        "z": "bd5efab3a54ad20c",
+        "g": "224b4e5df0a4aff1",
+        "name": "handle_unhandled_errors",
+        "func": "msg.statusCode = 500;\nmsg.payload = {\n    ok: false,\n    message: \"Internal Server Error\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 810,
+        "y": 1120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "23bcda06d730b551",
+        "type": "catch",
+        "z": "bd5efab3a54ad20c",
+        "g": "504069dc06829e62",
+        "name": "catch_unhandled_errors",
+        "scope": "group",
+        "uncaught": true,
+        "x": 350,
+        "y": 300,
+        "wires": [
+            [
+                "68ef2017d8d63028"
+            ]
+        ]
+    },
+    {
+        "id": "68ef2017d8d63028",
+        "type": "function",
+        "z": "bd5efab3a54ad20c",
+        "g": "504069dc06829e62",
+        "name": "handle_unhandled_errors",
+        "func": "msg.statusCode = 500;\nmsg.payload = {\n    ok: false,\n    message: \"Internal Server Error\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 300,
+        "wires": [
+            [
+                "f49e1e067a9d555c"
+            ]
+        ]
+    },
+    {
         "id": "4bc1e1e3301be371",
         "type": "http in",
         "z": "1f9ad198f05c78e0",
@@ -5959,7 +6025,7 @@
         "z": "1f9ad198f05c78e0",
         "g": "7451396dbeecdd0d",
         "name": "handle_invalid_token",
-        "func": "msg.statusCode = 400;\nmsg.payload = {\n    ok: false,\n    message: \"Invalid token!\"\n}\nreturn msg;",
+        "func": "msg.statusCode = 401;\nmsg.payload = {\n    ok: false,\n    message: \"Invalid or missing token!\"\n}\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -5980,7 +6046,9 @@
         "z": "1f9ad198f05c78e0",
         "g": "7451396dbeecdd0d",
         "name": "catch",
-        "scope": "group",
+        "scope": [
+            "6ccf5e0db011d125"
+        ],
         "uncaught": false,
         "x": 490,
         "y": 180,
@@ -6137,7 +6205,7 @@
         "z": "1f9ad198f05c78e0",
         "g": "d08782927857db71",
         "name": "handle_invalid_token",
-        "func": "msg.statusCode = 401;\nmsg.payload = {\n    ok: false,\n    message: \"Invalid token!\"\n}\nreturn msg;",
+        "func": "msg.statusCode = 401;\nmsg.payload = {\n    ok: false,\n    message: \"Invalid or missing token!\"\n}\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -6158,7 +6226,9 @@
         "z": "1f9ad198f05c78e0",
         "g": "d08782927857db71",
         "name": "catch",
-        "scope": "group",
+        "scope": [
+            "aebeee91a1e69f0e"
+        ],
         "uncaught": false,
         "x": 450,
         "y": 460,
@@ -6216,6 +6286,80 @@
         "x": 1505,
         "y": 340,
         "wires": []
+    },
+    {
+        "id": "2b3116444771ed19",
+        "type": "catch",
+        "z": "1f9ad198f05c78e0",
+        "g": "7451396dbeecdd0d",
+        "name": "catch_unhandled_errors",
+        "scope": "group",
+        "uncaught": true,
+        "x": 550,
+        "y": 220,
+        "wires": [
+            [
+                "4f53c1fc3ad29e5d"
+            ]
+        ]
+    },
+    {
+        "id": "4f53c1fc3ad29e5d",
+        "type": "function",
+        "z": "1f9ad198f05c78e0",
+        "g": "7451396dbeecdd0d",
+        "name": "handle_unhandled_errors",
+        "func": "msg.statusCode = 500;\nmsg.payload = {\n    ok: false,\n    message: \"Internal Server Error\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1010,
+        "y": 220,
+        "wires": [
+            [
+                "1f14ed077d48e282"
+            ]
+        ]
+    },
+    {
+        "id": "4fe731263751ee6a",
+        "type": "catch",
+        "z": "1f9ad198f05c78e0",
+        "g": "d08782927857db71",
+        "name": "catch_unhandled_errors",
+        "scope": "group",
+        "uncaught": true,
+        "x": 510,
+        "y": 500,
+        "wires": [
+            [
+                "aa15b3e082f78521"
+            ]
+        ]
+    },
+    {
+        "id": "aa15b3e082f78521",
+        "type": "function",
+        "z": "1f9ad198f05c78e0",
+        "g": "d08782927857db71",
+        "name": "handle_unhandled_errors",
+        "func": "msg.statusCode = 500;\nmsg.payload = {\n    ok: false,\n    message: \"Internal Server Error\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 970,
+        "y": 500,
+        "wires": [
+            [
+                "2daef27ecde9bc49"
+            ]
+        ]
     },
     {
         "id": "1559a397916dbc81",
@@ -6359,7 +6503,7 @@
         "z": "ef473e5856f6634c",
         "g": "01efc9251ab27577",
         "name": "handle_invalid_token",
-        "func": "msg.statusCode = 400;\nmsg.payload = {\n    ok: false,\n    message: \"Invalid token!\"\n}\nreturn msg;",
+        "func": "msg.statusCode = 401;\nmsg.payload = {\n    ok: false,\n    message: \"Invalid or missing token!\"\n}\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -6380,34 +6524,54 @@
         "z": "ef473e5856f6634c",
         "g": "01efc9251ab27577",
         "name": "catch",
-        "scope": "group",
+        "scope": [
+            "22a843db0fbf92fb"
+        ],
         "uncaught": false,
         "x": 320,
         "y": 300,
         "wires": [
             [
-                "2c726c3038e4c793",
-                "b3994344d4d8bc13"
+                "2c726c3038e4c793"
             ]
         ]
     },
     {
-        "id": "b3994344d4d8bc13",
-        "type": "debug",
+        "id": "94bdb6158ef11a00",
+        "type": "catch",
         "z": "ef473e5856f6634c",
         "g": "01efc9251ab27577",
-        "name": "debug 13",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "error",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 540,
-        "y": 340,
-        "wires": []
+        "name": "catch_unhandled_errors",
+        "scope": "group",
+        "uncaught": true,
+        "x": 390,
+        "y": 240,
+        "wires": [
+            [
+                "80a880d798c8e049"
+            ]
+        ]
+    },
+    {
+        "id": "80a880d798c8e049",
+        "type": "function",
+        "z": "ef473e5856f6634c",
+        "g": "01efc9251ab27577",
+        "name": "handle_unhandled_errors",
+        "func": "msg.statusCode = 500;\nmsg.payload = {\n    ok: false,\n    message: \"Internal Server Error\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 850,
+        "y": 240,
+        "wires": [
+            [
+                "156d551f9094bd51"
+            ]
+        ]
     },
     {
         "id": "bc5b3d729a98eac6",
