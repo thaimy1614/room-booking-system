@@ -72,9 +72,9 @@ Open .env file and create variable:
 Start Node-RED manually:
 
     cd to the project
-    node-red -s custom-setting.js 
+    node-red -s custom-setting.js -u .
 
-To run with custom-setting.js file
+To run with custom-setting.js file and set current user directory
 
 🌐 Open your browser at: 
 
