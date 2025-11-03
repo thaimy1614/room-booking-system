@@ -66,6 +66,11 @@ Add .env file into project directory
 Open .env file and create variable:
 
     JWT_SECRET_KEY=your-jwt-secret-key
+    MYSQL_HOST=your-mysql-host
+    MYSQL_PORT=your-mysql-port
+    MYSQL_USER=your-mysql-user
+    MYSQL_PASSWORD=your-mysql-password
+    MYSQL_DATABASE=your-mysql-database
 
 ▶️ 4. Open and Run project
 
