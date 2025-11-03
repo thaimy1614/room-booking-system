@@ -177,8 +177,8 @@ function RoomManagement() {
       setOpenModal(false);
       fetchRooms();
     } catch (err) {
-      // toast.error(err.message || 'Operation failed');
-      setError(err.message);
+      toast.error(err.message || 'Failed to submit room');
+      // setError(err.message);
     }
   };
 

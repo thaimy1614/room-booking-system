@@ -43,8 +43,14 @@ export const handleCreateRoom = async (roomData) => {
     });
     return response.data;
   } catch (error) {
-    toast.error(error.response?.data?.message || 'Failed to create room');
-    throw error;
+    const arrayErrors = error.response?.data?.message;
+    let errorMessages = "";
+    if (Array.isArray(arrayErrors)) {
+      arrayErrors.forEach(errMsg => errorMessages += `${errMsg}\n`);
+    } else {
+      errorMessages = error.response?.data?.message || "";
+    }
+    throw new Error(errorMessages || 'Failed to create room');
   }
 };
 
@@ -58,8 +64,14 @@ export const handleUpdateRoom = async (roomId, roomData) => {
     });
     return response.data;
   } catch (error) {
-    toast.error(error.response?.data?.message || 'Failed to update room');
-    throw error;
+    const arrayErrors = error.response?.data?.message;
+    let errorMessages = "";
+    if (Array.isArray(arrayErrors)) {
+      arrayErrors.forEach(errMsg => errorMessages += `${errMsg}\n`);
+    } else {
+      errorMessages = error.response?.data?.message || "";
+    }
+    throw new Error(errorMessages || 'Failed to create room');
   }
 };
 
